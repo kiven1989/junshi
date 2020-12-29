@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+		<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<!-- 引入样式 -->
+
+		<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- 引入组件库 -->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/contUp.js"></script>
+		<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+		<style>
+			.bannerSwiper {
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+			}
+
+			body {
+				background-color: #f5f7f7;
+			}
+		</style>
+	</head>
+
+	<body id="body">
+		<div id="app">
+			<div class="fixedTop center">
+				<div class="fixedTopMain">
+					<img src="img/logo.png" width="112" class="fl">
+					<div class="fr">
+						<div class="titleLink fl">
+							<a href="index.html"><span>
+								网站首页
+							</span></a>
+							<a href="about.html"><span>
+								关于君实
+							</span></a>
+							<a href="platform.html"><span>
+								科学与治疗领域
+							</span></a>
+							<a href="NewsCenter.html"><span class="on">
+								新闻资讯
+							</span></a>
+							<a href="yf.html"><span>
+								人才招聘
+							</span></a>
+							<a href="Investor.html"><span>
+								投资者关系
+							</span></a>
+							<a href="ContactUs.html"><span>
+								联系我们
+							</span></a>
+						</div>
+						<div class="languageChoose fl">
+							<span>简</span> |
+							<span>繁</span> |
+							<span>En</span>
+						</div>
+						<span class="enter">员工入口</span>
+					</div>
+				</div>
+			</div>
+			<div class="banner" style="background: url(img/newsbanner.png) no-repeat center center;height: 675px; position: relative;">
+
+			</div>
+
+			<div class="baseContent" style=" background: url(img/newsbg.png) no-repeat left bottom; background-size: auto 100%; z-index: 100; height: auto; padding-bottom: 270px;  ">
+				<img src="img/top.png" width="45" class="top" >
+				<div class="newsBox" style="padding-bottom: 50px;">
+					<img src="img/x3.png" class='newsX' width="338">
+					<!-- <img src="img/img123.png" style="width: 100%;" > -->
+					<div class="container">
+						<div class="title">
+							<h2 style="width: 80%;">title</h2>
+							<a class="btn" href="#">下载文章</a>
+						</div>
+						<p class="time">time</p>
+						<hr/>
+						<p class="content">content</p>
+						<hr/>
+						<div class="page">
+							<a >上一篇</a>
+							<a >下一篇</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		</div>
+<div class="footerMain1" id="div">
+			<div class="footerbox">
+				<div class="footerMain center">
+					<img src="img/footer2.png" width="100" >
+					<div class="w25">
+						<a href="index.html"><span>
+							网站首页<br>
+						</span></a>
+						<span>
+							<a href="about.html">关于我们<br>
+						</span></a>
+						<span>
+							治疗领域<br>
+						</span>
+					</div>
+					<div class="w25">
+						<a href="NewsCenter.html"><span>
+							新闻资讯<br>
+						</span></a>
+						<span>
+							<a href="yf.html">人才招聘<br>
+						</span></a>
+						<span>
+							<a href="Investor.html">投资者关系<br>
+						</span></a>
+					</div>
+					<div class="w25 w30">
+						<a href="ContactUs.html"><span>
+							联系我们<br>
+						</span></a>
+						<a href="adverse_event.html"><span>
+							不良事件报告平台<br>
+						</span></a>
+						
+					</div>
+					<div class="w35">
+						<span style="font-weight: bold;">
+							联系我们<br>
+						</span>
+						<span>
+							电话：(86)21-20248288<br>
+						</span>
+						<span>
+							传真：(86)21-50796192<br>
+						</span>
+						<span>
+							地址：上海市浦东新区海趣路36号、58号2幢13层<br>
+						</span>
+					</div>
+					<div class="wxBox">
+						<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100" style="position: relative; top: 5px;">
+					</div>
+				</div>
+				<div class="footerBottom">
+					opyright - 上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号
+				</div>
+			</div>
+					
+		</div>
+	</body>
+	<script src="js/minigrid.js"></script>
+	<style>
+		.container {
+			padding:0 20px;
+		}
+
+		.container hr {
+			color: #ccc;
+			margin:20px 0;
+		}
+
+		.container .title {
+			padding: 10px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.title h2 {
+			font-size: 30px;
+			padding: 20px 0;
+		}
+
+		.title .btn {
+			background-color: #E50012;
+			color: #fff;;
+			border:none;
+			padding: 5px 20px;
+			border-radius: 20px;
+		}
+		
+		.grid {
+			position: relative;
+			clear: right;
+			margin-top: 42px;
+			/* fluffy */
+			margin: 0 auto;
+			width: 98%;
+			/* end fluffy */
+		}
+
+		.grid-item {
+			position: absolute;
+			top: 0;
+			left: 0;
+			/* fluffy */
+			width: calc(95% / 3);
+			height: auto;
+			border-radius: 3px;
+			background-color: #fff;
+			/* end fluffy */
+			-webkit-transition: .3s ease-in-out;
+			-o-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+			border: 1px solid #EEEEEE;
+
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.grid-item img {
+			width: 100%;
+		}
+
+		.grid-item:hover .gridMore {
+			display: block;
+		}
+
+		.page {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.page a {
+			border:1px solid #999;
+			background: rgba(1,1,1,0);
+			color: #999;
+			border-radius: 5px;
+			padding: 10px;
+		}
+	</style>
+	<script>
+		(function() {
+			minigrid('.grid', '.grid-item', 12, null,
+				function() {
+					// var d = document.querySelector('.demo');
+					// d.style.opacity = 1;
+				}
+			);
+			window.addEventListener('resize', function() {
+				minigrid('.grid', '.grid-item');
+			});
+		})();
+		var Main = {
+			data() {
+				return {
+
+				}
+			},
+			created() {
+
+			},
+		}
+		var Ctor = Vue.extend(Main)
+		new Ctor().$mount('#app')
+	</script>
+	<script>
+		$(function() {
+			var swiper = new Swiper('.bannerSwiper', {
+				autoplay: {
+					disableOnInteraction: false,
+					delay: 2500,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				}
+			});
+		})
+	</script>
+	<script>
+		// function detail(id) {
+		// 	sendAjax('/newsShow' , { language: '0',id:id }, (res) => {
+		// 		console.log(res);
+		// 		if(res.code == 0) {
+		// 			let news = res.data.newsShow;
+		// 			$($('.title h2')[0]).text(news.title)
+		// 			$($('.time')[0]).text(news.newsdate)
+		// 			$($('.content')[0]).html(news.content)
+		// 		}
+		// 	})
+		// }
+		
+		$(function(){
+			let id = getQueryVariable('id');
+			
+			
+			
+			
+			sendAjax('/newsShow' , { language: '0',id:id }, (res) => {
+				console.log(res);
+			var imgurl = localStorage.getItem('imgUrl')
+				if(res.code == 0) {
+					let news = res.data.newsShow;
+					$($('.title h2')[0]).text(news.title)
+					$($('.title .btn')[0]).attr('src',(news.file3 ? imgurl + '' + news.file3.img_url :'')  )
+					$($('.time')[0]).text(news.newsdate)
+					$($('.content')[0]).html(news.content)
+					// $('.page button:eq(0)').text(news.prev_news.title ? '上一篇: ' + news.prev_news.title : news.prev_news)
+					// $('.page button:eq(1)').text(news.next_news.title ? '下一篇: ' + news.next_news.title : news.next_news)
+					
+					let html = '';
+					if(news.previd){
+						console.log(window.detail);
+						html += '<a href="NewsCenterD.html?id='+news.previd+'">上一篇:'+news.prev_news.title+'</a>'
+					} else {
+						html += '<a>'+news.prev_news+'</a>'
+					}
+					
+					if(news.nextid){
+						html += '<a href="NewsCenterD.html?id='+news.nextid+'">下一篇:'+news.next_news.title+'</a>'
+					} else {
+						html += '<a>'+news.next_news+'</a>'
+					}
+					// console.log(html);
+					
+					$('.page').html(html)
+					
+					// $('.page button:eq(0)').click(() => {
+					// 	if(news.previd){
+					// 		detail(news.previd);
+					// 	}
+					// })
+					// $('.page button:eq(1)').click(() => {
+					// 	if(news.nextid){
+					// 		detail(news.nextid);
+					// 	}
+					// })
+				}
+			})
+		})
+	</script>
+
+</html>

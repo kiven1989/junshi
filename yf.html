@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>人才招聘</title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+			overflow-x: hidden;
+		}
+
+		.yc {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			display: block;
+			margin: 0px;
+		}
+
+		.bannerYf {
+			width: 1920px;
+			height: 990px;
+		}
+
+		.boxF,
+		.boxS,
+		.boxT,
+		.overlay {
+			width: 300px;
+			height: 350px;
+			overflow: hidden;
+		}
+
+		.boxF,
+		.boxS {
+			visibility: hidden;
+		}
+
+		.boxF {
+			display: inline-block;
+			transform: rotate(120deg);
+			margin-right: 30px;
+			margin-left: 10px;
+			-ms-transform: rotate(120deg);
+			-moz-transform: rotate(120deg);
+			-webkit-transform: rotate(120deg);
+			transition: all 0.4s;
+		}
+
+		.boxS {
+			transform: rotate(-60deg);
+			-ms-transform: rotate(-60deg);
+			-moz-transform: rotate(-60deg);
+			-webkit-transform: rotate(-60deg);
+		}
+
+		.boxT {
+			transform: rotate(-60deg);
+			/* background: no-repeat 50% center; */
+			background-size: 125% auto;
+			-ms-transform: rotate(-60deg);
+			-moz-transform: rotate(-60deg);
+			-webkit-transform: rotate(-60deg);
+			visibility: visible;
+		}
+
+		.boxF:hover {
+			/* transform: scale(1.1); */
+		}
+		.boxS:hover {
+			/* transform: scale(1.1); */
+		}
+		.boxT:hover {
+			/* transform: scale(1.1); */
+			/* background-size: 150%; */
+		}
+
+		.boxT img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+   			 transition-duration: 0.5s;
+		}
+		.boxT img:nth-child(2) {
+			position: absolute;
+			left: 0;
+			display: none;
+		}
+		
+		.show {
+			display: inline-block !important;
+		}
+
+		.boxT:hover img:first-child {
+			transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			-moz-transform: scale(1.5);
+			-ms-transform: scale(1.5);
+			-o-transform: scale(1.5);
+		}
+		
+		
+		
+		/* @media(max-width:1366px) {
+			.yffuli {
+				width: 1366px;
+				height: 100vh;
+			}
+		} */
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="index.html"><span>
+								网站首页
+							</span></a>
+						<a href="about.html"><span>
+								关于君实
+							</span></a>
+						<a href="platform.html"><span>
+								科学与治疗领域
+							</span></a>
+						<a href="NewsCenter.html"><span>
+								新闻资讯
+							</span></a>
+						<a href="yf.html"><span class="on">
+								人才招聘
+							</span></a>
+						<a href="Investor.html"><span>
+								投资者关系
+							</span></a>
+						<a href="ContactUs.html"><span>
+								联系我们
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="yf.html">简</a>
+						</span> |
+						<span>
+							<a href="yffn.html">繁</a>
+						</span> |
+						<span>
+							<a href="yfen.html">En</a>
+						</span>
+					</div>
+					<span class="enter">员工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner"
+			style="background: no-repeat center center;height: 675px;z-index: 100; position: relative; background-size:auto 100%;">
+			<img src="img/x1.png" width="338" class="x" >
+		</div>
+		<img src="img/images/cc2_02.jpg" class="yc bannerYf">
+		<div class="about_wrap_one jfRecTop" style="position: relative; height: 1052px;">
+			<div class="sam_tit samlineWi huadong">
+				<span>公司简介</span>
+				<p class="samline "></p>
+				<br>
+			</div>
+			<div class="yfConsImgs yfconsLeft">
+				<img class="yfConsImgs1" src="" alt="">
+				<img class="yfConsImgs2" src="" alt="">
+			</div>
+			<div class="yfConsTxt yfconsRight">
+				<p>
+
+				</p>
+			</div>
+			<div class="clear"></div>
+			<div class="yfConsTxt yfconsLeft">
+				<p style="margin-top: 160px;">
+
+				</p>
+			</div>
+			<div class="yfConsImgs yfconsRight">
+				<img class="yfConsImgs1" src="" alt="">
+				<img class="yfConsImgs2" style="top: -26px; margin-top: 215px;" src="" alt="">
+			</div>
+			<img src="img/icon5.png" alt="" class="img-responsive" style="position: absolute;
+		left: 50%;
+		bottom: -75px;
+		transform: translateX(-50%);
+		width: 338px;">
+			<div class="clear"></div>
+		</div>
+		<div class="Yfbuju">
+
+			<div class="about_wrap_one platform_wrap_two">
+				<div class="sam_tit samlineWi huadong" style="width: 140px;">
+					<span>全球化布局</span>
+					<p class="samline" style="background-color: #ffffff;"></p>
+					<br>
+				</div>
+				<ul class="yfbujuUl">
+					<li>
+
+					</li>
+					<li>
+
+					</li>
+				</ul>
+				<div class="yfNan">
+					<!-- <img class="yfnan1" src="img/yfnan.gif" alt=""> -->
+					<img class="yfnan1Min" src="img/yfjiu.png" alt="">
+					<img class="yfnan1" src="img/yfborBk.png" alt="">
+					<!-- <img class="yfnanBor1" src="img/yfnanBor1.gif" alt=""> -->
+					<!-- <img class="yfnan2" src="img/yfnan.gif" alt=""> -->
+					<img class="yfnan2" src="img/yfborBk.png" alt="">
+					<img class="yfnan2Min" src="img/yfnan2Min.png" alt="">
+					<!-- <img class="yfnanBor2" src="img/yfnanBor2.gif" alt=""> -->
+					<ul>
+						<li class="yfjuxn1">
+
+						</li>
+						<li class="yfjuxn2"> </li>
+						<li class="yfjuxn3">
+						</li>
+						<li class="yfjuxn4">
+						</li>
+						<li class="yfjuxn5">
+
+						</li>
+						<li class="yfjuxn6">
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<img src="img/x1.png" alt="" class="img-responsive">
+		</div>
+		<div class="backgorus">
+			<div class="about_wrap_one jfRecTop">
+				<div class="sam_tit samlineWi huadong">
+					<span>招聘职位</span>
+					<p class="samline "></p>
+					<br>
+				</div>
+				<div class="zpresLeft">
+					<img src="img/zpres.png" alt="">
+				</div>
+				<div class="zpresRight">
+					<ul class="joinBos">
+						<li class="curs">校园招聘</li>
+						<li>社会招聘</li>
+					</ul>
+					<br>
+					<div class="joinZpList">
+						<div class="joinZpLeft" style="display: block;">
+							<ul class="JoinzpNav" id="jobs0">
+
+							</ul>
+						</div>
+						<div class="joinZpLeft">
+							<ul class="JoinzpNav" id="jobs1">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<img src="img/icon5.png" alt="" class="img-responsive"
+				style="position: absolute; left: 50%; bottom: -75px; transform: translateX(-50%); width: 338px;">
+		</div>
+		<div class="yffuli">
+			<div class="about_wrap_one platform_wrap_two">
+				<div class="sam_tit samlineWi huadong">
+					<span>薪酬福利</span>
+					<p class="samline" style="background-color: #ffffff;"></p>
+					<br>
+				</div>
+			</div>
+			 <ul>
+				<li style="top: 245px;left:455px"></li>
+				<li style="top: 234px;left:752px"></li>
+				<li style="top: 157px;left: 976px;"></li>
+				<li style="top: 374px;left: 622px;"></li>
+				<li style="top: 592px;left: 384px;"></li>
+				<li style="top:667px;left:551px"></li>
+				<li style="top: 735px;left: 787px;"></li>
+				<li style="top: 591px;left:1098px"></li>
+				<li style="top: 746px;left: 1189px;"></li>
+				<li style="top: 468px;left: 1348px;"></li>
+				<li style="top: 280px;left: 1285px;"></li>
+				<li style="top: 108px;left: 1332px;"></li>
+			</ul>
+		</div>
+		<div class="environment">
+			<div class="about_wrap_one jfRecTop">
+				<div class="sam_tit samlineWi huadong">
+					<span>办公环境</span>
+					<p class="samline "></p>
+					<br>
+				</div>
+				<div style="width: 1100px;margin: 0 auto;">
+					<div class="boxF">
+						<div class="boxS">
+							<div class="boxT">
+								<img src="img/banner.png" alt="">
+								<img src="img/lbx.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="boxF">
+						<div class="boxS">
+							<div class="boxT">
+								<img src="img/banner.png" alt="">
+								<img src="img/lbx.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="boxF">
+						<div class="boxS">
+							<div class="boxT">
+								<img src="img/banner.png" alt="">
+								<img src="img/lbx.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="width: 750px;margin: -80px auto 0;">
+					<div class="boxF">
+						<div class="boxS">
+							<div class="boxT">
+								<img src="img/banner.png" alt="">
+								<img src="img/lbx.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="boxF">
+						<div class="boxS">
+							<div class="boxT">
+								<img src="img/banner.png" alt="">
+								<img src="img/lbx.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+							网站首页<br>
+						</span></a>
+					<span>
+						<a href="about.html">关于我们<br>
+					</span></a>
+					<span>
+						治疗领域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+							新闻资讯<br>
+						</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投资者关系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+							联系我们<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+							不良事件报告平台<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						联系我们<br>
+					</span>
+					<span>
+						电话：(86)21-20248288<br>
+					</span>
+					<span>
+						传真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦东新区海趣路36号、58号2幢13层<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var height = window.screen.height;
+		var width = window.screen.width;
+		console.log(height/1080);
+		console.log(width/1920);
+		console.log(width , height);
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 100) {
+				$(".samlineWi .samline").css({ "width": 'calc(100% + 12px)' })
+			}
+
+		})
+		$(".joinBos li").click(function () {
+			$(".joinBos li").eq($(this).index()).addClass("curs").siblings().removeClass('curs');
+			$(".joinZpList .joinZpLeft").hide().eq($(this).index()).show();
+		});
+		$(".JoinzpNav").on('click', '>li', function () {
+			$(".JoinzpNav li").children('.joinAdd').removeClass('joinHide')
+			$(".JoinzpNav li").children('.joinPost').removeClass('joinShow')
+			$(".JoinzpNav li").children('button').removeClass('button')
+			$(this).children('.joinAdd').addClass("joinHide");
+			$(this).children('.joinPost').addClass("joinShow");
+			$(this).children('button').addClass("button");
+		});
+		sendAjax('/joinUs', { language: '0' }, (data) => {
+			var imgurl = localStorage.getItem('imgUrl')
+			var bane = imgurl + data.data.head_img.file.img_url
+			console.log(bane);
+			if (bane) {
+				
+				$(".banner").css({ 'background-image': `url(${bane})` })
+			}
+			if (data.data.second_img) {
+				$(".bannerYf").attr('src', imgurl + data.data.second_img.file.img_url)
+			}
+
+
+			var yfbuju = JSON.parse(data.data.global[0].text)
+			$(".yfbujuUl li:eq(0)").text(yfbuju.text1)
+			$(".yfbujuUl li:eq(1)").text(yfbuju.text2)
+			$(".yfNan ul li:eq(0)").text(yfbuju.text8)
+			$(".yfNan ul li:eq(1)").text(yfbuju.text3)
+			$(".yfNan ul li:eq(2)").text(yfbuju.text4)
+			$(".yfNan ul li:eq(3)").text(yfbuju.text5)
+			$(".yfNan ul li:eq(4)").text(yfbuju.text6)
+			$(".yfNan ul li:eq(5)").text(yfbuju.text7)
+			var i = 0
+			var company = data.data.company
+			for (i = 0; i < data.data.company.length; i++) {
+				if (company[i].position == '上') {
+					$(".yfconsRight p").text(company[i].content)
+					$(".yfconsLeft img:eq(1)").attr('src', imgurl + company[i].file.img_url)
+				}
+				if (company[i].position == '下') {
+					$(".yfconsLeft p").text(company[i].content)
+					$(".yfconsRight img:eq(1)").attr('src', imgurl + company[i].file.img_url)
+				}
+			}
+			var pay = JSON.parse(data.data.pay[0].text)
+			var paylist = Object.values(pay)
+			var j = 0;
+			for (j = 0; j < paylist.length; j++) {
+				$('.yffuli ul li').eq(j).text(paylist[j])
+			}
+			// $('.yffuli ul li:eq(0)').css({"top": 252*(height/1080)+"px","left": 462*(width/1920)+"px","width": 105*(width/1920)+"px","height": 105*(width/1920)+"px"})
+			// $('.yffuli ul li:eq(1)').css({"top": 241*(height/1080)+"px","left": 752*(width/1920)+"px","width": 105*(width/1920)+"px","height": 105*(width/1920)+"px"})
+			// 195 599
+			var jobs1 = data.data.jobs1
+			let his = ''
+			$.each(jobs1, function (i, n) {
+				his += ""
+					+ '<li>'
+					+ '		<button>' + n.title + '</button>'
+					+ '			<img class="joinAdd" src="img/joinAdd.png" alt="">'
+					+ '			<div class="joinPost">'
+					+ '				<div style="float: left;width: 300px;margin-right: 30px;">'
+					+ '					<h3>岗位职责</h3>'
+					+ '					<p class="joinLine"></p>'
+					+ '						<ul>'
+					+ '							<li>' + n.responsibility + '</li>'
+					+ '						</ul>'
+					+ '					</div>'
+					+ '					<div style="float: left;width: 300px;">'
+					+ '						<h3>任职资格</h3>'
+					+ '						<p class="joinLine"></p>'
+					+ '						<ul>'
+					+ '							<li>' + n.qualification + '</li>'
+					+ '						</ul>'
+					+ '						<h3>简历投递方式</h3>'
+					+ '					<p class="joinLine" style="width:78px"></p>'
+					+ '					<ul>'
+					+ '						<li>' + n.methods + '</li>'
+					+ '					</ul>'
+					+ '				</div>'
+					+ '				<div class="clear"></div>'
+					+ '				</div>'
+					+ '		</li>'
+
+			})
+			$("#jobs0").html(his);
+			let hts = ''
+			var jobs2 = data.data.jobs2
+			$.each(jobs2, function (i, n) {
+				hts += ""
+					+ '<li>'
+					+ '		<button>' + n.title + '</button>'
+					+ '			<img class="joinAdd" src="img/joinAdd.png" alt="">'
+					+ '			<div class="joinPost">'
+					+ '				<div style="float: left;width: 300px;margin-right: 30px;">'
+					+ '					<h3>岗位职责</h3>'
+					+ '					<p class="joinLine"></p>'
+					+ '						<ul>'
+					+ '							<li>' + n.responsibility + '</li>'
+					+ '						</ul>'
+					+ '					</div>'
+					+ '					<div style="float: left;width: 300px;">'
+					+ '						<h3>任职资格</h3>'
+					+ '						<p class="joinLine"></p>'
+					+ '						<ul>'
+					+ '							<li>' + n.qualification + '</li>'
+					+ '						</ul>'
+					+ '						<h3>简历投递方式</h3>'
+					+ '					<p class="joinLine" style="width:78px"></p>'
+					+ '					<ul>'
+					+ '						<li>' + n.methods + '</li>'
+					+ '					</ul>'
+					+ '				</div>'
+					+ '				<div class="clear"></div>'
+					+ '				</div>'
+					+ '		</li>'
+
+			})
+			$("#jobs1").html(hts);
+
+			var environment = data.data.environment
+			var s = ''
+			for (s = 0; s < environment.length; s++) {
+				if (environment[s].position == '上左') {
+					$('.boxF').eq(0).find('img:eq(0)').attr("src", imgurl + environment[s].file.img_url)
+				}
+				if (environment[s].position == '上中') {
+					$('.boxF').eq(1).find('img:eq(0)').attr("src", imgurl + environment[s].file.img_url)
+				}
+				if (environment[s].position == '上右') {
+					$('.boxF').eq(2).find('img:eq(0)').attr("src", imgurl + environment[s].file.img_url)
+				}
+				if (environment[s].position == '下左') {
+					$('.boxF').eq(3).find('img:eq(0)').attr("src", imgurl + environment[s].file.img_url)
+				}
+				if (environment[s].position == '下右') {
+					$('.boxF').eq(4).find('img:eq(0)').attr("src", imgurl + environment[s].file.img_url)
+				}
+			}
+
+			var x = $('.boxT');
+			var index=0;
+			for(var i = 0 ; i<x.length ; i++){
+				(function(o){
+					$(x[o]).click(function(event){
+						$(x[o]).find('img:eq(1)').addClass('show');
+						console.log(11);
+						if(index != o) {
+							$(x[index]).find('img:eq(1)').removeClass('show');
+						}
+						
+					index=o;
+					
+					//取消冒泡
+
+					var event = event || window.event;
+
+					if(event && event.stopPropagation)
+
+					{
+
+						event.stopPropagation();
+
+					}
+
+					else
+
+					{
+
+						event.cancelBubble = true;
+
+					}
+						
+					})
+				})(i)
+				
+			}
+			$(document).click(function(e){
+				// console.log(e.target.className);
+				var event = e || window.event;
+				
+				if(event.target.className != 'show') {
+					$('img.show').removeClass('show')
+					// console.log($('.show'));
+				}
+				
+			})
+
+
+
+
+		})
+	})
+</script>
+</
+html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="index.html"><span>
+							网站首页
+						</span></a>
+						<a href="about.html"><span>
+							关于君实
+						</span></a>
+						<a href="platform.html"><span class="on">
+							科学与治疗领域
+						</span></a>
+						<a href="NewsCenter.html"><span>
+							新闻资讯
+						</span></a>
+						<a href="yf.html"><span>
+							人才招聘
+						</span></a>
+						<a href="Investor.html"><span>
+							投资者关系
+						</span></a>
+						<a href="ContactUs.html"><span>
+							联系我们
+						</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="product.html">简</a>
+						</span> |
+						<span>
+							<a href="productfn.html">繁</a>
+						</span> |
+						<span>
+							<a href="producten.html">En</a>
+						</span>
+					</div>
+					<span class="enter">员工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+			<img src="img/x2.png" width="338" class="x">
+		</div>
+		<!-- <div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+			<img src="img/x2.png" width="338" class="x">
+		</div> -->
+		<div class="baseNav">
+			<ul>
+				<a href="platform.html"><li>研发平台</li></a>
+				<a href="base.html"><li>
+				生产基地
+				</li></a>
+		        <a href="product.html"><li  style="background:#004387"><img src="img/pocur1.png" />
+		           <p>产品管线</p> </li></a>
+			</ul>
+		</div>
+		<div class="prodBack">
+			<div class="proMin">
+				<el-row :gutter="30" id="dtail">
+					<el-col :md="4" style="background-color: #ffffff;border-radius: 10px;">
+						<div class="proLeft">
+							<h2>产品管线</h2>
+							<ul class="ProNavs">
+								<!-- <li>
+									<p class="ProTitleActive">Cancer<img src="img/proIcon1.png" /></p>
+									<div class="ProActive"></div>
+									<ul class="ProNavsMin">
+										<li>
+											<a href="#" class="ProTitleActive">JS001 (PD-1)</a>
+										</li>
+										<li>
+											<a href="#"> JS003 (PD-L1)</a>
+										</li>
+										<li>
+											<a href="#">JS004 (BTLA)</a>
+										</li>
+										<li>
+											<a href="#">JS006 (TIGIT)</a>
+										</li>
+										<li>
+											<a href="#">JS007 (CTLA-4)</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<p>Autoimmune Diseases</p>
+									<div class=""></div>
+								</li>
+								<li>
+									<p>Metabolic Diseases</p>
+									<div class=""></div>
+								</li>
+								<li>
+									<p>Neurologic Diseases</p>
+									<div class=""></div>
+								</li>
+								<li>
+									<p>Infectious Diseases</p>
+									<div class=""></div>
+								</li> -->
+							</ul>
+						</div>
+					</el-col>
+					<el-col :md="20">
+						<div class="PriTwoRight" style="">
+							<div class="PriTwo">
+								<h3>抗PCSK9单抗</h3>
+								<span>
+									JS002是由君实生物自主研发的注射用重组人源化抗PCSK9单克隆抗体，用于治疗心血管疾病。君实生物是国内首家获得该靶点药物临床试验批件的中国企业。<br>
+									目前，公司已完成I期临床试验，II期临床试验已完成入组，正在进行随访。公司正在启动在更广泛患者人群中的III期临床研究的筹备工作。
+								</span>
+								<h4>作用原理</h4>
+								<div class="PriTowline"></div>
+								<br>
+								<p> <span>PCSK9是新一代降脂效率与安全性更优的降脂靶点，抗PCSK9单克隆抗体可用于治疗高胆固醇血症。</span><br>
+									<span>胆固醇在血液中以脂蛋白的形式存在。血浆中低密度脂蛋白（Low Density
+									Lipoprotein，LDL）是运输内源性胆固醇的主要载体，LDL-C是低密度脂蛋白胆固醇，它的含量可以反应血浆中LDL的水平。LDL通过结合肝细胞表面的低密度脂蛋白受体（LDL-R）被降解和转化。PCSK9是由PCSK9基因编码的丝氨酸蛋白酶，其可与LDL-R结合并使其降解，LDL-R的降解将导致LDL含量增加，即LDL-C水平升高。</span><br>
+									<span>抗PCSK9单抗通过与人体PCSK9以高亲和力结合，阻断PCSK9与细胞表面的LDL-R结合，减少LDL-R降解，使其能够与LDL结合，从而增强肝细胞对LDL的摄取，达到降低血液中LDL含量和LDL-C水平的目的。整体而言，与他汀类药物抑制胆固醇合成、减少胆固醇“来路”的机理不同，<span class="on">
+										PCSK9抑制剂是增加胆固醇的“去路”，稳定LDL-R的数量，从而加速清除体内已经合成的胆固醇。
+									</span></span>
+									
+								</p>
+								<img style="margin: 30px auto;display: block;" src="img/proTwoImsd.png" alt="">
+								<h4>JS002的特点</h4>
+								<div class="PriTowline"></div>
+								<br>
+								<p>
+									<span>JS002是一种创新的抗PCSK9单克隆抗体。</span><br>
+									<span>临床前研究表明JS002拥有下列主要特征：</span>
+								</p>
+								<ul class="proTowUl">
+									<li>
+									
+										<span>	<img src="img/1.png" alt="">凭借<span class="on">高亲和性及新的CDR结构</span>
+											，其能够识别更多种类的PCSK9在食蟹猴或大鼠的单一剂量毒性研究及重复剂量毒性研究中，并未观察到明显副作用;
+										</span>
+									</li>
+									<li>
+										
+										<span><img src="img/2.png" alt="">
+											基于临床前研究的药效学结果，JS002已显示出对降低患有高胆固醇血症的猕猴模型的LDL-C水平的有效性；
+											
+										</span>
+									</li>
+									<li>
+										
+										<span><img src="img/3.png" alt="">
+											JS002的药代动力学参数与已上市的PCSK9抑制剂类似。
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</el-col>
+					
+					<el-col :md="4" style="height: 1px;"></el-col>
+					<el-col :md="20">
+						<div class="PriTwoRight" style="">
+							<div class="PriTwo">
+								<h3>抗PCSK9单抗</h3>
+								<span>
+									JS002是由君实生物自主研发的注射用重组人源化抗PCSK9单克隆抗体，用于治疗心血管疾病。君实生物是国内首家获得该靶点药物临床试验批件的中国企业。<br>
+									目前，公司已完成I期临床试验，II期临床试验已完成入组，正在进行随访。公司正在启动在更广泛患者人群中的III期临床研究的筹备工作。
+								</span>
+								<h4>作用原理</h4>
+								<div class="PriTowline"></div>
+								<br>
+								<p> <span>PCSK9是新一代降脂效率与安全性更优的降脂靶点，抗PCSK9单克隆抗体可用于治疗高胆固醇血症。</span><br>
+									<span>胆固醇在血液中以脂蛋白的形式存在。血浆中低密度脂蛋白（Low Density
+									Lipoprotein，LDL）是运输内源性胆固醇的主要载体，LDL-C是低密度脂蛋白胆固醇，它的含量可以反应血浆中LDL的水平。LDL通过结合肝细胞表面的低密度脂蛋白受体（LDL-R）被降解和转化。PCSK9是由PCSK9基因编码的丝氨酸蛋白酶，其可与LDL-R结合并使其降解，LDL-R的降解将导致LDL含量增加，即LDL-C水平升高。</span><br>
+									<span>抗PCSK9单抗通过与人体PCSK9以高亲和力结合，阻断PCSK9与细胞表面的LDL-R结合，减少LDL-R降解，使其能够与LDL结合，从而增强肝细胞对LDL的摄取，达到降低血液中LDL含量和LDL-C水平的目的。整体而言，与他汀类药物抑制胆固醇合成、减少胆固醇“来路”的机理不同，<span class="on">
+										PCSK9抑制剂是增加胆固醇的“去路”，稳定LDL-R的数量，从而加速清除体内已经合成的胆固醇。
+									</span></span>
+									
+								</p>
+								<img style="margin: 30px auto;display: block;" src="img/proTwoImsd.png" alt="">
+								<h4>JS002的特点</h4>
+								<div class="PriTowline"></div>
+								<br>
+								<p>
+									<span>JS002是一种创新的抗PCSK9单克隆抗体。</span><br>
+									<span>临床前研究表明JS002拥有下列主要特征：</span>
+								</p>
+								<ul class="proTowUl">
+									<li>
+									
+										<span>	<img src="img/1.png" alt="">凭借<span class="on">高亲和性及新的CDR结构</span>
+											，其能够识别更多种类的PCSK9在食蟹猴或大鼠的单一剂量毒性研究及重复剂量毒性研究中，并未观察到明显副作用;
+										</span>
+									</li>
+									<li>
+										
+										<span><img src="img/2.png" alt="">
+											基于临床前研究的药效学结果，JS002已显示出对降低患有高胆固醇血症的猕猴模型的LDL-C水平的有效性；
+											
+										</span>
+									</li>
+									<li>
+										
+										<span><img src="img/3.png" alt="">
+											JS002的药代动力学参数与已上市的PCSK9抑制剂类似。
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					
+					</el-col>
+				</el-row>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	
+	//点击切换
+	
+	function productShow(item){
+		// console.log(item);
+		// console.log(event.target.nextSibling.nextSibling);
+		let html = ''
+		if(item.product&&item.product[0].length) {
+			// html += '<ul class="ProNavsMin">'
+			item.product[0].forEach((item1,index1) => {
+				html += '<li><a href="#" class="ProTitleActive">'+item1.name+'</a></li>'
+			})
+			// html += '</ul>'
+		}
+		// console.log(html);
+		$('.ProNavs li ul.ProNavsMin').html('');
+		$('.ProNavs li ul.ProNavsMin').removeClass('ProNavsMin')
+		$('.ProNavs li div.ProActive').removeClass('ProActive')
+		$('.ProNavs li p.ProTitleActive').removeClass('ProTitleActive')
+		$(event.target.nextSibling.nextSibling).addClass('ProNavsMin')
+		$(event.target.nextSibling).addClass('ProActive')
+		$(event.target).addClass('ProTitleActive')
+		$(event.target.nextSibling.nextSibling).html(html)
+		
+	}
+	
+	
+	
+	
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+		let product_id = getQueryVariable('id')
+		sendAjax('/productDetail',{language:0,product_id: product_id} , res => {
+			console.log(res);
+			let html = '<el-col :md="4" style="background-color: #ffffff;border-radius: 10px;"><div class="proLeft"><h2>产品管线</h2>'
+					  +'<ul class="ProNavs"></ul></div></el-col>'
+			
+			res.data.forEach((item,index) => {
+				if(index > 0) {
+					html += '<el-col :md="20"><div class="PriTwoRight" style=""><div class="PriTwo">'
+				}
+				html += '<el-col :md="20"><div class="PriTwoRight" style=""><div class="PriTwo"><h3>'+item.name+'</h3><span>'+item.synopsis+'</span>'
+				if(item.content.length) {
+					item.content.forEach((item1,index1) => {
+						html += '<h4>&nbsp;&nbsp;药品代号:'+item1.title+'&nbsp;&nbsp;&nbsp;&nbsp;靶点:'+item1.target+'</h4>'
+						if(item1.content_info) {
+							
+							//管线
+							if(item1.content_info.pipeline.length) {
+								item1.content_info.pipeline.forEach((item2.index2) => {
+									html += '<h4>'+item2.name+'</h4>'
+								})
+							}
+							//文献
+							if(item1.content_info.development.length) {
+								item1.content_info.development.forEach((item2.index2) => {
+									
+								})
+							}
+						}
+					})
+				}
+			})
+			
+			/*
+			<el-col :md="4" style="background-color: #ffffff;border-radius: 10px;">
+				<div class="proLeft">
+					<h2>产品管线</h2>
+					<ul class="ProNavs">
+					</ul>
+				</div>
+			</el-col>
+			<el-col :md="20">
+				<div class="PriTwoRight" style="">
+					<div class="PriTwo">
+						<h3>抗PCSK9单抗</h3>
+						<span>
+							JS002是由君实生物自主研发的注射用重组人源化抗PCSK9单克隆抗体，用于治疗心血管疾病。君实生物是国内首家获得该靶点药物临床试验批件的中国企业。<br>
+							目前，公司已完成I期临床试验，II期临床试验已完成入组，正在进行随访。公司正在启动在更广泛患者人群中的III期临床研究的筹备工作。
+						</span>
+						<h4>作用原理</h4>
+						<div class="PriTowline"></div>
+						<br>
+						<p> <span>PCSK9是新一代降脂效率与安全性更优的降脂靶点，抗PCSK9单克隆抗体可用于治疗高胆固醇血症。</span><br>
+							<span>胆固醇在血液中以脂蛋白的形式存在。血浆中低密度脂蛋白（Low Density
+							Lipoprotein，LDL）是运输内源性胆固醇的主要载体，LDL-C是低密度脂蛋白胆固醇，它的含量可以反应血浆中LDL的水平。LDL通过结合肝细胞表面的低密度脂蛋白受体（LDL-R）被降解和转化。PCSK9是由PCSK9基因编码的丝氨酸蛋白酶，其可与LDL-R结合并使其降解，LDL-R的降解将导致LDL含量增加，即LDL-C水平升高。</span><br>
+							<span>抗PCSK9单抗通过与人体PCSK9以高亲和力结合，阻断PCSK9与细胞表面的LDL-R结合，减少LDL-R降解，使其能够与LDL结合，从而增强肝细胞对LDL的摄取，达到降低血液中LDL含量和LDL-C水平的目的。整体而言，与他汀类药物抑制胆固醇合成、减少胆固醇“来路”的机理不同，<span class="on">
+								PCSK9抑制剂是增加胆固醇的“去路”，稳定LDL-R的数量，从而加速清除体内已经合成的胆固醇。
+							</span></span>
+							
+						</p>
+						<img style="margin: 30px auto;display: block;" src="img/proTwoImsd.png" alt="">
+						<h4>JS002的特点</h4>
+						<div class="PriTowline"></div>
+						<br>
+						<p>
+							<span>JS002是一种创新的抗PCSK9单克隆抗体。</span><br>
+							<span>临床前研究表明JS002拥有下列主要特征：</span>
+						</p>
+						<ul class="proTowUl">
+							<li>
+							
+								<span>	<img src="img/1.png" alt="">凭借<span class="on">高亲和性及新的CDR结构</span>
+									，其能够识别更多种类的PCSK9在食蟹猴或大鼠的单一剂量毒性研究及重复剂量毒性研究中，并未观察到明显副作用;
+								</span>
+							</li>
+							<li>
+								
+								<span><img src="img/2.png" alt="">
+									基于临床前研究的药效学结果，JS002已显示出对降低患有高胆固醇血症的猕猴模型的LDL-C水平的有效性；
+									
+								</span>
+							</li>
+							<li>
+								
+								<span><img src="img/3.png" alt="">
+									JS002的药代动力学参数与已上市的PCSK9抑制剂类似。
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</el-col>
+			*/
+		})
+		
+		sendAjax('/pipelineIndex',{language:0} , res => {
+			//产品分类 -> 产品
+			let procate = res.data.procate;
+			let html = ''
+			 
+			procate.forEach((item,index) => {
+				html += "<li><p onclick='productShow("+JSON.stringify(item)+")'>"+item.name+"<img src='img/proIcon1.png' /></p><div></div><ul></ul>"
+				
+				html += '</li>';
+			})
+			let html1 = '';
+			procate[0].product[0].forEach((item1,index1) => {
+				html1 += '<li><a href="producTwo.html?id='+item1.id+'" class="ProTitleActive">'+item1.name+'</a></li>'
+			})
+			
+			// console.log(html);
+			$('.ProNavs').html(html);
+			// $('')
+			$('.ProNavs li:eq(0) p').addClass('ProTitleActive')
+			$('.ProNavs li:eq(0) div').addClass('ProActive')
+			$('.ProNavs li:eq(0) ul').addClass('ProNavsMin')
+			$('.ProNavs li:eq(0) ul').html(html1)
+		})
+	})
+	
+	
+	
+</script>
+
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+
+		.mengban {
+			background-color: rgba(0, 74, 149, 0.5);
+			width: 100%;
+			position: absolute;
+			display: none;
+			height: calc(100%);
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="indexfn.html"><span >
+							網站首頁
+							</span></a>
+						<a href="aboutfn.html"><span>
+							關於君實
+							</span></a>
+						<a href="platformfn.html"><span>
+							科學與治療領域
+							</span></a>
+						<a href="NewsCenterfn.html"><span class="on">
+							新聞資訊
+							</span></a>
+						<a href="yffn.html"><span>
+							人才招聘
+							</span></a>
+						<a href="Investorfn.html"><span>
+							投資者關系
+							</span></a>
+						<a href="ContactUsfn.html"><span>
+							聯系我們
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="NewsCenter.html">简</a>
+						</span> |
+						<span>
+							<a href="NewsCenterfn.html">繁</a>
+						</span> |
+						<span>
+							<a href="NewsCenteren.html">En</a>
+						</span>
+					</div>
+					<span class="enter">員工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="border-bottom-left-radius: 20%;border-bottom-right-radius: 20%;">
+
+		</div>
+
+		<div class="baseContent"
+			style=" background: url(img/newsbg.png) no-repeat left bottom; background-size: auto 100%; z-index: 100; height: auto; padding-bottom: 270px;  ">
+			<img src="img/top.png" width="45" class="top">
+			<div class="newsBox" style="padding-bottom: 50px;">
+				<img src="img/x3.png" class='newsX' width="338">
+				<div class="newsTitle">
+					新聞資訊
+					<div>
+
+					</div>
+				</div>
+				<br>
+				<div style="background:#F9F9F9;padding:38px">
+					<div class="newsTop1">
+						<div class="newsTopLeft">
+							<img src="img/douhao.png" alt="">
+							<h3>君实生物在香港联交所主板成功上市</h3>
+							<span>2018年12月24日—今天，君实生物在香港联合交易所有限公司（联交所）主板成功上市（股票代码：01877），成为国内首家“新三板+H”挂牌落地的企业。一周前，君实生物的拓益（特瑞普利单抗）刚在中国获批上市，成为首个获批的......</span>
+						</div>
+						<div class="newsTopRi">
+							<img src="img/newceni.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="centerYear fr center">
+					<span>年份</span> <img class="centerYearLe" src="img/left.png" width="24">
+					<ul>
+
+					</ul>
+					<img class="centerYearRe" src="img/right.png" width="24">
+				</div>
+				<div class="grid">
+
+
+				</div>
+				<div id="" class="checkmore">
+					查看更多
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+						網站首頁<br>
+						</span></a>
+					<span>
+						<a href="about.html">關於我們<br>
+					</span></a>
+					<span>
+						治療領域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+						新聞資訊<br>
+						</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投資者關系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						聯系我們<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+						不良事件報告平臺<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						聯系我們<br>
+					</span>
+					<span>
+						電話：(86)21-20248288<br>
+					</span>
+					<span>
+						傳真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦東新區海趣路36號、58號2幢13層<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君實生物醫藥科技股份有限公司 All Rights Reserved. 滬ICP備14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<style>
+	.grid {
+		position: relative;
+		clear: right;
+		margin-top: 42px;
+		/* fluffy */
+		margin: 0 auto;
+		width: 98%;
+		/* end fluffy */
+	}
+
+	.grid-item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		/* fluffy */
+		width: calc(95% / 3);
+		height: auto;
+		border-radius: 3px;
+		background-color: #fff;
+		/* end fluffy */
+		-webkit-transition: .3s ease-in-out;
+		-o-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		border: 1px solid #EEEEEE;
+
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.grid-item img {
+		width: 100%;
+	}
+
+	.grid-item:hover .gridMore {
+		display: block;
+	}
+
+	.grid-item:hover .mengban {
+		display: block;
+	}
+</style>
+<script src="js/minigrid.js"></script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+
+
+		$(".centerYear ul").on('click', 'li', function () {
+			
+			$('.centerYear ul li span').removeClass('on')
+			$(this).find('span').addClass('on')
+			sendAjax('/chooseNews', { language: '1', chooseNews: $(this).text() }, function (data) {
+				var newsList = data.data.newsList
+				newli(newsList)
+			})
+		})
+		$('.centerYearLe').on('click', '', function () {
+			let i = 0
+			let num
+			for (i = 0; i < $('.centerYear ul li').length; i++) {
+				if ($('.centerYear ul li').eq(i).find('span').hasClass('on')) {
+					num = [i]
+				}
+			}
+			
+			if (num == 0) {
+				return
+			} else {
+				console.log(num)
+				$('.centerYear ul li').find('span').removeClass('on');
+				$('.centerYear ul li').eq(Number(num) - 1).find('span').addClass("on")
+				sendAjax('/chooseNews', { language: '0', chooseNews: $('.centerYear ul li').eq(Number(num) - 1).find('span').text() }, function (data) {
+				var newsList = data.data.newsList
+				newli(newsList)
+			})
+			}
+		})
+		$('.centerYearRe').on('click', '', function () {
+			let i = 0
+			let num
+			for (i = 0; i < $('.centerYear ul li').length; i++) {
+				if ($('.centerYear ul li').eq(i).find('span').hasClass('on')) {
+					num = [i]
+				}
+			}
+			
+			if (num == $('.centerYear ul li').length-1) {
+				return
+			} else {
+				console.log(num)
+				$('.centerYear ul li').find('span').removeClass('on');
+				$('.centerYear ul li').eq(Number(num) + 1).find('span').addClass("on")
+				sendAjax('/chooseNews', { language: '0', chooseNews: $('.centerYear ul li').eq(Number(num) + 1).find('span').text() }, function (data) {
+				var newsList = data.data.newsList
+				newli(newsList)
+			})
+			}
+		})
+		function newli(datas) {
+			var imgurl = localStorage.getItem('imgUrl')
+			let his = ''
+			$.each(datas, function (i, n) {
+				his += ""
+					+ '<a href="NewsCenterD.html">'
+					+ '	<div class="grid-item">'
+					+ '		<img src="' + imgurl + '' + n.file.img_url + '">'
+					+ '		<div class="gridTitle">'
+					+ '			 ' + n.title + ''
+					+ '		</div>'
+					+ '		<div class="gridD">'
+					+ '			' + n.content + ''
+					+ '		</div>'
+					+ '		<div class="gridMore">'
+					+ '			了解更多+'
+					+ '		</div>'
+					+ '		<div class="mengban" style=""></div>'
+					+ '	</div>'
+					+ '</a>'
+
+			})
+			$(".grid").html(his);
+			setTimeout(function () {
+				minigrid('.grid', '.grid-item', 12, null,
+					function () {
+						// var d = document.querySelector('.demo');
+						// d.style.opacity = 1;
+					}
+				);
+				window.addEventListener('resize', function () {
+					minigrid('.grid', '.grid-item');
+				});
+			}, 500);
+		}
+
+
+
+		sendAjax('/newsList', { language: '0' }, function (data) {
+			var imgurl = localStorage.getItem('imgUrl')
+
+			var bane = imgurl + data.data.head_img.file.img_url
+			$(".banner").css({ 'background-image': `url(${bane})` })
+			$(".newsTopLeft h3").text(data.data.top_news.title)
+			$(".newsTopLeft span").text(data.data.top_news.content)
+			$(".newsTopRi img").attr('src', imgurl + data.data.top_news.file1.img_url)
+			var news_year = data.data.news_year
+			var yearLi = ''
+			$.each(news_year, function (i, n) {
+				yearLi += ''
+					+ '<li><span class="yearspan">' + n.newsdate + '</span> </li>'
+			})
+			$(".centerYear ul").html(yearLi)
+			$(".centerYear ul li:eq(0) span").addClass('on')
+
+
+			var newsList = data.data.newsList
+			let his = ''
+			$.each(newsList, function (i, n) {
+				his += ""
+					+ '<a href="NewsCenterD.html">'
+					+ '	<div class="grid-item">'
+					+ '		<img src="' + imgurl + '' + n.file.img_url + '">'
+					+ '		<div class="gridTitle">'
+					+ '			 ' + n.title + ''
+					+ '		</div>'
+					+ '		<div class="gridD">'
+					+ '			' + n.content + ''
+					+ '		</div>'
+					+ '		<div class="gridMore">'
+					+ '			了解更多+'
+					+ '		</div>'
+					+ '		<div class="mengban" style=""></div>'
+					+ '	</div>'
+					+ '</a>'
+
+			})
+			$(".grid").html(his);
+			setTimeout(function () {
+				minigrid('.grid', '.grid-item', 12, null,
+					function () {
+						// var d = document.querySelector('.demo');
+						// d.style.opacity = 1;
+					}
+				);
+				window.addEventListener('resize', function () {
+					minigrid('.grid', '.grid-item');
+				});
+			}, 50);
+
+
+		})
+
+
+	})
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+
+
+</html>

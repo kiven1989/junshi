@@ -1,0 +1,801 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*手机样式*/
+@media (min-width:992px) {
+.con_list li a:hover {
+  background: url(../images/icon01.jpg) no-repeat right center;
+}
+.con_list li a:hover .time,
+.con_list li a:hover .text  {
+  color: #02317d;
+}
+}
+@media (max-width:1500px) {
+    .investor-box .rmb {
+        margin: 15px 0 5px;
+        padding-right: 30px;
+    }
+    .investor-box .table {
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+    .investor-box .rmb div {
+        padding-right: 20px;
+    }
+}
+@media (max-width:1400px) {
+    header .header-nav li>a {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+@media (max-width:1370px) {
+    .moreR {
+        width: 196px;
+    }
+    .productIList a {
+        padding-left: 10%;
+        height: 100px;
+    }
+    .productIList .ico {
+        padding: 10px 0px;
+        height: 100px;
+        width: 120px;
+    }
+    .productIList .con {
+        padding: 0px 100px 0px 160px;
+        height: 100px;
+        width: 730px;
+    }
+    .productIList .line_1 {
+        right: 37px;
+    }
+    .productIList .line_2 {
+        right: 50px;
+    }
+    .productIList .t {
+        padding: 40px 0px 10px;
+    }
+    .productIList a:hover .t {
+        padding-top: 22px;
+    }
+    .productIList .c {
+        font-size: 14px;
+    }
+}
+@media (max-width:1345px) {
+}
+@media (max-width:1295px) {
+}
+@media (max-width:1259px) {
+    header .logo {
+        width: 150px;
+    }
+    header .header-nav li>a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    header .language {
+        padding-left: 15px;
+    }
+    header .language a, .banner-fixed .text .text-box p {
+        font-size: 14px;
+    }
+    .banner-fixed .text .text-box div.h1 {
+        font-size: 34px;
+    }
+    .about .title {
+        font-size: 24px;
+        padding: 30px 0 15px;
+    }
+    .about .con {
+        font-size: 14px;
+    }
+    .team .h-title, .history .h-title, .culture .h-title, .concept .h-title, .recruitment .h-title, .information .h-title, .announcement .h-title, .report .h-title, .h-title {
+        font-size: 28px;
+    }
+    .h-title {
+        padding: 50px 0 30px;
+    }
+    .team-con {
+        padding: 40px 0 30px;
+    }
+    .team-con li .img {
+        width: 35%;
+    }
+    .team-con li .text p, .history-con, footer .f-nav ul li a, .treatment-con .img, .treatment-con .text, #myModal .modal-dialog .modal-header div, #myModal .modal-dialog .modal-body, #myModal .modal-dialog .modal-footer .display-flex {
+        font-size: 14px;
+    }
+    .team-con li .text .title {
+        font-size: 24px;
+    }
+    .team-con li .text .title span {
+        font-size: 18px;
+    }
+    .history-tab-swiper .slides li div {
+        font-size: 16px;
+    }
+    .history-tab-swiper {
+        padding: 0 50px;
+    }
+    .history-con {
+        padding: 35px 0 10px;
+    }
+    .team-swiper {
+        padding-bottom: 70px;
+    }
+    footer {
+        padding: 30px 0;
+    }
+    footer .f-nav ul li {
+        margin-right: 20px;
+    }
+    footer .f-web {
+        padding: 0 20px 0 5px;
+    }
+    .treatment-con {
+        padding: 50px 0 82px;
+    }
+    .treatment-con .text h4 {
+        padding-bottom: 15px;
+    }
+    .treatment-tab .serviceIlist {
+        padding: 50px 0 55px;
+    }
+    .treatment-tab .serviceIlist a {
+        width: 150px;
+        height: 150px;
+    }
+    .serviceIlist a {
+        font-size: 14px;
+    }
+    .treatment-tab .serviceIlist li:after {
+        bottom: -69px;
+    }
+    .treatment-tab .serviceIlist li:hover:after, .treatment-tab .serviceIlist li.active:after {
+        bottom: -55px;
+    }
+    .news-swiper {
+        padding: 22px 0;
+    }
+    .news ul {
+        margin-bottom: 47px;
+    }
+    .news li {
+        font-size: 14px;
+    }
+    .news li .text h3 {
+        font-size: 18px;
+    }
+    .news li .text p {
+        padding-top: 10px;
+    }
+    .news li .time div {
+        font-size: 24px;
+    }
+    .news-more a {
+        padding: 10px 90px;
+    }
+    #myModal .modal-dialog .modal-header {
+        padding-top: 49px;
+        padding-bottom: 49px;
+    }
+    #myModal .modal-dialog .modal-header h1 {
+        font-size: 26px;
+    }
+    #myModal .modal-dialog .modal-body {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    #myModal .modal-dialog .modal-footer .display-flex {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .concept .concept-text, .concept ul.row li .text, .panel-group .panel-body, .contact-us-text .con div, .contact-us-tab ul li a, .information .text, .announcement-swiper ul li .box p, .report-swiper ul li .box p, .announcement-swiper ul li .box .more, .report-swiper ul li .box .more, .serviceIlist dd p {
+        font-size: 14px;
+    }
+    .panel-group .panel-heading a {
+        font-size: 15px;
+    }
+    .contact-us-text .con {
+        padding: 25px 20px 20px;
+    }
+    .contact-us-text .con h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .contact-us-tab {
+        padding: 34px 0 24px;
+    }
+    .information .text {
+        line-height: 1.5;
+        width: 48%;
+    }
+    .announcement-swiper, .report-swiper {
+        margin-bottom: 30px;
+        padding-bottom: 70px;
+    }
+    .announcement-swiper ul li .box, .report-swiper ul li .box {
+        padding: 80px 15px 20px;
+    }
+    .announcement-swiper ul li .box .more, .report-swiper ul li .box .more {
+        margin-top: 15px;
+        padding: 7px 10px;
+    }
+    .announcement-swiper ul li .box .time, .report-swiper ul li .box .time {
+        left: 15px;
+        font-size: 15px;
+    }
+    .announcement-swiper ul li .box .time div, .report-swiper ul li .box .time div {
+        font-size: 20px;
+    }
+    .investor-box .h1 {
+        font-size: 26px;
+    }
+    .investor-box .rmb {
+        margin: 15px 0 5px;
+        background-position: right 20px;
+        padding-right: 30px;
+    }
+    .investor-box .table {
+        margin-bottom: 10px;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .investor-box .rmb div {
+        font-size: 38px;
+        padding-right: 20px;
+    }
+    .investor-box .rmb span {
+        font-size: 20px;
+    }
+    footer .f-nav ul li a {
+        padding-bottom: 3px;
+        margin-bottom: 6px;
+    }
+    .h-news-con .text {
+        padding: 15px 2.5%;
+    }
+    .h-news-con .text h3 {
+        font-size: 20px;
+    }
+    .h-news-con .text p {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+    .serviceIlist dd p {
+        padding-top: 10px;
+    }
+    .telbox .tel {
+        font-size: 30px;
+    }
+    .h-contact-con .serviceIlist {
+        padding: 66px 0 30px;
+    }
+    .h-recruitment-con {
+        padding: 40px 0;
+    }
+    .h-recruitment-con ul li .display-flex {
+        padding: 10px 10%;
+    }
+    .h-news-con {
+        padding: 35px 9.375%;
+    }
+}
+@media (max-width: 1110px) {
+    header .header-nav li>a {
+        padding: 0 4px;
+    }
+    header .language a {
+        padding: 0 2px;
+    }
+    header .language {
+        padding-left: 10px;
+        margin-left: 6px;
+    }
+}
+@media (max-width:1024px) {
+    .productIpage {
+        padding-bottom: 100px;
+    }
+    .productIdemo .moreR {
+        bottom: 0;
+    }
+    .productIList a {
+        padding-left: 5%;
+    }
+    .productIList .t {}
+    .productIList .con {
+        width: 560px;
+    }
+    .productIList .c {}
+    .productIList a:hover .t {}
+    .banner .flex-control-nav {
+        bottom: 15px;
+    }
+    .mouse-header {
+        bottom: 35px;
+    }
+}
+@media (max-width:991px) {
+    .menufix {
+        display: none;
+    }
+    .menu {
+        right: 0;
+        top: 50%;
+        float: right;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .menu strong {
+        display: none;
+    }
+    #menu_toggle {
+        display: none;
+    }
+    #menu_toggle1 {
+        display: block;
+    }
+    .header-menu {
+        height: 80px;
+    }
+    .menu span, .menu span:after, .menu span:before {
+        width: 32px;
+    }
+    .menu span:before {
+        top: -8px;
+    }
+    .menu span:after {
+        bottom: -8px;
+    }
+    #banner {
+        width: 100% !important;
+        height: auto !important;
+    }
+    #banner .banner ul.swiper-wrapper img {
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        top: 0 !important;
+    }
+    footer .f-logo {
+        display: none;
+    }
+    footer .f-nav ul {
+        float: left;
+    }
+    .banner-fixed .text .text-box div.h1 {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .treatment-tab .serviceIlist a {
+        width: 130px;
+        height: 130px;
+    }
+    .treatment-tab .serviceIlist .ico {
+        width: 55px;
+        height: 55px;
+        background-size: contain;
+    }
+    .treatment-con .img, .treatment-con .text {
+        width: 100%;
+    }
+    .treatment-con .text {
+        padding-bottom: 20px;
+    }
+    .treatment-tab .serviceIlist {
+        padding: 30px 0 35px;
+    }
+    .treatment-tab .serviceIlist li:after {
+        bottom: -49px;
+    }
+    .treatment-tab .serviceIlist li:hover:after, .treatment-tab .serviceIlist li.active:after {
+        bottom: -35px;
+    }
+    #myModal .modal-dialog {
+        padding-left: 0;
+    }
+    #myModal .modal-dialog .close {
+        top: 0;
+        left: inherit;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .concept ul.row li {
+        margin-bottom: 14px;
+    }
+    .panel-group {
+        margin-bottom: 55px;
+    }
+    .panel-group .panel-body {
+        padding: 20px 25px;
+    }
+    .contact-us-tab ul li {
+        margin-bottom: 18px;
+    }
+    .information .text, .information .img {
+        width: 100%;
+    }
+    .h-recruitment-con ul li {
+        width: 50%;
+        width: calc(50% - 1px);
+        width: -moz-calc(50% - 1px);
+        width: -webkit-calc(50% - 1px);
+    }
+    .adverse_event_logo {
+        border-bottom: 3px solid #cdcecf;
+        padding: 30px 0 20px;
+    }
+    .adverse_event_logo img {
+        width: 40%;
+    }
+    .adverse_event_list .adverse_event_text,
+    .steps_border .btn-default-width {
+        max-width: inherit;
+    }
+    .adverse_event_text {
+        font-size: 14px;
+        padding: 20px 0 10px;
+    }
+    .adverse_event_title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .adverse_event_list .adverse_event_title, 
+    .adverse_event_list .adverse_event_text p {
+        padding-bottom: 10px;
+    }
+    .adverse_event_href a {
+        margin: 10px 0;
+    }
+    .adverse_event_list {
+        padding-bottom: 15px;
+    }
+    .adverse_event_footer {
+        padding: 20px 0 40px;
+    }
+    .steps_head {
+        padding: 20px 0 10px;
+        font-size: 16px;
+    }
+    .steps_head span {
+        font-size: 12px;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+    .steps_border {
+        border: 5px solid #eef1f7;
+        padding: 20px 15px 30px;
+    }
+    .steps_border .form-group {
+        margin-bottom: 15px;
+    }
+    .steps_border .label-title {
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+    .steps_border .form-control {
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+    .doctor-text {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    .checkbox-custom {
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .steps_border .btn-default {
+        margin-top: 10px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+    }
+    .steps_table {
+        padding-top: 20px;
+    }
+    .steps_table_title {
+        margin-bottom: 15px;
+    }
+    .newly_added_investor_left {
+        width: 100%;
+        padding-bottom: 10px;
+        float: none;
+    }
+    .newly_added_investor_left .title {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .newly_added_investor_left ul::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .newly_added_investor_left ul li {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        float: left;
+    }
+    .newly_added_investor_left ul li a {
+        font-size: 16px;
+        padding-left: 14px;
+    }
+    .newly_added_investor_right {
+        width: 100%;
+        padding-left: 0;
+        border-left: none;
+        float: none;
+        min-height: inherit;
+    }
+    .steps_four_type .radio-inline {
+        font-size: 16px;
+    }
+    input::placeholder {
+      font-size: 14px;
+    }
+    input::-moz-placeholder {
+      font-size: 14px;
+    }
+    input:-ms-input-placeholder {
+      font-size: 14px;
+    }
+    textarea.form-control::placeholder {
+      font-size: 14px;
+    }
+    textarea.form-control::-moz-placeholder {
+      font-size: 14px;
+    }
+    textarea.form-control:-ms-input-placeholder {
+      font-size: 14px;
+    }
+    .frequency_tab .radio-inline, 
+    .dose_tab .radio-inline {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+    }
+    .frequency_tab .radio-inline+.radio-inline,
+    .dose_tab .radio-inline+.radio-inline {
+        margin-left: 0;
+    }
+    .steps_four_type .label-title {
+        padding-bottom: 0;
+    }
+    .newly_added_investor {
+        padding: 40px 0 60px;
+    }
+    .newly_added_investor_right .title {
+        font-size: 18px;
+        padding: 15px 0 0;
+    }
+    .con_list li {
+        margin-bottom: 10px;
+    }
+    .con_list li a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .con_list {
+        padding-bottom: 15px;
+    }
+    .pagination li a, .pagination li span {
+        font-size: 16px;
+        padding: 0 3px;
+    }
+    .pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span {
+        font-size: 23px;
+        padding: 0 10px;
+    }
+}
+@media (max-width:880px) {
+}
+@media (max-width:861px) {
+    .productIdemo .black {
+        width: 65%;
+    }
+}
+@media (max-width:767px) {
+    footer .f-copyright, footer .f-web {
+        display: block;
+    }
+    footer .f-web {
+        padding: 10px 0;
+    }
+    .treatment-tab .serviceIlist li:after {
+        display: none;
+    }
+    .treatment-tab .serviceIlist li {
+        margin: 5px;
+    }
+    .treatment-tab .serviceIlist {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .news li .img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .news li .text {
+        width: 75%;
+    }
+    #map {
+        height: 380px;
+    }
+    .banner-fixed .img {
+        height: 300px;
+    }
+    .banner-fixed .img>img {
+        max-width: inherit;
+        max-height: 100%;
+    }
+    .h-news-con .img, .h-news-con .text {
+        width: 100%;
+    }
+    .h-news-con .flex-control-nav {
+        bottom: 0;
+        top: inherit;
+        width: 100%;
+        text-align: center;
+    }
+    .h-news-con .flex-control-nav li {
+        display: inline-block;
+    }
+    .h-news-con .flex-control-nav li a {
+        margin: 0 4px;
+    }
+    .h-contact-con .serviceIlist dd {
+        width: 50%;
+        height: 204px;
+        margin-bottom: 15px;
+    }
+    .h-contact-con .serviceIlist {
+        padding: 36px 0 20px;
+    }
+    .steps {
+        display: none !important;
+    }
+    .steps_table table th span {
+        display: none;
+    }
+    .steps_table table th, 
+    .steps_table table td {
+        font-size: 12px;
+        width: auto;
+    }
+    .steps_border textarea.form-control {
+        padding: 12px;
+    }
+    .radio-tab-box {
+        margin-right: 0;
+    }
+    .radio-tab-text {
+        padding-top: 5px;
+    }
+    .time_icon,
+    .select_icon {
+        background-size: 25px auto;
+    }
+    .con_list li a .text {
+        display: block;
+        width: 100%;
+        margin-top: 3px;
+    }
+}
+@media (max-width:641px) {
+    .h-recruitment-con ul li {
+        width: 100%;
+    }
+    .h-news-con {
+        padding: 35px 15px;
+    }
+    .steps_border {
+        border: none;
+        border-top: 2px solid #eef1f7;
+        border-bottom: 2px solid #eef1f7;
+        padding: 20px 0 30px;
+    }
+}
+@media (max-width:580px) {
+    .productIList .con {
+        width: 100%;
+    }
+    .productIdemo .black {
+        width: 100%;
+    }
+    .productIList a {
+        width: 100%;
+    }
+    .productIList a {
+        padding-left: 10%;
+        height: 62px;
+    }
+    .productIList .ico {
+        padding: 0px;
+        height: 62px;
+        width: 82px;
+    }
+    .productIList .ico .i {
+        height: 62px;
+        width: 62px;
+    }
+    .productIList .con {
+        padding: 0px 100px;
+        height: 62px;
+    }
+    .productIList .line_1 {
+        right: 37px;
+    }
+    .productIList .line_2 {
+        right: 50px;
+    }
+    .productIList .t {
+        padding: 20px 0px 10px;
+        font-size: 16px;
+    }
+    .productIList a:hover .t {
+        padding-top: 18px;
+    }
+    .productIList .c {
+        display: none;
+    }
+    .moreR {
+        height: 50px;
+        line-height: 50px;
+    }
+    .productIpage {
+        padding-bottom: 60px;
+    }
+    .adverse_event_logo {
+        padding: 20px 0 15px;
+        border-bottom: 2px solid #cdcecf;
+    }
+}
+@media (max-width:540px) {
+    .adverse_event_logo {
+        padding: 15px 0 10px;
+        border-bottom: 1px solid #cdcecf;
+    }
+    .steps_border {
+        border-top: 1px solid #eef1f7;
+        border-bottom: 1px solid #eef1f7;
+        padding: 15px 0 20px;
+    }
+}
+@media (max-width:481px) {
+    .serviceIlist dd p {
+        padding: 10px 0 0;
+    }
+    .adverse_event_logo img {
+        width: 35%;
+    }
+}
+@media (max-width:360px) {
+    .h-contact-con .serviceIlist dd {
+        height: 226px;
+    }
+    .adverse_event_logo img {
+        width: 30%;
+    }
+}
+@media (max-width:340px) {
+}

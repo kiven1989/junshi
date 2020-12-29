@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="indexfn.html"><span >
+							網站首頁
+							</span></a>
+						<a href="aboutfn.html"><span>
+							關於君實
+							</span></a>
+						<a href="platformfn.html"><span class="on">
+							科學與治療領域
+							</span></a>
+						<a href="NewsCenterfn.html"><span>
+							新聞資訊
+							</span></a>
+						<a href="yffn.html"><span>
+							人才招聘
+							</span></a>
+						<a href="Investorfn.html"><span>
+							投資者關系
+							</span></a>
+						<a href="ContactUsfn.html"><span>
+							聯系我們
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="basebase.html">简</a>
+						</span> |
+						<span>
+							<a href="basefn.html">繁</a>
+						</span> |
+						<span>
+							<a href="baseen.html">En</a>
+						</span>
+					</div>
+					<span class="enter">員工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+			<img src="img/x2.png" width="338" class="x">
+		</div>
+		<div class="baseNav">
+			<ul>
+				<a href="platformfn.html"><li>研發平臺</li></a>
+				<a href="basefn.html"><li style="background:#004387"><img src="img/baseIcon.png" />
+					<p>生產基地</p>
+				</li></a>
+				<a href="productfn.html"><li>產品管線</li></a>
+			</ul>
+		</div>
+		<div class="baseContent">
+			<div class="baseMinCon">
+				<p>
+					我們在中國擁有兩個單克隆抗體生產基地，分別位於<span>蘇州吳江</span>和<span>上海臨港</span>
+				</p>
+				<div class="baseTitle">
+					<h2>蘇州吳江生產基地</h2>
+					<span></span>
+				</div>
+				<div class="bannerSwiper" style="position: relative;overflow: hidden;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<el-row :gutter="30" class="baselists">
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon2.png" alt="">
+								<span>GMP認證</span>
+							</div>
+							<br><br>
+							<p>蘇州吳江生產基地已獲<span>GMP認證</span></p>
+						</div>
+					</el-col>
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon3.png" alt="">
+								<span>3000L</span>
+							</div>
+							<br><br>
+							<p><span>擁有3,000L</span>發酵能力</p>
+						</div>
+					</el-col>
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon4.png" alt="">
+								<span>藥品生產</span>
+							</div>
+							<br><br>
+							<p style="bottom: 20px;">正在進行公司產品的 <span>商業化生產、</span> 和<br> <span>臨床試驗用藥</span>的生產
+							</p>
+						</div>
+					</el-col>
+				</el-row>
+			</div>
+			<div class="baseBots">
+				<div class="baseMinCon">
+					<div class="baseTitle">
+						<h2>上海臨港生產基地</h2>
+						<span></span>
+					</div>
+					<div class="bannerSwiper" style="position: relative;overflow: hidden;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<el-row :gutter="30" class="baselists">
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon5.png" alt="">藥品生產</h2><br>
+								<p>已於2019年底獲得 <span>《藥品生產許可證》</span>並投入試生產</p>
+							</div>
+						</el-col>
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon6.png" alt="">30,000L</h2><br>
+								<p>壹期項目產能達到<span>30,000L</span>發酵能力</p>
+							</div>
+						</el-col>
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon7.png" alt="">CGMP標準</h2><br>
+								<p>上海臨港生產基地按照<span>CGMP標準</span>進行建設</p>
+							</div>
+						</el-col>
+					</el-row>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+						網站首頁<br>
+						</span></a>
+					<span>
+						<a href="about.html">關於我們<br>
+					</span></a>
+					<span>
+						治療領域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+						新聞資訊<br>
+						</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投資者關系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						聯系我們<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+						不良事件報告平臺<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						聯系我們<br>
+					</span>
+					<span>
+						電話：(86)21-20248288<br>
+					</span>
+					<span>
+						傳真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦東新區海趣路36號、58號2幢13層<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君實生物醫藥科技股份有限公司 All Rights Reserved. 滬ICP備14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+	})
+
+</script>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="indexen.html"><span >
+								Home
+							</span></a>
+						<a href="abouten.html"><span>
+							About
+							</span></a>
+						<a href="platformen.html"><span class="on">
+							Scientific treatment
+							</span></a>
+						<a href="NewsCenteren.html"><span>
+								News
+							</span></a>
+						<a href="yfen.html"><span>
+							Recruit
+							</span></a>
+						<a href="Investoren.html"><span>
+							Investor
+							</span></a>
+						<a href="ContactUsen.html"><span>
+							Contact us
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="base.html">简</a>
+						</span> |
+						<span>
+							<a href="basefn.html">繁</a>
+						</span> |
+						<span>
+							<a href="baseen.html">En</a>
+						</span>
+					</div>
+					<span class="enter">Staff entrance</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+			<img src="img/x2.png" width="338" class="x">
+		</div>
+		<div class="baseNav">
+			<ul>
+				<a href="platformen.html"><li>R &amp; D platform</li></a>
+				<a href="baseen.html"><li style="background:#004387"><img src="img/baseIcon.png" />
+					<p style="margin-right: 80px;">production base</p>
+				</li></a>
+				<a href="producten.html"><li>Product pipeline</li></a>
+			</ul>
+		</div>
+		<div class="baseContent">
+			<div class="baseMinCon">
+				<p>
+					We have two monoclonal antibody production bases in China, which are located in Suzhou Wujiang and Shanghai Lingang
+				</p>
+				<div class="baseTitle">
+					<h2>Suzhou Wujiang production base</h2>
+					<span></span>
+				</div>
+				<div class="bannerSwiper" style="position: relative;overflow: hidden;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<el-row :gutter="30" class="baselists">
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon2.png" alt="">
+								<span>GMPauthentication</span>
+							</div>
+							<br><br>
+							<p>Suzhou Wujiang production base<span>GMPauthentication</span></p>
+						</div>
+					</el-col>
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon3.png" alt="">
+								<span>3000L</span>
+							</div>
+							<br><br>
+							<p><span>have3,000L</span>Fermentation capacity</p>
+						</div>
+					</el-col>
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon4.png" alt="">
+								<span>Pharmaceutical production</span>
+							</div>
+							<br><br>
+							<p style="bottom: 20px;">We are working on the <span>Commercial production</span> and<br> <span>Clinical trial medication</span>Production of
+							</p>
+						</div>
+					</el-col>
+				</el-row>
+			</div>
+			<div class="baseBots">
+				<div class="baseMinCon">
+					<div class="baseTitle">
+						<h2>Shanghai Lingang production base</h2>
+						<span></span>
+					</div>
+					<div class="bannerSwiper" style="position: relative;overflow: hidden;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<el-row :gutter="30" class="baselists">
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon5.png" alt="">Pharmaceutical production</h2><br>
+								<p>It has obtained the <span> drug production license </span> by the end of 2019 and put into trial production</p>
+							</div>
+						</el-col>
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon6.png" alt="">30,000L</h2><br>
+								<p>The production capacity of phase I project reaches <span> 30000l </span> fermentation capacity</p>
+							</div>
+						</el-col>
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon7.png" alt="">CGMP standard</h2><br>
+								<p>Shanghai port production base is constructed according to <span> cGMP Standard </span></p>
+							</div>
+						</el-col>
+					</el-row>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+							Home<br>
+						</span></a>
+					<span>
+						<a href="about.html">About<br>
+					</span></a>
+					<span>
+						Treatment area<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+							News<br>
+						</span></a>
+					<span>
+						<a href="yf.html">Talent recruitment<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">Investor<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						Contact us<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+						Adverse event reporting platform<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						contact us<br>
+					</span>
+					<span>
+						Telephone:(86)21-20248288<br>
+					</span>
+					<span>
+						Fax:(86)21-50796192<br>
+					</span>
+					<span>
+						Address:13 / F, building 2, No. 36 and 58 Haiqu Road, Pudong New Area, Shanghai<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - Shanghai Junshi Biomedical Technology Co., Ltd All Rights Reserved. 沪ICP备14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+	})
+
+</script>
+
+</html>

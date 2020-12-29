@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+
+
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="indexen.html"><span class="on">
+								Home
+							</span></a>
+						<a href="abouten.html"><span>
+							About
+							</span></a>
+						<a href="platformen.html"><span>
+							Scientific treatment
+							</span></a>
+						<a href="NewsCenteren.html"><span>
+								News
+							</span></a>
+						<a href="yfen.html"><span>
+							Recruit
+							</span></a>
+						<a href="Investoren.html"><span>
+							Investor
+							</span></a>
+						<a href="ContactUsen.html"><span>
+							Contact us
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="index.html">简</a>
+						</span> |
+						<span>
+							<a href="indexfn.html">繁</a>
+						</span> |
+						<span>
+							<a href="indexen.html">En</a>
+						</span>
+					</div>
+					<span class="enter">Staff entrance</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="border-bottom-left-radius: 20%;border-bottom-right-radius: 20%;">
+			<img src="img/x1.png" width="338" class="x">
+		</div>
+		<div class="innovate   pr">
+			<div class="noswiper">
+
+			</div>
+			<div class="Mypagination center">
+				<span class="on"></span>
+				<span></span>
+			</div>
+			<img src="img/x2.png" width="176" class="x">
+			<div class="w1300 pr  lshow">
+
+				<div class="ileft fl center">
+
+					<img src="img/2U1A7244_1@2x.png">
+				</div>
+				<div class="ileft1 fl">
+
+
+
+					<div class="qiu1">
+
+					</div>
+
+				</div>
+				<div class="ileft2 fl">
+
+
+
+					<div class="qiu2">
+
+					</div>
+
+				</div>
+				<div class="jd">
+					<div class="jdTitle">
+						<span>Source innovation, scientific spirit</span>
+						<div class="titleLIine"></div>
+					</div>
+					<div class="jdInfo ">
+						Technology of antibody development platform in the whole life cycle of global integrated R &amp; D system
+					</div>
+
+					<div class="moreBt">
+						Learn more
+					</div>
+				</div>
+
+			</div>
+			<div class="w1300 pr dn rshow">
+
+				<div class="ileft fl center" style="left: 745px;">
+
+					<img src="img/2U1A7244_1@22x.png">
+				</div>
+				<div class="ileft1 fl" style="left:736px">
+
+
+
+					<div class="qiu1">
+
+					</div>
+
+				</div>
+				<div class="ileft2 fl" style="left: 727px;">
+
+
+
+					<div class="qiu2">
+
+					</div>
+
+				</div>
+				<div class="jd" style="right: 650px;">
+					<div class="jdTitle">
+						<span>Innovative Biopharmaceutical Enterprises</span>
+						<div class="titleLIine"></div>
+					</div>
+					<div class="jdInfo ">
+						Founded in December 2012, China's leading innovative Biomedical Company
+					</div>
+
+					<div class="moreBt" style="margin-top: 85px;">
+						Learn more
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="domainBox">
+			<div class="domainMain">
+				<div class="domainTitle">
+					Treatment area
+					<div class="line"></div>
+				</div>
+				<div class="domainIndex">
+					<div class="zuo center">
+						<img src="img/l.png" width="45" />
+					</div>
+					<div class="you center">
+						<img src="img/r.png" width="45" />
+					</div>
+					<div class="lineBox r1">
+						<div>
+
+						</div>
+
+					</div>
+					<div class="domaincenter center on">
+						<div id="domains">
+						</div>
+						<div class="rotateBox">
+							<div class="pqiu dw1 on">
+								<img data-id="1" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw2">
+								<img data-id="2" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw3">
+								<img data-id="3" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw4">
+								<img data-id="4" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw5">
+								<img data-id="5" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw6">
+								<img data-id="6" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw7">
+								<img data-id="7" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+							<div class="pqiu dw8">
+								<img data-id="8" src="" width="45" />
+								<div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="HideIndex" style="display: none;"></div>
+				</div>
+			</div>
+			<img src="img/x1.png" width="338" class="x">
+		</div>
+		<div class="indexbtn">
+			<div class="indexCourse">
+				<img class="indexCourImg" src="img/indexbtn.png" alt="">
+				<div class="indeCouList lisds">
+					<h2>Company history</h2>
+					<ul>
+						<li class="history1">
+							<h3></h3>
+							<div class="indexCoulText">
+								<p class="CoulTextp1"></p>
+							</div>
+							<div class="clear"></div>
+							<div class="coulLine"></div>
+						</li>
+						<li class="history2">
+							<h3></h3>
+							<div class="indexCoulText">
+								<p class="CoulTextp1 "></p>
+							</div>
+							<div class="clear"></div>
+							<div class="coulLine" style=""></div>
+						</li>
+						<li class="history3">
+							<h3></h3>
+							<div class="indexCoulText">
+								<p class="CoulTextp1 "></p>
+							</div>
+							<div class="clear"></div>
+							<div class="coulLine"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<img src="img/x1.png" width="338" class="x">
+			</div>
+			<div class="indexNews indexTrams">
+				<h2>News</h2>
+				<ul>
+					<li id="indexNews1">
+						<a href="">
+							<img class="btnTow" src="" alt="">
+							<div class="indexnewText">
+								<h3></h3>
+								<div class=""></div>
+								<span></span>
+							</div>
+							<div class="btnTowDetail">
+								<button>Learn more+</button>
+							</div>
+						</a>
+					</li>
+					<li id="indexNews2">
+						<a href="">
+							<div class="indexnewText btnTow">
+								<h3></h3>
+								<div class="indexnewLine"></div>
+								<span></span>
+							</div>
+							<img class="btnTow" src="img/indenew.png" alt="">
+							<div class="btnTowDetail">
+								<button>Learn more+</button>
+							</div>
+						</a>
+					</li>
+					<li id="indexNews3">
+						<a href="">
+							<img class="btnTow" src="img/indenew.png" alt="">
+							<div class="indexnewText">
+								<h3></h3>
+								<div class="indexnewLine"></div>
+								<span></span>
+							</div>
+							<div class="btnTowDetail">
+								<button>Learn more+</button>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<button>Learn more+</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+							Home<br>
+						</span></a>
+					<span>
+						<a href="about.html">About<br>
+					</span></a>
+					<span>
+						Treatment area<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+							News<br>
+						</span></a>
+					<span>
+						<a href="yf.html">Talent recruitment<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">Investor<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						Contact us<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+						Adverse event reporting platform<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						contact us<br>
+					</span>
+					<span>
+						Telephone:(86)21-20248288<br>
+					</span>
+					<span>
+						Fax:(86)21-50796192<br>
+					</span>
+					<span>
+						Address:13 / F, building 2, No. 36 and 58 Haiqu Road, Pudong New Area, Shanghai<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - Shanghai Junshi Biomedical Technology Co., Ltd All Rights Reserved. 沪ICP备14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+
+	// $(".footerMain").load("footer")
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+
+</script>
+<script>
+
+
+
+	$(".lineBox ").addClass("r2")
+	$(".rotateBox ").on('click', 'div', function () {
+		var index = $(this).index() + 1
+		var index1 = $(this).index()
+		// $(".lineBox ").removeClass("r1 r2 r3 r4 r5")
+		// $(".lineBox ").addClass("r" + index)
+		$(".rotateBox div").removeClass("on")
+		$(this).closest(".xic.on").find(".xic").removeClass("on")
+		$(this).closest(".xic.on").find(".xic").eq(index1).addClass("on")
+		$(".rotateBox").addClass("on")
+		$('.rotateBox').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".rotateBox").removeClass("on")
+
+				$(".zuo,.you").removeClass("on")
+			});
+		$(".rotateBox>div:eq(0)").addClass('on')
+		var numbs = $(this).find('img').data("id")
+		$(".xic").removeClass("on")
+		$(".xic").eq(numbs - 1).addClass("on")
+
+		if ($(this).hasClass('dw1')) {
+			return
+		} else {
+
+			var thisCli = $(this).find("*")
+			var thisOne = $(".dw1").find("*")
+			var zancun = $("#HideIndex")
+			zancun.html(thisOne)
+			$(".dw1").html(thisCli)
+			$(this).html(zancun.find("*"))
+
+		}
+
+	})
+	var showIndex = 0
+	$(".lineBox ").addClass("r1 ")
+	$(".zuo").click(function () {
+		if ($(this).hasClass("on")) {
+			return false;
+		}
+		$(".zuo,.you").addClass("on")
+
+		showIndex--
+		if (showIndex < 0) {
+			showIndex = 1
+		}
+		$(".rotateBox").addClass("on")
+		// $(".lineBox").removeClass("r1 r2 r3 r4 r5")
+		// $(".lineBox ").addClass("r1 ")
+		$(".dw1 ").addClass("on")
+		$('.rotateBox').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".rotateBox").removeClass("on")
+				$(".xic").removeClass("on")
+				$(".xic").eq(showIndex).addClass("on")
+				$(".zuo,.you").removeClass("on")
+			});
+
+
+
+	})
+	$(".you").click(function () {
+		if ($(this).hasClass("on")) {
+			return false;
+		}
+		$(".zuo,.you").addClass("on")
+
+		showIndex--
+		if (showIndex > 1) {
+			showIndex = 0
+		}
+		$(".rotateBox").addClass("on")
+		// $(".lineBox").removeClass("r1 r2 r3 r4 r5")
+		// $(".lineBox ").addClass("r1 ")
+		$(".dw1 ").addClass("on")
+
+		$('.rotateBox').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".rotateBox").removeClass("on")
+				$(".xic").removeClass("on")
+				$(".xic").eq(showIndex).addClass("on")
+				$(".zuo,.you").removeClass("on")
+			});
+
+
+
+	})
+	function leftSwipe() {
+		var startX = 0,
+			endX = 0;
+		var index = 0
+		var time
+		$(document).mousedown(function (e) {
+			// console.log('mousedown')
+			startX = e.clientX;
+			// $(document).mousemove (function () {
+			//     console.log('mousemove')  
+			clearTimeout(time)
+		})
+		function zizeng() {
+			index++
+			$(".Mypagination span").removeClass("on")
+			$(".noswiper").show()
+			if (index == 1) {
+				$(".innovate .lshow").removeClass("left")
+				$(".innovate .lshow").addClass("right")
+				$('.right .ileft img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+					function () {
+						setTimeout(function () {
+							$(".noswiper").hide(); $(".innovate .lshow").removeClass("right"); $(".jd div").css("opacity", "1");
+							$(".rshow").show().removeClass("mm");
+							time = setTimeout(function () {
+								zizeng()
+							}, 2500)
+						}, 2000)
+
+						$(".jd >div").css("opacity", "0")
+						$(".lshow").hide()
+						$(".rshow").show().addClass("mm")
+
+					});
+
+			}
+			if (index > 1) {
+				index = 0
+				$(".innovate .rshow").removeClass("right")
+				$(".innovate .rshow").addClass("left")
+				$('.left .ileft img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+					function () {
+						setTimeout(function () {
+							$(".noswiper").hide(); $(".innovate .rshow").removeClass("left"); $(".jd div").css("opacity", "1");
+							$(".lshow").show().removeClass("mm");
+							time = setTimeout(function () {
+								zizeng()
+							}, 2500)
+						}, 2000)
+
+						$(".jd >div").css("opacity", "0")
+						$(".rshow").hide()
+						$(".lshow").show().addClass("mm")
+
+					});
+			}
+			$(".Mypagination span").eq(index).addClass("on")
+		}
+		time = setTimeout(function () {
+			zizeng()
+		}, 2500)
+		$(".innovate .w1300").mouseup(function (e) {
+			console.log('mouseup')
+			$(".Mypagination span").removeClass("on")
+			endX = e.clientX;
+			console.log('startX: ' + startX + ' endX: ' + endX);
+			if (endX - startX < 0) {
+				console.log('swipe to right');
+				index++
+				console.log(index)
+				$(".noswiper").show()
+				if (index == 1) {
+					$(".innovate .lshow").removeClass("left")
+					$(".innovate .lshow").addClass("right")
+					$('.right .ileft img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+						function () {
+							setTimeout(function () {
+								$(".noswiper").hide(); $(".innovate .lshow").removeClass("right"); $(".jd div").css("opacity", "1");
+								$(".rshow").show().removeClass("mm");
+								time = setTimeout(function () {
+									zizeng()
+								}, 2500)
+							}, 2000)
+
+							$(".jd >div").css("opacity", "0")
+							$(".lshow").hide()
+							$(".rshow").show().addClass("mm")
+
+						});
+
+				}
+				if (index > 1) {
+					index = 0
+					$(".innovate .rshow").removeClass("right")
+					$(".innovate .rshow").addClass("left")
+					$('.left .ileft img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+						function () {
+							setTimeout(function () {
+								$(".noswiper").hide(); $(".innovate .rshow").removeClass("left"); $(".jd div").css("opacity", "1");
+								$(".lshow").show().removeClass("mm");
+								time = setTimeout(function () {
+									zizeng()
+								}, 2500)
+							}, 2000)
+
+							$(".jd >div").css("opacity", "0")
+							$(".rshow").hide()
+							$(".lshow").show().addClass("mm")
+
+						});
+				}
+				$(".Mypagination span").eq(index).addClass("on")
+			} else if (endX - startX > 0) {
+				console.log('swipe to left');
+				index--
+				console.log(index)
+				$(".noswiper").show()
+				if (index < 0) {
+					index = 1
+					$(".innovate .lshow").removeClass("left")
+					$(".innovate .lshow").addClass("right")
+					$('.right .ileft img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+						function () {
+							setTimeout(function () {
+								$(".noswiper").hide(); $(".innovate .lshow").removeClass("right"); $(".jd div").css("opacity", "1");
+								$(".rshow").show().removeClass("mm");
+								time = setTimeout(function () {
+									zizeng()
+								}, 2500)
+							}, 2000)
+
+							$(".jd >div").css("opacity", "0")
+							$(".lshow").hide()
+							$(".rshow").show().addClass("mm")
+
+						});
+
+				}
+				if (index <= 0) {
+
+					$(".innovate .rshow").removeClass("right")
+					$(".innovate .rshow").addClass("left")
+					$('.left .ileft img').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+						function () {
+							setTimeout(function () {
+								$(".noswiper").hide(); $(".innovate .rshow").removeClass("left"); $(".jd div").css("opacity", "1");
+								$(".lshow").show().removeClass("mm");
+								time = setTimeout(function () {
+									zizeng()
+								}, 2500)
+							}, 2000)
+
+							$(".jd >div").css("opacity", "0")
+							$(".rshow").hide()
+							$(".lshow").show().addClass("mm")
+
+						});
+				}
+				$(".Mypagination span").eq(index).addClass("on")
+			}
+		})
+	}
+
+	leftSwipe();
+	var swiper = new Swiper('.swiper-container', {
+		followFinger: false,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		on: {
+			touchMove: function (swiper, event) {
+				你的事件
+				console.log(111)
+			},
+		},
+	});
+	/*
+	Copyright 漏 2015 HTML5andBeyond.com
+	Licensed Under MIT
+	*/
+
+	!function (e) { e.fn.lbyl = function (n) { { var t = e.extend({ content: "", speed: 10, type: "fade", fadeSpeed: 500, finished: function () { } }, n), d = e(this), s = [], i = t.content; e(this).length } d.empty(), d.attr("data-time", i.length * t.speed); for (var p = 0; p < i.length; p++)s.push(i[p]); e.each(s, function (e, n) { d.append('<span style="display: none;">' + n + "</span>"), setTimeout(function () { "show" == t.type ? d.find("span:eq(" + e + ")").show() : "fade" == t.type && d.find("span:eq(" + e + ")").fadeIn(t.fadeSpeed) }, e * t.speed) }), setTimeout(function () { t.finished() }, i.length * t.speed) } }(jQuery);
+	$(function () {
+		$('.indexCoulText p').hide()
+		var imgurl = localStorage.getItem('imgUrl')
+		var licheng = ''
+		sendAjax('/mainIndex', { language: '2' }, function (data) {
+
+			var bane = imgurl + data.data.banner_list[0].file.img_url
+			$(".banner").css({ 'background': `url(${bane})` })
+			licheng = data.data.history
+			$("#indexNews1 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[0].id)
+			$("#indexNews1 a>img").attr('src', imgurl + data.data.newslist[0].file.img_url)
+			$("#indexNews1 a h3").text(data.data.newslist[0].title)
+			$("#indexNews1 a span").text(data.data.newslist[0].content)
+			if (data.data.newslist[1]) {
+				$("#indexNews2 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[1].id)
+				$("#indexNews2 a>img").attr('src', imgurl + data.data.newslist[1].file.img_url)
+				$("#indexNews2 a h3").text(data.data.newslist[1].title)
+				$("#indexNews2 a span").text(data.data.newslist[1].content)
+			}
+
+			if (data.data.newslist[2]) {
+				$("#indexNews3 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[2].id)
+				$("#indexNews3 a>img").attr('src', imgurl + data.data.newslist[2].file.img_url)
+				$("#indexNews3 a h3").text(data.data.newslist[2].title)
+				$("#indexNews3 a span").text(data.data.newslist[2].content)
+			}
+
+			$(".rotateBox .pqiu").hide()
+			var are = data.data.area
+			var i = 0;
+
+			for (i = 0; i < are.length; i++) {
+				if (are[i]) {
+					$(".rotateBox .pqiu").eq(i).show()
+					$(".rotateBox .pqiu").eq(i).find('img').attr('src', imgurl + are[i].file.img_url)
+					$(".rotateBox .pqiu").eq(i).find('div').text(are[i].title)
+				}
+				let html = ''
+
+				html += ''
+					+ '<div class="domainCenter xic">'
+					+ '	<img src="' + imgurl + are[i].file.img_url + '" width="70"><br>'
+					+ '	<span class="domainName">'
+					+ '		' + are[i].title + ''
+					+ '	</span><br>'
+					+ '	<span class="domainXq">'
+					+ '	' + are[i].text1 + '<br>' + are[i].text2 + '<br>' + are[i].text3 + '<br>' + are[i].text4 + ''
+					+ '	</span>'
+					+ '	<a href="' + are[i].url + '"><div class="domainMore">'
+					+ '		查看更多'
+					+ '	</div></a>'
+					+ '</div>'
+				$("#domains").append(html)
+			}
+			$("#domains>.domainCenter:eq(0)").addClass('on')
+
+		})
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 2200) {
+				$('.indeCouList').addClass('indexTrams')
+
+				$(".history1 h3").lbyl({
+					content: licheng[0].time,
+					speed: 100,
+					type: 'show',
+					finished: function () {
+						$('.indexCoulText p').show()
+						$('.history1 p').lbyl({
+							content: licheng[0].text,
+							speed: 100,
+							type: 'show',
+						})
+						$('.coulLine').css({ "opacity": '1' })
+						$('.lisds').removeClass('lisds')
+						$('.history1').removeClass('history1')
+					} // Finished Callback
+				});
+				$(".history2 h3").lbyl({
+					content: licheng[0].time,
+					speed: 100,
+					type: 'show',
+					finished: function () {
+						$('.indexCoulText p').show()
+						$('.history2 p').lbyl({
+							content: licheng[0].text,
+							speed: 100,
+							type: 'show',
+						})
+						$('.coulLine').css({ "opacity": '1' })
+						$('.lisds').removeClass('lisds')
+						$('.history2').removeClass('history2')
+					} // Finished Callback
+				});
+				$(".history3 h3").lbyl({
+					content: licheng[0].time,
+					speed: 100,
+					type: 'show',
+					finished: function () {
+						$('.indexCoulText p').show()
+						$('.history2 p').lbyl({
+							content: licheng[0].text,
+							speed: 100,
+							type: 'show',
+						})
+						$('.coulLine').css({ "opacity": '1' })
+						$('.lisds').removeClass('lisds')
+						$('.history3').removeClass('history3')
+					} // Finished Callback
+				});
+			}
+		})
+		$('.indexNews li').hover(function () {
+			$(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "0" })
+			$(this).find('.btnTowDetail').stop(true, true).animate({ bottom: "0" })
+
+		}, function () {
+			$(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "20px" })
+			$(this).find('.btnTowDetail').stop(true, true).animate({ bottom: "-607px" })
+		})
+
+
+
+
+	})
+
+
+
+</script>
+
+</html>

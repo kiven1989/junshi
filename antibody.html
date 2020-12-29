@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+		<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<!-- 引入样式 -->
+
+		<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- 引入组件库 -->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/contUp.js"></script>
+		<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+		<style>
+			.bannerSwiper {
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+			}
+
+			body {
+				background-color: #f5f7f7;
+			}
+		</style>
+	</head>
+
+	<body id="body">
+		<div id="app">
+			<div class="fixedTop center">
+				<div class="fixedTopMain">
+					<img src="img/logo.png" width="112" class="fl">
+					<div class="fr">
+						<div class="titleLink fl">
+							<span>
+								网站首页
+							</span>
+							<span>
+								关于君实
+							</span>
+							<span>
+								科学与治疗领域
+							</span>
+							<span>
+								新闻资讯
+							</span>
+							<span>
+								人才招聘
+							</span>
+							<span>
+								投资者关系
+							</span>
+							<span>
+								联系我们
+							</span>
+						</div>
+						<div class="languageChoose fl">
+							<span>简</span> |
+							<span>繁</span> |
+							<span>En</span>
+						</div>
+						<span class="enter">员工入口</span>
+					</div>
+				</div>
+			</div>
+			<div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+				<img src="img/x2.png" width="338" class="x">
+			</div>
+			<div class="baseNav">
+				<ul>
+					<li>研发平台</li>
+					<li>
+						生产基地
+					</li>
+					<li style="background:#004387"><img src="img/pocur1.png" />
+						<p>产品管线</p>
+					</li>
+				</ul>
+			</div>
+			<div class="prodBack">
+				<div class="proMin">
+					<el-row :gutter="30">
+						<el-col :md="4" style="background-color: #ffffff;border-radius: 10px;">
+							<div class="proLeft">
+								<h2>产品管线</h2>
+								<ul class="ProNavs">
+									<li>
+										<p class="ProTitleActive">Cancer<img src="img/proIcon1.png" /></p>
+										<div class="ProActive"></div>
+										<ul class="ProNavsMin">
+											<li>
+												<a href="#" class="ProTitleActive">JS001 (PD-1)</a>
+											</li>
+											<li>
+												<a href="#"> JS003 (PD-L1)</a>
+											</li>
+											<li>
+												<a href="#">JS004 (BTLA)</a>
+											</li>
+											<li>
+												<a href="#">JS006 (TIGIT)</a>
+											</li>
+											<li>
+												<a href="#">JS007 (CTLA-4)</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<p>Autoimmune Diseases</p>
+										<div class=""></div>
+									</li>
+									<li>
+										<p>Metabolic Diseases</p>
+										<div class=""></div>
+									</li>
+									<li>
+										<p>Neurologic Diseases</p>
+										<div class=""></div>
+									</li>
+									<li>
+										<p>Infectious Diseases</p>
+										<div class=""></div>
+									</li>
+								</ul>
+							</div>
+						</el-col>
+						<el-col :md="20">
+							<div class="PriTwoRight" style="">
+								<div class="PriTwo antiBody">
+									<h3>抗TNF-α单抗，修美乐生物类似药</h3>
+									<span>
+										UBP1211为重组人源抗TNF-α单克隆抗体注射液，针对包括类风湿关节炎在内自身免疫性疾病，为修美乐（阿达木单抗）的生物类似药。目前，公司已向NMPA提交UBP1211的上市申请并获受理。
+									</span>
+									<h4>作用机理</h4>
+									<div class="PriTowline"></div>
+									<br>
+									<p>
+										<span>肿瘤坏死因子（TNF-α）由巨噬细胞、肥大细胞和被激活的TH细胞分泌，为炎症反应的强效诱导剂和先天免疫的关键调节器，在多种炎症的发生和发展中处于核心地位。</span>
+										<span>TNF-α和TNF-α受体结合可诱导炎症反应，现已证明，类风湿关节炎、银屑病、克罗恩病、强直性脊柱炎等多种自身免疫性疾病与TNF-α密切相关。抗TNF-α单克隆抗体可结合TNF-α受体，抑制TNF-α与TNF-α受体的结合，从而阻止炎症的发生。</span>
+										<span class="on">
+											抗TNF-α单克隆抗体是一种治疗免疫介导的炎症性疾病的新一代疗法，具备疗效高、安全性高且给药方便的特点。
+										</span>
+									</p>
+									<img style="margin: 30px auto;display: block;" src="img/z1.png" alt="">
+									<h4>临床试验</h4>
+									<span>
+										公司同时进行I期及III期研究以比较UBP1211及修美乐用于治疗中度至重度类风湿关节炎患者的相似性。I期临床试验为PK比对研究，III期研究为大样本量的有效性比对研究。I期临床研究共计入组病人184人，III期临床研究共计入组病人526人。
+									</span>
+									<h4>开发合作</h4>
+									<span>
+										2017年8月，公司与泰康生物（一家专注于生物药开发的生物科技公司）订立合作研究、开发及商业化协议，共同开发UBP1211及享用所有相关知识产权。
+									</span>
+								</div>
+								
+							</div>
+							<div class="PriTwoRight" style="">
+								<div class="PriTwo antiBody" style="    background: url(img/JS005.png) no-repeat;background-size: 100% 98px;">
+									<h3>抗IL-17A单抗</h3>
+									<span>
+										JS005是君实生物自主研发的重组人源化抗IL-17A单克隆抗体注射液，于2019年8月获得NMPA临床试验申请批准，目前处于I期临床阶段。
+									</span>
+									<h4>作用机理</h4>
+									<div class="PriTowline"></div>
+									<br>
+									<p>
+										<span>IL（白细胞介素）-17A是一种具有多效性的细胞因子，可以作用于多种细胞，增强炎性分子的表达，在机体抗胞外菌和真菌感染中发挥关键作用；IL-17A的异常表达也与多种自身免疫疾病和肿瘤的发生发展有关。 </span>
+										<span>IL-17A分泌的增加是由于突变引发皮肤角化细胞中NF-κB信号的激活，促进CCL20（趋化生长因子20）等分子的表达，引起αβT细胞等的浸润和激活，促进细胞因子IL-17A的分泌，进而进一步刺激角化细胞的激活，上调CCL20等的表达，从而形成炎症循环。</span>
+										<span class="on">
+											抗IL-17A单克隆抗体通过与IL-17A结合，降低IL-17A的表达，从而抑制角化细胞的激活，达到抑制炎症反应的目的。
+										</span>
+									</p>
+									<img style="margin: 30px auto;display: block;" src="img/z2.png" alt="">
+									<h4>JS005的特点与优势</h4>
+									<span class="on">
+										JS005的氨基酸序列，特别是CDR区（与靶分子结合区域）的序列与已上市同类单抗的CDR序列不同，为独有的新型结构。
+									</span>
+									<span>在临床前研究中，JS005显示出与已上市抗IL-17单抗药物相当的疗效和安全性。临床前研究数据充分显示：重组人源化抗IL-17A单克隆抗体靶点明确、疗效确切、安全性良好、生产工艺稳定、产品质量可控。 </span>
+								</div>
+							</div>
+							
+							<div class="PriTwoRight" style="">
+								<div class="PriTwo antiBody" style="    background: url(img/UBP1213.png) no-repeat;background-size: 100% 98px;">
+									<h3>抗BLyS单抗</h3>
+									<span>
+										<span>UBP1213是一种重组人源化抗BLyS单克隆抗体注射液，用于治疗系统性红斑狼疮和其他自身免疫系统疾病。</span><br>
+										
+									</span>
+									<span>
+										
+										<span class="on">君实生物是国内该靶点单抗第一家获得NMPA的IND批准的中国企业</span>，目前处于剂型改进和临床试验准备阶段。<br>
+										
+									</span>
+									<span>
+										<span> UBP1213针对适应症为系统性红斑狼疮（SLE）。SLE是一种多发于青年女性的累及多脏器的自身免疫性炎症性结缔组织病，可导致机体的多系统损害。</span><br>
+										
+									</span>
+									<h4>作用机理</h4>
+									<div class="PriTowline"></div>
+									<br>
+									<p>
+										<span>BLyS由巨噬细胞、嗜中性粒细胞及单核细胞产生，B细胞必须依靠其存活。过量的BLyS会诱导异常高的自身反应性B细胞含量，引起系统性红斑狼疮（SLE）和其他自身免疫性疾病。BLyS抑制剂可与BLyS结合，阻止其通过正常及自体反应的B细胞表面的受体传递信号，从而抑制B细胞特异功能，促进B细胞凋亡，达到长期缓解系统性红斑狼疮、减少病情复发的效果。</span>
+										
+									</p>
+									<img style="margin: 30px auto;display: block;" src="img/z3.png" alt="">
+									<h4>UBP1213的特点与优势</h4>
+									<div class="PriTowline" style="width: 200px;"></div>
+									<br>
+									<span>临床前研究显示，UBP1213具有以下主要特征：</span>
+									<ul class="proTowUl">
+										<li>
+										
+											<span>	<img src="img/1.png" alt="">UBP1213与BLyS的解离速率慢，亲和力强；
+											</span>
+										</li>
+										<li>
+											
+											<span><img src="img/2.png" alt="">
+												UBP1213抑制可溶性BLyS与其受体BR3-Fc结合的能力强；
+												
+											</span>
+										</li>
+										<li>
+											
+											<span><img src="img/3.png" alt="">
+												 在对食蟹猴使用40倍最小预期生物效应水平（MABEL）剂量的单剂量毒性研究和10倍MABEL剂量的重复剂量毒性研究中，研究结果是可逆 的，反映了UBP1213的高度安全性；
+											</span>
+										</li>
+										<li>
+											
+											<span><img src="img/4.png" alt="">
+												 在食蟹猴体内进行的以低、中、高剂量单次给药和中剂量多次给药的药代动力学研究中，显示出典型的单克隆抗体药代动力学特征。
+											</span>
+										</li>
+									</ul>
+									<h4>开发合作</h4>
+									<div class="PriTowline"></div>
+									<br>
+									<p>
+										<span>公司于2012年5月与武汉华鑫康源生物医药有限公司订立合作协议。</span>
+								</div>
+							</div>
+						</el-col>
+					</el-row>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+	</body>
+	<script>
+		var Main = {
+			data() {
+				return {
+
+				}
+			},
+			created() {
+
+			},
+		}
+		var Ctor = Vue.extend(Main)
+		new Ctor().$mount('#app')
+	</script>
+	<script>
+		$(function() {
+			var swiper = new Swiper('.bannerSwiper', {
+				autoplay: {
+					disableOnInteraction: false,
+					delay: 2500,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				}
+			});
+		})
+	</script>
+
+</html>

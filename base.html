@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="index.html"><span>
+							网站首页
+						</span></a>
+						<a href="about.html"><span>
+							关于君实
+						</span></a>
+						<a href="platform.html"><span class="on">
+							科学与治疗领域
+						</span></a>
+						<a href="NewsCenter.html"><span>
+							新闻资讯
+						</span></a>
+						<a href="yf.html"><span>
+							人才招聘
+						</span></a>
+						<a href="Investor.html"><span>
+							投资者关系
+						</span></a>
+						<a href="ContactUs.html"><span>
+							联系我们
+						</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="base.html">简</a>
+						</span> |
+						<span>
+							<a href="basefn.html">繁</a>
+						</span> |
+						<span>
+							<a href="baseen.html">En</a>
+						</span>
+					</div>
+					<span class="enter">员工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+			<img src="img/x2.png" width="338" class="x">
+		</div>
+		<div class="baseNav">
+			<ul>
+				<a href="platform.html"><li>研发平台</li></a>
+				<a href="base.html"><li style="background:#004387"><img src="img/baseIcon.png" />
+					<p>生产基地</p>
+				</li></a>
+				<a href="product.html"><li>产品管线</li></a>
+			</ul>
+		</div>
+		<div class="baseContent">
+			<div class="baseMinCon">
+				<p>
+					我们在中国拥有两个单克隆抗体生产基地，分别位于<span>苏州吴江</span>和<span>上海临港</span>
+				</p>
+				<div class="baseTitle">
+					<h2>苏州吴江生产基地</h2>
+					<span></span>
+				</div>
+				<div class="bannerSwiper" style="position: relative;overflow: hidden;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/basebanner1.png" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<el-row :gutter="30" class="baselists">
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon2.png" alt="">
+								<span>GMP认证</span>
+							</div>
+							<br><br>
+							<p>苏州吴江生产基地已获<span>GMP认证</span></p>
+						</div>
+					</el-col>
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon3.png" alt="">
+								<span>3000L</span>
+							</div>
+							<br><br>
+							<p><span>拥有3,000L</span>发酵能力</p>
+						</div>
+					</el-col>
+					<el-col :md="8" class="">
+						<div class="baselistBtn">
+							<div class="baseCircular">
+								<img src="img/baseIcon4.png" alt="">
+								<span>药品生产</span>
+							</div>
+							<br><br>
+							<p style="bottom: 20px;padding: 0 20px;">正在进行公司产品的 <span>商业化生产、</span> 和<br> <span>临床试验用药</span>的生产
+							</p>
+						</div>
+					</el-col>
+				</el-row>
+			</div>
+			<div class="baseBots">
+				<div class="baseMinCon">
+					<div class="baseTitle">
+						<h2>上海临港生产基地</h2>
+						<span></span>
+					</div>
+					<div class="bannerSwiper" style="position: relative;overflow: hidden;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/basebanner2.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<el-row :gutter="30" class="baselists">
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon5.png" alt=""><span>药品生产</span></h2><br>
+								<p>已于2019年底获得 <span>《药品生产许可证》</span>并投入试生产</p>
+							</div>
+						</el-col>
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon6.png" alt=""><span>30,000L</span></h2><br>
+								<p>一期项目产能达到<span>30,000L</span>发酵能力</p>
+							</div>
+						</el-col>
+						<el-col :md="8" class="">
+							<div class="baselistBtres">
+								<h2><img src="img/baseIcon7.png" alt=""><span>CGMP标准</span></h2><br>
+								<p>上海临港生产基地按照<span>CGMP标准</span>进行建设</p>
+							</div>
+						</el-col>
+					</el-row>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100" >
+				<div class="w25">
+					<a href="index.html"><span>
+						网站首页<br>
+					</span></a>
+					<span>
+						<a href="about.html">关于我们<br>
+					</span></a>
+					<span>
+						治疗领域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+						新闻资讯<br>
+					</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投资者关系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						联系我们<br>
+					</span></a>
+					<a href="adverse_event.html"><span>
+						不良事件报告平台<br>
+					</span></a>
+					
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						联系我们<br>
+					</span>
+					<span>
+						电话：(86)21-20248288<br>
+					</span>
+					<span>
+						传真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦东新区海趣路36号、58号2幢13层<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100" style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号
+			</div>
+		</div>
+				
+	</div>
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+		
+		
+		
+		sendAjax('/base',{language:0} , res => {
+			console.log(res);
+		
+			if(res.code == 0){
+				let pro = res.data.base;
+				
+				let imgurl = localStorage.getItem('imgUrl')
+				
+				pro = pro.map(item => {
+					return {
+						id:item.id,
+						key:item.key,
+						value:JSON.parse(item.value),
+						language:item.language
+					}
+				})
+				
+				pro.forEach((item,index) => {
+					// console.log(item.key);
+					switch(item.key) {
+						case 'pro_0' : 
+							$('.baseMinCon>p').text(item.value.content);
+							break;
+						case 'pro_1' : 
+							$('.swiper-wrapper:eq(0) div:eq(0) img').attr('src', imgurl + item.value.url);
+							$('.swiper-wrapper:eq(0) div:eq(1) img').attr('src', imgurl + item.value.url1);
+							$('.swiper-wrapper:eq(0) div:eq(2) img').attr('src', imgurl + item.value.url2);
+							break;
+						case 'pro_2' : 
+							$('.baselistBtn:eq(0)>p').text(item.value.text);
+							$('.baseCircular:eq(0)>span').text(item.value.title);
+							break;
+						case 'pro_3' : 
+							$('.baselistBtn:eq(1)>p').text(item.value.text);
+							$('.baseCircular:eq(1)>span').text(item.value.title);
+							break;
+						case 'pro_4' : 
+							$('.baselistBtn:eq(2)>p').text(item.value.text);
+							$('.baseCircular:eq(2)>span').text(item.value.title);
+							break;
+						case 'pro_5' : 
+							$('.swiper-wrapper:eq(1) div:eq(0) img').attr('src', imgurl + item.value.url);
+							$('.swiper-wrapper:eq(1) div:eq(1) img').attr('src', imgurl + item.value.url1);
+							$('.swiper-wrapper:eq(1) div:eq(2) img').attr('src', imgurl + item.value.url2);
+							break;
+						case 'pro_6' : 
+							$('.baselistBtres:eq(0)>h2>span').text(item.value.title);
+							$('.baselistBtres:eq(0)>p').text(item.value.text);
+							break;
+						case 'pro_7' : 
+							$('.baselistBtres:eq(1)>h2>span').text(item.value.title);
+							$('.baselistBtres:eq(1)>p').text(item.value.text);
+							break;
+						case 'pro_8' : 
+							$('.baselistBtres:eq(2)>h2>span').text(item.value.title);
+							$('.baselistBtres:eq(2)>p').text(item.value.text);
+							break;
+					}
+				})
+			}
+		})
+	})
+
+</script>
+
+</html>

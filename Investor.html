@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+
+		.inleft img {
+			display: none;
+		}
+
+		.inleft .on img {
+			display: block;
+		}
+		#inveH2{
+font-size: 16px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #555555;
+line-height: 57px;
+
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="index.html"><span>
+								网站首页
+							</span></a>
+						<a href="about.html"><span>
+								关于君实
+							</span></a>
+						<a href="platform.html"><span>
+								科学与治疗领域
+							</span></a>
+						<a href="NewsCenter.html"><span>
+								新闻资讯
+							</span></a>
+						<a href="yf.html"><span>
+								人才招聘
+							</span></a>
+						<a href="Investor.html"><span class="on">
+								投资者关系
+							</span></a>
+						<a href="ContactUs.html"><span>
+								联系我们
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="Investor.html">简</a>
+						</span> |
+						<span>
+							<a href="Investorfn.html">繁</a>
+						</span> |
+						<span>
+							<a href="Investoren.html">En</a>
+						</span>
+					</div>
+					<span class="enter">员工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner"
+			style="background: url(img/ibanner.png) no-repeat center center;height: 675px; position: relative; background-size: 100%;">
+
+		</div>
+
+		<div class="baseContent"
+			style=" background: url(img/newsbg.png) no-repeat left bottom; background-size: auto 100%; z-index: 100; height: auto; padding-bottom: 270px;  ">
+			<img src="img/top.png" width="45" class="top">
+			<div class="newsBox" style="padding-bottom: 50px;">
+				<img src="img/x3.png" class='newsX' width="338">
+				<div class="newsTitle">
+					投资者关系
+					<div style="width: 130px;">
+
+					</div>
+				</div>
+				<div style="overflow: hidden; margin-top: 20px;">
+					<ul class="inleft fl">
+
+					</ul>
+					<div class="fl" style="margin-left: 20px;width: 1050px;">
+						<h2 id="inveH2"></h2>
+						<iframe id="inveIfra" src="" width="100%" height="1000px" frameborder="0"></iframe>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+							网站首页<br>
+						</span></a>
+					<span>
+						<a href="about.html">关于我们<br>
+					</span></a>
+					<span>
+						治疗领域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+							新闻资讯<br>
+						</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投资者关系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+							联系我们<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+							不良事件报告平台<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						联系我们<br>
+					</span>
+					<span>
+						电话：(86)21-20248288<br>
+					</span>
+					<span>
+						传真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦东新区海趣路36号、58号2幢13层<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<script>
+
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+		sendAjax('/investmentMenu', { language: '0' }, (data) => {
+			var imgurl = localStorage.getItem('imgUrl')
+
+			var list = data.data.investment_menu
+			var html = ''
+			$.each(list, (i, n) => {
+				html += ""
+					+ '<li data-id="'+n.id+'"><span>' + n.title + '<img src="img/i1.png" width="13"></span></li>'
+			})
+			$(".inleft").append(html)
+			$(".inleft li:eq(0)").addClass('on')
+			inveDet(list[0].id)
+		})
+		function inveDet(num) {
+			sendAjax('/investmentShow', { language: '0', id: num }, (data) => {
+				var imgurl = localStorage.getItem('imgUrl')
+				$("#inveH2").html('首页 <img src="img/jiantou.png" /> 投资者关系  <img src="img/jiantou.png" /> ' + data.data.investmentShow.title)
+				$('#inveIfra').attr('src',data.data.investmentShow.url)
+			})
+		}
+		$(".inleft").on('click','li',function(){
+			inveDet($(this).data('id'))
+			$(".inleft li").removeClass('on')
+			$(this).addClass('on')
+		})
+	})
+</script>
+
+</html>

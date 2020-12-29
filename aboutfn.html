@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		#swiper {
+			width: 1260px;
+			margin: 0 auto;
+			overflow-x: hidden;
+			position: relative;
+		}
+
+		#swiper .swiper-button-prev:after,
+		.swiper-container-rtl .swiper-button-next:after {
+			content: '';
+		}
+
+		#swiper .swiper-button-next:after,
+		.swiper-container-rtl .swiper-button-prev:after {
+			content: '';
+		}
+
+		#swiper .swiper-slide {
+			width: 236px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+
+		#swiper .text-center {
+			text-align: center;
+			font-size: 24px;
+			width: 70px;
+			font-weight: bold;
+			color: #004A95;
+			line-height: 36px;
+			margin: 25px auto 15px;
+			border-bottom: 7px solid #004A95;
+		}
+
+		#swiper .img-responsive {
+			width: 210px;
+			height: 210px;
+			border-radius: 50%;
+		}
+
+		#swiper p {
+			width: 236px;
+			margin: 36px auto;
+			line-height: 34px;
+			font-size: 18px;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="indexfn.html"><span >
+							網站首頁
+							</span></a>
+						<a href="aboutfn.html"><span class="on">
+							關於君實
+							</span></a>
+						<a href="platformfn.html"><span>
+							科學與治療領域
+							</span></a>
+						<a href="NewsCenterfn.html"><span>
+							新聞資訊
+							</span></a>
+						<a href="yffn.html"><span>
+							人才招聘
+							</span></a>
+						<a href="Investorfn.html"><span>
+							投資者關系
+							</span></a>
+						<a href="ContactUsfn.html"><span>
+							聯系我們
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="index.html">简</a>
+						</span> |
+						<span>
+							<a href="indexfn.html">繁</a>
+						</span> |
+						<span>
+							<a href="indexen.html">En</a>
+						</span>
+					</div>
+					<span class="enter">員工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner"
+			style="background:  no-repeat center center;height: 675px;border-bottom-left-radius: 20%;border-bottom-right-radius: 20%;">
+		</div>
+	</div>
+	<div class="about_wrap_one_box" style="padding-bottom: 90px;">
+		<div class="about_wrap_one">
+			<div class="sam_tit samlineWi huadong">
+				<span>關於君實</span>
+				<p class="samline "></p>
+			</div>
+			<div class="flex-bet">
+				<div class="abouttopImgp abouttopImgp1">
+					<img src="img/abouttopp.gif" alt="" class="img-responsive">
+					<img class="imgbts" src="" style="position: absolute;left: 80px;top: 84px;z-index:-1;width: 260px;
+					height: 260px;
+					border-radius: 50%;" alt="">
+				</div>
+				<div class="mid">
+					<div class="tit aboutTit">
+
+					</div>
+					<div class="content aboutcont1">
+
+					</div>
+					<div class="tit aboutTit2">
+
+					</div>
+					<div class="content aboutcont2" style="line-height: 30px;">
+
+					</div>
+				</div>
+				<div class="right abouttopImgp abouttopImgp2" style="display: flex;align-items: flex-end;">
+					<img src="img/zouba.gif" alt="" class="img-responsive">
+					<img class="imgbts" src=""
+						style="position: absolute;left: 38px;bottom: 48px;z-index:-1;width: 260px;height: 260px;border-radius: 50%;"
+						alt="">
+				</div>
+			</div>
+		</div>
+		<img src="img/icon5.png" alt="" class="img-responsive">
+	</div>
+	<div class="platform_wrap_two_box" style="padding-bottom: 60px;">
+		<div class="platform_wrap_two" style="position: relative;">
+			<div class="sam_tit" style="width:140px">
+				<span>我們的使命</span>
+				<p class="samline" style="background-color: #ffffff;"></p>
+			</div>
+			<p class="aboutBackP">
+				憑借強大的研發能力並立足醫療創新的前沿，君實生物以滿足醫療需求和治愈病患為使命。
+			</p>
+			<img src="img/icon10s.png" alt="" class="img-responsive">
+			<img src="" alt="" class="aboutSmPos1 aboutSmPos">
+			<img src="" alt="" class="aboutSmPos2 aboutSmPos">
+			<img src="" alt="" class="aboutSmPos3 aboutSmPos">
+			<img src="" alt="" class="aboutSmPos4 aboutSmPos">
+			<ul class="mySmres">
+				<li class="mysmTop1">
+					<div class="">
+
+					</div>
+					<p></p>
+				</li>
+				<li class="mysmTop2">
+					<div class="">
+
+					</div>
+					<p></p>
+				</li>
+				<li class="mysmTop3">
+					<div class="">
+
+					</div>
+					<p></p>
+				</li>
+				<li class="mysmTop4">
+					<div class="">
+
+					</div>
+					<p></p>
+				</li>
+			</ul>
+		</div>
+		<img src="img/x1.png" alt="" class="img-responsive">
+	</div>
+	<div class="platform_wrap_three_box">
+		<div class="platform_wrap_three">
+			<div class="sam_tit samlineWi huadong">
+				<span>發展戰略</span>
+				<p class="samline "></p>
+			</div>
+			<p>
+				我們計劃成為壹家集研發、生產和商業化於壹體的全產業鏈運營集團，並具有全球競爭力的創新型生物制藥公司。
+			</p>
+			<div class="zhanlues">
+				<img class="icons11" src="img/icon11.png" alt="">
+				<ul>
+					<li style="top: 74px;right: 862px;">
+						<p>快速拓展產品管線</p>
+						<span></span>
+					</li>
+					<li style="top: 74px;right: 184px;">
+						<p>專註於在研藥品的推進和商業化</p>
+						<span></span>
+					</li>
+					<li style="top: 330px;left: 668px;">
+						<p>提高大分子發酵產能， 降低生產成本</p>
+						<span></span>
+					</li>
+				</ul>
+				<img class="zhanl1" src="img/icon22.png" alt="">
+				<img class="zhanl2" src="img/icon22.png" alt="">
+				<img class="zhanl3" src="img/icon22.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="platform_wrap_four_box">
+		<div class="platform_wrap_four ">
+			<div class="sam_tit samlineWi">
+				<span>發展歷程</span>
+				<p class="samline "></p>
+			</div>
+			<div id="swiper4">
+				<div class="swiper-wrapper">
+
+				</div>
+			</div>
+			<div id="swiper">
+				<div class="swiper-wrapper" id="swiperLI">
+
+				</div>
+				<div class="swiper-button-prev">
+					<img src="img/icon13.png" alt="" class="">
+				</div>
+				<div class="swiper-button-next">
+					<img src="img/icon14.png" alt="" class="">
+				</div>
+			</div>
+		</div>
+		<img src="img/icon5.png" alt="" class="img-responsive" style="position: absolute;
+		left: 50%;
+		bottom: -75px;
+		transform: translateX(-50%);
+		width: 338px;">
+	</div>
+	<div class="about_wrap_two_box">
+		<div class="about_wrap_two ">
+			<div class="sam_tit samlineWi">
+				<span>核心團隊</span>
+				<p class="samline " style="background: #ffffff;"></p>
+			</div>
+
+			<div class="swiper-container itemZhang" id="swiper2">
+				<div class="swiper-wrapper flex-bet algin-center" id="swiper2min">
+
+				</div>
+				<div class="swiper-button-prev">
+					<img src="img/5.png" alt="" class="img-responsive">
+				</div>
+				<div class="swiper-button-next">
+					<img src="img/6.png" alt="" class="img-responsive">
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<img src="img/x1.png" alt="" class="img-responsive" style="position: absolute;
+		left: 50%;
+		bottom: -1px;
+		transform: translateX(-50%);
+		width: 338px;">
+	</div>
+	<div class="platform_wrap_three_box">
+		<div class="platform_wrap_three ">
+			<div class="sam_tit samlineWi" style="width: 130px;">
+				<span>全球化布局</span>
+				<p class="samline "></p>
+			</div>
+			<p>
+				立足中國，布局全球。<br>
+				君實生物從上海的全球總部出發，在蘇州、美國舊金山和馬裏蘭建成三個研發中心，在蘇州吳江和上海臨港設立兩個單克隆抗體生產基地。
+			</p>
+			<div class="layoutbtn">
+				<div class="layoutImg" id="layoutImg">
+					<img class="layuitIcon" src="img/mapAds.png" alt="">
+					<ul class="layUllist">
+						<li class="layLiTop" id="222">
+							<img class="laytop1" src="img/laytop1.png" alt="">
+							<div class="layLiTxt">
+								<h3></h3>
+								<p></p>
+								<div class="clear"></div>
+								<ul>
+									<li></li>
+								</ul>
+								<div class="clear"></div>
+								<strong></strong>
+							</div>
+						</li>
+						<li class="layLiTop layLiTop2">
+							<img class="laytop2" src="img/laytop2.png" alt="">
+							<div class="layLiTxt">
+								<strong></strong>
+								<div class="clear"></div>
+								<h3></h3>
+								<p></p>
+								<div class="clear"></div>
+								<ul>
+									
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class=" layoutImg2" id="layoutImg2">
+					<img class="layuitIcon" src="img/mapAds.png" alt="">
+					<ul class="layUllist">
+						<li class="layLiTop layLiTop1" id="333">
+							<img class="laytop1" src="img/laytop3.png" alt="">
+							<div class="layLiTxt">
+								<h3></h3>
+								<p></p>
+								<div class="clear"></div>
+								<ul>
+									<li></li>
+								</ul>
+								<div class="clear"></div>
+								<strong></strong>
+							</div>
+						</li>
+						<li class="layLiTop2 layLiTop">
+							<img class="laytop2" src="img/laytop4.png" alt="">
+							<div class="layLiTxt">
+								<strong></strong>
+								<div class="clear"></div>
+								<h3></h3>
+								<p></p>
+								<div class="clear"></div>
+								<ul>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+						網站首頁<br>
+						</span></a>
+					<span>
+						<a href="about.html">關於我們<br>
+					</span></a>
+					<span>
+						治療領域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+						新聞資訊<br>
+						</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投資者關系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						聯系我們<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+						不良事件報告平臺<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						聯系我們<br>
+					</span>
+					<span>
+						電話：(86)21-20248288<br>
+					</span>
+					<span>
+						傳真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦東新區海趣路36號、58號2幢13層<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君實生物醫藥科技股份有限公司 All Rights Reserved. 滬ICP備14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+		var imgurl = localStorage.getItem('imgUrl')
+		sendAjax('/aboutUs', { language: '1' }, function (data) {
+			var bane = imgurl + data.data.head_img.file.url + '/' + data.data.head_img.file.name
+			$(".banner").css({ 'background-image': `url(${bane})` })
+			$('.aboutTit').text(data.data.aboutus[0].title)
+			$('.aboutcont1').text(data.data.aboutus[0].text)
+			if (data.data.aboutus[1]) {
+				$('.aboutTit2').text(data.data.aboutus[1].title)
+				$('.aboutcont2').text(data.data.aboutus[1].text)
+				$(".abouttopImgp2 .imgbts").attr('src', imgurl + data.data.aboutus[1].file.img_url)
+			}
+
+			$(".abouttopImgp1 .imgbts").attr('src', imgurl + data.data.aboutus[0].file.img_url)
+
+			var i = 0;
+			var missRes = data.data.mission
+			for (i = 0; i < missRes.length; i++) {
+				if (missRes[i].position == '左上') {
+					$(".mysmTop1 div").text(missRes[i].text)
+					$(".aboutSmPos1").attr('src', imgurl + missRes[i].file.img_url)
+				}
+				if (missRes[i].position == '右上') {
+					$(".mysmTop2 div").text(missRes[i].text)
+					$(".aboutSmPos2").attr('src', imgurl + missRes[i].file.img_url)
+				}
+				if (missRes[i].position == '左下') {
+					$(".mysmTop3 div").text(missRes[i].text)
+					$(".aboutSmPos3").attr('src', imgurl + missRes[i].file.img_url)
+				}
+				if (missRes[i].position == '右下') {
+					$(".mysmTop4 div").text(missRes[i].text)
+					$(".aboutSmPos4").attr('src', imgurl + missRes[i].file.img_url)
+				}
+			}
+			//战略
+
+			let j = 0;
+			let strategy = data.data.strategy
+			for (j = 0; j < strategy.length; j++) {
+				if (strategy[j].position == '左上') {
+					$(".zhanlues ul li:eq(0) p").text(strategy[j].title)
+					$(".zhanl1").attr('src', imgurl + strategy[j].file.img_url)
+				}
+				if (strategy[j].position == '右上') {
+					$(".zhanlues ul li:eq(1) p").text(strategy[j].title)
+					$(".zhanl2").attr('src', imgurl + strategy[j].file.img_url)
+				}
+				if (strategy[j].position == '下部') {
+					$(".zhanlues ul li:eq(2) p").text(strategy[j].title)
+					$(".zhanl3").attr('src', imgurl + strategy[j].file.img_url)
+				}
+			}
+
+
+
+			var html = '';
+			var list = data.data.team
+			var mySwiper = new Swiper('#swiper2', {
+				// autoplay: {
+				// 	disableOnInteraction: false,
+				// },
+				delay: 3000,
+				speed: 1000,
+				loop: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					bulletElement: 'li',
+					clickable: true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+				},
+			})
+			$.each(list, function (i, n) {
+				html += ""
+					+ '<div class="swiper-slide">'
+					+ '<h3>' + n.title + ' </h3>'
+					+ '<p> ' + n.subtitle + '</p>'
+					+ '	<img class="zhangzhuo" src="' + imgurl + '' + n.file.img_url + '" alt="">'
+					+ '		<div class="itemRItxt">'
+					+ '			<h4>' + n.file_title + '</h4>'
+					+ '			<br><span>' + n.text + '</span>'
+					+ '	</div>'
+					+ '		</div>'
+			})
+			$("#swiper2min").append(html);
+
+			var histor = data.data.history
+			var his = ''
+			$.each(histor, function (i, n) {
+				his += ""
+					+ '<div class="swiper-slide">'
+					+ '		<div class="text-center">' + n.month + '月</div>'
+				if (n.file) {
+					his += '		<img src="' + imgurl + '' + n.file.img_url + '" alt="" class="img-responsive">'
+				}
+				his += '		<p>'
+					+ '			' + n.text + ''
+					+ '		</p>'
+					+ '	</div>'
+
+			})
+			$("#swiperLI").html(his)
+			var years = data.data.history_title
+			var yearList = ''
+			$.each(years, function (i, n) {
+				yearList += ''
+					+ '<div class="swiper-slide">' + n.year + '</div>'
+			})
+			$("#swiper4 .swiper-wrapper").append(yearList)
+			$("#swiper4 .swiper-wrapper .swiper-slide:eq(0)").addClass('swip4Cur')
+			//左一
+			$("#layoutImg>ul>li:eq(0) .layLiTxt h3").text(data.data.global[0].title)
+			$("#layoutImg>ul>li:eq(0) .layLiTxt p").text(data.data.global[0].subtitle)
+			$("#layoutImg>ul>li:eq(0) .layLiTxt ul li").text(data.data.global[0].text)
+			$("#layoutImg>ul>li:eq(0) .layLiTxt strong").text(data.data.global[1].title)
+			//左二
+			$("#layoutImg>ul>li:eq(1) .layLiTxt h3").text(data.data.global[1].title)
+			$("#layoutImg>ul>li:eq(1) .layLiTxt p").text(data.data.global[1].subtitle)
+			$("#layoutImg>ul>li:eq(1) .layLiTxt ul li").text(data.data.global[1].text)
+			$("#layoutImg>ul>li:eq(1) .layLiTxt strong").text(data.data.global[0].title)
+			//右1
+			$("#layoutImg2>ul>li:eq(0) .layLiTxt h3").text(data.data.global[2].title)
+			$("#layoutImg2>ul>li:eq(0) .layLiTxt p").text(data.data.global[2].subtitle)
+			$("#layoutImg2>ul>li:eq(0) .layLiTxt ul li").text(data.data.global[2].text)
+			$("#layoutImg2>ul>li:eq(0) .layLiTxt strong").text(data.data.global[3].title)
+			//右2
+			$("#layoutImg2>ul>li:eq(1) .layLiTxt h3").text(data.data.global[3].title)
+			$("#layoutImg2>ul>li:eq(1) .layLiTxt p").text(data.data.global[3].subtitle)
+			$("#layoutImg2>ul>li:eq(1) .layLiTxt ul li").text(data.data.global[3].text)
+			$("#layoutImg2>ul>li:eq(1) .layLiTxt strong").text(data.data.global[2].title)
+
+		})
+
+		$("#swiper4").on('click', '.swiper-slide', function () {
+			$(this).addClass('swip4Cur').siblings().removeClass('swip4Cur')
+			sendAjax('/historyDate', { language: '0', year: $(this).text() }, function (data) {
+				let histor = data.data.history
+				let his = ''
+				$.each(histor, function (i, n) {
+					his += ""
+						+ '<div class="swiper-slide">'
+						+ '		<div class="text-center">' + n.month + '月</div>'
+					if (n.file) {
+						his += '		<img src="' + imgurl + '' + n.file.img_url + '" alt="" class="img-responsive">'
+					}
+					his += '		<p>'
+						+ '			' + n.text + ''
+						+ '		</p>'
+						+ '	</div>'
+
+				})
+				$("#swiperLI").html(his)
+			})
+		})
+		//监听高度
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 100) {
+				$(".about_wrap_one_box .sam_tit").addClass('huadong')
+				$(".about_wrap_one_box .samline").css({ "width": 'calc(100% + 12px)' })
+			}
+			if ($(document).scrollTop() > 800) {
+				$(".platform_wrap_two .sam_tit").addClass('huadong')
+				$(".platform_wrap_two .samline").css({ "width": 'calc(100% + 12px)' })
+				$('.mysmTop1 p').addClass('line')
+				$('.mysmTop2 p').addClass('line')
+				$('.mysmTop3 p').addClass('line')
+				$('.mysmTop4 p').addClass('line')
+			}
+			if ($(document).scrollTop() > 2000) {
+				$(".platform_wrap_three .sam_tit").addClass('huadong')
+				$(".platform_wrap_three .samline").css({ "width": 'calc(100% + 12px)' })
+				$(".icons11").css({ "opacity": "1" })
+				$('.zhanlues span').css({ "width": "calc(100% + 36px)" })
+				setTimeout(function () {
+					$(".zhanlues p").css({ "opacity": "1" })
+				}, 500)
+			}
+			if ($(document).scrollTop() > 1000) {
+				$(".about_wrap_two .sam_tit").addClass('huadong')
+				$(".about_wrap_two .samline").css({ "width": 'calc(100% + 12px)' })
+			}
+			if ($(document).scrollTop() > 2500) {
+				$(".platform_wrap_four .sam_tit").addClass('huadong')
+				$(".platform_wrap_four  .samline").css({ "width": 'calc(100% + 12px)' })
+			}
+		})
+		//狗日的点击效果
+		$('.layoutImg').click(function (event) {
+			$(this).find('.layUllist').children('li:first').show()
+			$('.layoutImg2').find('.layUllist>li').hide()
+			$(this).find('.layuitIcon').show()
+			event.stopPropagation();
+		})
+		$('.layoutImg2').click(function (event) {
+			$('.layoutImg').find('.layUllist>li').hide()
+			$(this).find('.layUllist').children('li:first').show()
+			$(this).find('.layuitIcon').show()
+			event.stopPropagation();
+		})
+		$(".layoutImg").on('click', 'strong', function (event) {
+			$(this).parents(".layLiTop").hide().siblings().show()
+			event.stopPropagation();
+		})
+
+		$(".layoutImg2").on('click', 'strong', function (event) {
+			$(this).parents(".layLiTop").hide().siblings().show()
+			event.stopPropagation();
+		})
+		var swiper = new Swiper('#swiper', {
+			loop: true,
+
+			// 一行显示slider的个数
+			slidesPerView: 3,
+
+			// 定义slides的数量多少为一组
+			slidesPerGroup: 3,
+
+			// 分页
+			pagination: {
+				el: '.swiper-pagination',
+
+				// 设为true, 点击分页器的指示点分页器会控制Swiper切换
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+		var swiper = new Swiper('#swiper4', {
+			loop: true,
+
+			// 一行显示slider的个数
+			slidesPerView: 5,
+			// 定义slides的数量多少为一组
+			slidesPerGroup: 5,
+		});
+	})
+
+</script>
+
+</html>

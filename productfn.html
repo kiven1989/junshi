@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="css/normalize.css" type="text/css" rel="stylesheet" media="all">
+	<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<!-- 引入样式 -->
+
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="https://unpkg.zhimg.com/element-ui/lib/theme-chalk/display.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 引入组件库 -->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/contUp.js"></script>
+	<script src="https://unpkg.zhimg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.zhimg.com/element-ui/lib/index.js"></script>
+
+	<style>
+		.bannerSwiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #f5f7f7;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="fixedTop center">
+			<div class="fixedTopMain">
+				<img src="img/logo.png" width="112" class="fl">
+				<div class="fr">
+					<div class="titleLink fl">
+						<a href="indexfn.html"><span >
+							網站首頁
+							</span></a>
+						<a href="aboutfn.html"><span>
+							關於君實
+							</span></a>
+						<a href="platformfn.html"><span class="on">
+							科學與治療領域
+							</span></a>
+						<a href="NewsCenterfn.html"><span>
+							新聞資訊
+							</span></a>
+						<a href="yffn.html"><span>
+							人才招聘
+							</span></a>
+						<a href="Investorfn.html"><span>
+							投資者關系
+							</span></a>
+						<a href="ContactUsfn.html"><span>
+							聯系我們
+							</span></a>
+					</div>
+					<div class="languageChoose fl">
+						<span>
+							<a href="product.html">简</a>
+						</span> |
+						<span>
+							<a href="productfn.html">繁</a>
+						</span> |
+						<span>
+							<a href="producten.html">En</a>
+						</span>
+					</div>
+					<span class="enter">員工入口</span>
+				</div>
+			</div>
+		</div>
+		<div class="banner" style="background: url(img/baseBanner.png) no-repeat center center;height: 675px;">
+			<img src="img/x2.png" width="338" class="x">
+		</div>
+		<div class="baseNav">
+			<ul>
+				<a href="platformfn.html"><li>研發平臺</li></a>
+				<a href="basefn.html"><li>
+					生產基地
+				</li></a>
+                <a href="productfn.html"><li  style="background:#004387"><img src="img/pocur1.png" />
+                   <p>產品管線</p> </li></a>
+			</ul>
+		</div>
+		<div class="prodBack">
+			<div class="proMin">
+                <el-row :gutter="30">
+                    <el-col :md="4" style="background-color: #ffffff;border-radius: 10px;">
+                        <div class="proLeft">
+                            <h2>产品管线</h2>
+                            <ul class="ProNavs">
+                                <li>
+                                    <p class="ProTitleActive">抗肿瘤<img src="img/proIcon1.png" /></p>
+                                    <div class="ProActive"></div>
+                                    <ul class="ProNavsMin">
+                                        <li>
+                                            <a href="#" class="ProTitleActive">JS001 (PD-1)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> JS003 (PD-L1)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">JS004 (BTLA)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">JS006 (TIGIT)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">JS007 (CTLA-4)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>自身免疫</p>
+                                    <div class=""></div>
+                                </li>
+                                <li>
+                                    <p>代谢性疾病</p>
+                                    <div class=""></div>
+                                </li>
+                                <li>
+                                    <p>神经系统疾病</p>
+                                    <div class=""></div>
+                                </li>
+                                <li>
+                                    <p>抗感染</p>
+                                    <div class=""></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </el-col>
+                    <el-col :md="20">
+                        <div class="ProRight">
+                            <img class="ProRightImg" src="img/proBacks1.png" alt="">
+						</div>
+						<div class="ProRight">
+							<img src="img/productIms.png" style="float: left;" alt="">
+							<div class="ProRightTxt">
+								<span>我们围绕“创新驱动”与“患者可及”，通过源头创新与合作引进，构建了丰富的产品管线，包含单抗、融合蛋白、小分子药物等多种类型，覆盖抗肿瘤、代谢类疾病、自身免疫疾病和神经系统疾病等治疗领域，处于已上市销售到早期探索发现的不同研发阶段。</span>
+								<br>
+								<span>随着产品管线的不断丰富和对药物联合治疗的进一步探索，我们的创新领域还将持续扩展至包括小分子药物、抗体药物偶联物（ADC）等在内的更多类型的药物研发，及癌症、自身免疫性疾病的下一代创新疗法的探索。</span>
+							</div>
+							<div class="clear"></div>
+							<div class="proContent">
+								<p class="procolor" style="margin-left: 12px;"><img src="img/procolor1.png"> 生物药剂</p>
+								<p class="procolor"><img src="img/procolor2.png"> 小分子药物</p>
+								<button class="probuton">下载完整管线图</button>
+								<div class="clear"></div>
+								<ul class="protitle">
+									<li></li>
+									<li><img src="img/prosei.png" alt="">&nbsp; <span>肿瘤</span></li>
+									<li></li>
+								</ul>
+								<ul class="proTabTop">
+									<li class="probor">药品代号</li>
+									<li class="probor">靶点</li>
+									<li class="minwidth">临床前</li>
+									<li class="minwidth">临床<br>一期</li>
+									<li class="minwidth">临床<br>二期</li>
+									<li class="minwidth">临床<br>三期</li>
+									<li class="minwidth"><br>DNA</li>
+									<li class="minwidth">临床试<br>验地区</li>
+								</ul>
+								<div class="productMax">
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax" style="line-height: 54px;">JS001</li>
+											<li class="produMax" style="line-height: 54px;">PD-1</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="probule">
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS004</li>
+											<li class="produMax">BTLA</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS006</li>
+											<li class="produMax">TIGIT</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS007</li>
+											<li class="produMax">CTLA-4</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+								</div>
+								<ul class="protitle">
+									<li></li>
+									<li><img src="img/pro4.png" alt=""><span>代谢疾病</span></li>
+									<li></li>
+								</ul>
+								<div class="productMax">
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS002</li>
+											<li class="produMax">PCSK9</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li class="probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS008</li>
+											<li class="produMax">未予披露</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+								</div>
+								<ul class="protitle">
+									<li></li>
+									<li><img src="img/pro5.png" alt=""><span>自身免疫</span></li>
+									<li></li>
+								</ul>
+								<div class="productMax">
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS002</li>
+											<li class="produMax">PCSK9</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li class="probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS008</li>
+											<li class="produMax">未予披露</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+								</div>
+								<ul class="protitle">
+									<li></li>
+									<li><img src="img/pro6.png" alt=""><span>神经疾病</span></li>
+									<li></li>
+								</ul>
+								<div class="productMax">
+									<div class="proHides">
+										<ul class="produList">
+											<li class="produMax">JS002</li>
+											<li class="produMax">PCSK9</li>
+											<li class="produLiu">
+												<ul class="proMinlist">
+													<li class="projianBlue probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li class="proBlack">
+														<p></p>
+													</li>
+													<li class="probule">
+														<p></p>
+													</li>
+													<li>
+														<p></p>
+													</li>
+													<li>中国</li>
+												</ul>
+											</li>
+											<li class="produImg"></li>
+										</ul>
+										<div class="proHideMin">
+											<ul>
+												<li>
+													<p><span>临床实验地区</span>-中国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+												<li>
+													<p><span>临床实验地区-</span>-美国</p>
+													<p><span>开发来源</span>-自主研发</p><br>
+													<p><span>适应性</span>：黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞
+														肺癌,黑色素，粘膜黑色素，鼻咽癌，尿路上皮癌，非小细胞肺癌
+													</p>
+												</li>
+											</ul>
+											<button>查看明细</button>
+										</div>
+									</div>
+								</div>
+								<ul class="protitle">
+									<li></li>
+									<li><img src="img/pro7.png" alt=""> &nbsp;<span>抗感染</span></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+                    </el-col>
+                </el-row>
+            </div>
+
+		</div>
+	</div>
+	</div>
+	<div class="footerMain1" id="div">
+		<div class="footerbox">
+			<div class="footerMain center">
+				<img src="img/footer2.png" width="100">
+				<div class="w25">
+					<a href="index.html"><span>
+						網站首頁<br>
+						</span></a>
+					<span>
+						<a href="about.html">關於我們<br>
+					</span></a>
+					<span>
+						治療領域<br>
+					</span>
+				</div>
+				<div class="w25">
+					<a href="NewsCenter.html"><span>
+						新聞資訊<br>
+						</span></a>
+					<span>
+						<a href="yf.html">人才招聘<br>
+					</span></a>
+					<span>
+						<a href="Investor.html">投資者關系<br>
+					</span></a>
+				</div>
+				<div class="w25 w30">
+					<a href="ContactUs.html"><span>
+						聯系我們<br>
+						</span></a>
+					<a href="adverse_event.html"><span>
+						不良事件報告平臺<br>
+						</span></a>
+
+				</div>
+				<div class="w35">
+					<span style="font-weight: bold;">
+						聯系我們<br>
+					</span>
+					<span>
+						電話：(86)21-20248288<br>
+					</span>
+					<span>
+						傳真：(86)21-50796192<br>
+					</span>
+					<span>
+						地址：上海市浦東新區海趣路36號、58號2幢13層<br>
+					</span>
+				</div>
+				<div class="wxBox">
+					<img src="img/footer3.png" width="80"> <img src="img/footer1.png" width="100"
+						style="position: relative; top: 5px;">
+				</div>
+			</div>
+			<div class="footerBottom">
+				opyright - 上海君實生物醫藥科技股份有限公司 All Rights Reserved. 滬ICP備14029724号
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	var Main = {
+		data() {
+			return {
+
+			}
+		},
+		created() {
+
+		},
+	}
+	var Ctor = Vue.extend(Main)
+	new Ctor().$mount('#app')
+</script>
+<script>
+	$(function () {
+		var swiper = new Swiper('.bannerSwiper', {
+			autoplay: {
+				disableOnInteraction: false,
+				delay: 2500,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+		$(".produImg").click(function() {
+        $(".proHideMin").hide()
+        $(this).parent().siblings(".proHideMin").show()
+        $('.produImg').removeClass('Imgcurs');
+        $(this).addClass("Imgcurs")
+        // $(".joinBos li").eq($(this).index()).addClass("curs").siblings().removeClass('curs');
+        // $(".joinZpList .joinZpLeft").hide().eq($(this).index()).show();
+    });
+	})
+	
+</script>
+
+</html>
