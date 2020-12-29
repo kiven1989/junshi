@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripion" content="">
+    <meta name="keywords" content="">
+    <title>君实生物</title>
+    <!--<link rel="stylesheet" href="../../css/animate.min.css">-->
+    <!--<link rel="stylesheet" href="../../css/swiper.min.css">-->
+    <link rel="stylesheet" href="../../css/pc/PCcommon.css?t=5">
+    <!--<link rel="stylesheet" href="../../css/pc/myanimate.css">-->
+    <!--<link rel="stylesheet" href="../../css/pc/index.css?t=1">-->
+    <style>
+        .bg {
+            width: 100%;
+        }
+
+        .box {
+            top: 5rem;
+            height: 13.76rem;
+            background-color: #fff;
+            border-radius: .2rem;
+        }
+
+        .box > .title {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .34rem;
+            top: .5rem;
+        }
+
+        .box > .title .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+
+        .box ul {
+            position: absolute;
+            top: 1.45rem;
+            left: .34rem;
+        }
+
+        .box ul li {
+            position: relative;
+            width: 1.76rem;
+            height: .74rem;
+            background-color: #fff;
+            color: #525252;
+            text-indent: .13rem;
+            letter-spacing: 1px;
+            font-size: .18rem;
+            font-family: '微软雅黑';
+            line-height: .74rem;
+            border-bottom: 1px solid #F2F2F2;
+            cursor: pointer;
+        }
+
+        .box ul .show {
+            background-color: #004A95;
+            color: #fff;
+            font-weight: 900;
+            border: none;
+            border-radius: .1rem;
+        }
+
+        .box ul .show::before {
+            position: absolute;
+            content: '';
+            right: -.16rem;
+            height: 100%;
+            width: 2px;
+            background-color: #004A95;
+        }
+
+        .box .iframeBox {
+            position: absolute;
+            width: 10.72rem;
+            min-height: 10.58rem;
+            top: 1.45rem;
+            left: 2.27rem;
+            border-left: 1px solid #F2F2F2;
+            padding: 0 .5rem;
+            box-sizing: border-box;
+        }
+
+        .box .iframeBox .catalog {
+            font-size: .16rem;
+            font-family: '微软雅黑';
+            color: #525252;
+        }
+
+        .box .iframeBox .catalog > span {
+            cursor: pointer;
+        }
+
+        .box .iframeBox > .change {
+            font-size: .32rem;
+            color: #004A95;
+            margin-top: .32rem;
+            margin-bottom: .76rem;
+        }
+
+        iframe {
+            width: 102%;
+            height: 9rem;
+        }
+    </style>
+</head>
+<body ondragstart="return false">
+<img class='bg' src="../../images/pc/inves.jpg" alt="">
+<div class="box bx">
+    <div class="title">投资者关系
+        <div class="borderB"></div>
+    </div>
+    <ul>
+        <li class='show'>公司资料</li>
+        <li>公告及通函</li>
+        <li>投资日历</li>
+        <li>财务报告</li>
+        <li>股票信息（A股）</li>
+        <li>股票信息（港股）</li>
+        <li>推介投影片</li>
+        <li>企业管治</li>
+        <li>投资者互动</li>
+    </ul>
+    <div class="iframeBox">
+        <div class="catalog">
+            <span>首页</span> &gt;
+            <span>投资者关系</span> &gt;
+            <span class='change'>公司资料</span>
+        </div>
+        <div class="change">公司资料</div>
+        <iframe src='http://website.shanghaijunshibio.wisdomir.com/sc/ir_info.php#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default9468&xdm_p=1' frameborder="0"></iframe>
+    </div>
+</div>
+<!--底部-->
+<div id="bot" class="page">
+    <div class="content">
+        <div class="bx">
+            <div class="logo">
+                <img src="../../images/pc/logo.png" alt="">
+            </div>
+            <div class="">
+                <div class="btn">网站首页</div>
+                <div class="btn">关于我们</div>
+                <div class="btn">治疗领域</div>
+            </div>
+            <div class="">
+                <div class="btn">新闻资讯</div>
+                <div class="btn">人才招聘</div>
+                <div class="btn">投资者关系</div>
+            </div>
+            <div class="">
+                <div class="btn">联系我们</div>
+                <div class="btn">不良事件通报平台</div>
+            </div>
+            <div class="">
+                <div class="">联系我们</div>
+                <div class="">电话：（021）20248288</div>
+                <div class="">传真：（86）21-50796192</div>
+                <div class="">地址：中国上海市张江高科技园蔡伦路781号6楼602室</div>
+            </div>
+            <div class="rwm">
+                <img src="../../images/pc/index/rwm1.png" alt="">
+                <img src="../../images/pc/index/rwm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="ICP">Copyright-上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号</div>
+</div>
+<!--导航条-->
+<div id="nav">
+    <div class="bx">
+        <div class="logo">
+            <img src="../../images/pc/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <div class="indexBtn">网站首页</div>
+            <div class="asBtn">关于君实</div>
+            <div class="territoryBtn">治疗领域</div>
+            <div class="newsBtn">新闻资讯</div>
+            <div class="joinBtn">加入我们</div>
+            <div class="investBtn show">投资者关系</div>
+            <div class="relationBtn">联系我们</div>
+            <div class="languageBtn">
+                <div class="chinses btn">简</div>
+                <div>|</div>
+                <div class="complex btn">繁</div>
+                <div>|</div>
+                <div class="engligh btn">EN</div>
+            </div>
+            <div class="staffBtn">员工入口</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/pc/PCcommon.js?t=1"></script>
+<!--<script src="../../js/animate.js"></script>-->
+<!--<script src="../../js/pc/index.js"></script>-->
+<script>
+    $('ul li').each(function (i, e) {
+        $(e).on('click',function () {
+            var str = $(this).html();
+            $('.change').html(str);
+            $('ul li').removeClass('show');
+            $(this).addClass('show');
+            if(i == 0){
+                $('iframe').attr('src','http://website.shanghaijunshibio.wisdomir.com/sc/ir_info.php#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default9468&xdm_p=1');
+            }else if(i == 1){
+                $('iframe').attr('src','https://iframesolution.website.wisdomir.com/main/page1.php?id=457&lang=sc#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default2226&xdm_p=1');
+            }else if(i == 2){
+                $('iframe').attr('src','https://eventcalendar.website.wisdomir.com/index.php?id=457&lang=sc#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default9584&xdm_p=1');
+            }else if(i == 4){
+                $('iframe').attr('src','https://iframesolution.website.wisdomir.com/main/page2.php?id=457&lang=sc#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default581&xdm_p=1');
+            }else if(i == 5){
+                $('iframe').attr('src','https://stockchart2.website.wisdomir.com/main/index.php?id=457&lang=sc#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default1637&xdm_p=1');
+            }else if(i == 6){
+                $('iframe').attr('src','https://k.webbsn.com/h5/kbl/index.html?login=false');
+            }else if(i == 7){
+                $('iframe').attr('src','http://website.shanghaijunshibio.wisdomir.com/sc/ir_presentations.php#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default3665&xdm_p=1');
+            }else if(i == 8){
+                $('iframe').attr('src','https://alertform.website.wisdomir.com/main/index.php?id=457&lang=sc#xdm_e=http%3A%2F%2Fwww.junshipharma.com&xdm_c=default8269&xdm_p=1');
+            }
+        })
+    })
+
+    $('#nav .indexBtn,#nav .logo').on('click',function () {
+        window.location.href = 'index1.html';
+    })
+    $('.catalog span:nth-child(1)').on('click',function () {
+        window.location.href = 'invest.html';
+    })
+</script>
+</html>

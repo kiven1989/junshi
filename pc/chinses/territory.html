@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripion" content="">
+    <meta name="keywords" content="">
+    <title>君实生物</title>
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/pc/PCcommon.css?t=5">
+    <style>
+        /*html,body{*/
+        /*-moz-user-select:none; !* Firefox私有属性 *!*/
+        /*-webkit-user-select:none; !* WebKit内核私有属性 *!*/
+        /*-ms-user-select:none; !* IE私有属性(IE10及以后) *!*/
+        /*-khtml-user-select:none; !* KHTML内核私有属性 *!*/
+        /*-o-user-select:none; !* Opera私有属性 *!*/
+        /*user-select:none; !* CSS3属性 *!*/
+        /*}*/
+        .bx {
+            height: 100%;
+        }
+
+        .page, .page > .bg {
+            position: relative;
+            width: 100%;
+        }
+
+        .page1 {
+            z-index: 1;
+        }
+
+        .page2 {
+            height: 2.32rem;
+            background-color: #004A95;
+            margin-top: -.95rem;
+        }
+
+        .page2 .bx {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page2 .btn {
+            position: relative;
+            width: 33.33%;
+            height: 100%;
+            background-color: #004A95;
+            cursor: pointer;
+            font-family: Regular;
+            font-size: .2rem;
+            color: #fff;
+        }
+
+        .page2 .bx .show {
+            background-color: #004387;
+            font-family: Bold;
+            font-size: .24rem;
+        }
+
+        .page2 .btn > div {
+            position: absolute;
+            bottom: .55rem;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        .page2 .btn1.show > div:before {
+            position: absolute;
+            content: '';
+            background: url("../../images/pc/territory/btn1.png") no-repeat center;
+            background-size: 100% 100%;
+            width: .68rem;
+            height: .62rem;
+            left: -.88rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .page2 .btn2.show > div:before {
+            position: absolute;
+            content: '';
+            background: url("../../images/pc/territory/btn2.png") no-repeat center;
+            background-size: 100% 100%;
+            width: .65rem;
+            height: .62rem;
+            left: -.85rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .page2 .btn3.show > div:before {
+            position: absolute;
+            content: '';
+            background: url("../../images/pc/territory/btn3.png") no-repeat center;
+            background-size: 100% 100%;
+            width: .66rem;
+            height: .62rem;
+            left: -.86rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #base .page3 .title {
+            width: 100%;
+            text-align: center;
+            font-family: Regular;
+            font-size: .18rem;
+            color: #626262;
+            margin-top: .7rem;
+            letter-spacing: 1px;
+        }
+
+        #base .page3 .title > span {
+            font-family: Bold;
+            font-size: .2rem;
+            color: #004A95;
+        }
+
+        #base .page3 .title1 {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .3rem;
+            top: 1.4rem;
+        }
+
+        #base .page3 .title1 .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+
+        #base .page3 .banner1 {
+            position: absolute;
+            top: 2.2rem;
+            left: .3rem;
+            width: 7.41rem;
+            height: 6.17rem;
+        }
+
+        #base .page3 .banner1 > .bn {
+            position: absolute;
+            width: 7.03rem;
+            height: 5.82rem;
+            opacity: .7;
+            color: #D8D8D8;
+        }
+
+        #base .page3 .banner1 > .bn > img {
+            width: 100%;
+        }
+
+        #base .page3 .banner1 > .bn > .shade {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, .6);
+        }
+
+        #base .page3 .banner1 .show {
+            opacity: 1;
+        }
+
+        #base .page3 .banner1 .show > .shade {
+            display: none;
+        }
+
+        #base .page3 .banner1 .bn1 {
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }
+
+        #base .page3 .banner1 .bn2 {
+            top: .4rem;
+            left: .2rem;
+            z-index: 2;
+        }
+
+        #base .page3 .banner1 .bn3 {
+            top: .59rem;
+            left: .38rem;
+            z-index: 1;
+        }
+
+        #base .page3 .banner1 .point {
+            position: absolute;
+            width: 100%;
+            bottom: -.75rem;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+
+        #base .page3 .banner1 .point > div {
+            width: .13rem;
+            height: .13rem;
+            margin: 0 .08rem;
+            border-radius: 50%;
+            background-color: #A3A3A3;
+            cursor: pointer;
+        }
+
+        #base .page3 .banner1 .point .show {
+            background-color: #004A95;
+        }
+
+        #base .page3 .banner1 > img {
+            position: absolute;
+            width: 4.69rem;
+            top: .23rem;
+            left: 7.9rem;
+        }
+
+        #base .page4 .title1 {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .3rem;
+            top: .6rem;
+        }
+
+        #base .page .title1 .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+
+        #base .page4 .banner2 {
+            position: absolute;
+            top: 1.45rem;
+            left: 5.75rem;
+            width: 7.41rem;
+            height: 6.17rem;
+        }
+
+        #base .page4 .banner2 > .bn {
+            position: absolute;
+            width: 7.03rem;
+            height: 5.82rem;
+            opacity: .7;
+            color: #D8D8D8;
+        }
+
+        #base .page4 .banner2 > .bn > img {
+            width: 100%;
+        }
+
+        #base .page4 .banner2 > .bn > .shade {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, .6);
+        }
+
+        #base .page4 .banner2 .show {
+            opacity: 1;
+        }
+
+        #base .page4 .banner2 .show > .shade {
+            display: none;
+        }
+
+        #base .page4 .banner2 .bn1 {
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }
+
+        #base .page4 .banner2 .bn2 {
+            top: .4rem;
+            left: .2rem;
+            z-index: 2;
+        }
+
+        #base .page4 .banner2 .bn3 {
+            top: .59rem;
+            left: .38rem;
+            z-index: 1;
+        }
+
+        #base .page4 .banner2 .point {
+            position: absolute;
+            width: 100%;
+            bottom: -.75rem;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+
+        #base .page4 .banner2 .point > div {
+            width: .13rem;
+            height: .13rem;
+            margin: 0 .08rem;
+            border-radius: 50%;
+            background-color: #A3A3A3;
+            cursor: pointer;
+        }
+
+        #base .page4 .banner2 .point .show {
+            background-color: #004A95;
+        }
+
+        #base .page4 .banner2 > img {
+            position: absolute;
+            width: 4.69rem;
+            top: .23rem;
+            left: -5.44rem;
+        }
+
+        #pipeline .page3 {
+            overflow: hidden;
+        }
+
+        #pipeline .page3 > .bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #pipeline .page3 .bx {
+            position: relative;
+            height: auto;
+        }
+
+        #pipeline .page3 .tab {
+            margin: .43rem 0 0 .11rem;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 2.28rem;
+            /*height: 5rem;*/
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #pipeline .page3 .tab .level1 {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        #pipeline .page3 .tab .level1 .btn {
+            position: relative;
+            font-size: .16rem;
+            font-family: Regular;
+            color: #5e5e5e;
+            height: .74rem;
+            line-height: .74rem;
+            border-bottom: 1px solid #F2F2F2;
+            cursor: pointer;
+        }
+
+        #pipeline .page3 .tab .level1.show .btn {
+            font-family: Bold;
+            color: #004A95;
+            border-bottom: 2px solid #004A95;
+        }
+
+        #pipeline .page3 .tab .level1.other .btn:before {
+            position: absolute;
+            content: '▲';
+            font-size: .2rem;
+            font-family: Regular;
+            color: #5e5e5e;
+            top: 50%;
+            right: 0;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .tab .level1:last-child {
+            border: none;
+        }
+
+        #pipeline .page3 .tab .level1.show.other .btn:before {
+            position: absolute;
+            content: '▲';
+            font-size: .2rem;
+            font-family: Bold;
+            color: #004A95;
+            top: 50%;
+            right: 0;
+            -webkit-transform: translateY(-50%) rotate(180deg);
+            -moz-transform: translateY(-50%) rotate(180deg);
+            -ms-transform: translateY(-50%) rotate(180deg);
+            -o-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        #pipeline .page3 .tab .level1.other .level2 {
+            border-bottom: 1px solid #F2F2F2;
+            font-size: .14rem;
+            font-family: Regular;
+            height: .45rem;
+            text-indent: .18rem;
+            line-height: .45rem;
+            color: #494949;
+            display: none;
+            cursor: pointer;
+        }
+
+        #pipeline .page3 .tab .level1.other.show .level2 {
+            display: block;
+            overflow: hidden;
+        }
+
+        #pipeline .page3 .tab .level1.other.show .level2.show {
+            color: #004A95;
+        }
+
+        #pipeline .page3 .content {
+            margin-top: .43rem;
+            margin-bottom: 1rem;
+            width: 10rem;
+        }
+
+        #pipeline .page3 .content .pipeline {
+            display: block;
+        }
+
+        #pipeline .page3 .content .pipeline .title {
+            position: relative;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 100%;
+            height: 4.69rem;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+        }
+
+        #pipeline .page3 .content .pipeline .title > img {
+            position: absolute;
+            width: 8.9rem;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox {
+            padding-bottom: .3rem;
+            position: relative;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: .15rem;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+            box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 1);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .contrastTitle {
+            height: 3.47rem;
+            position: relative;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .contrastTitle > img {
+            position: absolute;
+            width: 2.31rem;
+            left: .32rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .contrastTitle > .text {
+            position: absolute;
+            left: 2.92rem;
+            width: 68%;
+            font-family: Regular;
+            font-size: .14rem;
+            color: #5e5e5e;
+            line-height: .28rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: flex-start;
+            height: .3rem;
+            margin-left: .32rem;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div {
+            height: 100%;
+            position: relative;
+            margin-right: .3rem;
+            text-indent: .38rem;
+            color: #3D3D3D;
+            font-family: Regular;
+            font-size: .14rem;
+            height: 100%;
+            line-height: .3rem;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div > span {
+            position: absolute;
+            width: .24rem;
+            height: .14rem;
+            left: 0;
+            top: .08rem;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(1) > span {
+            background-color: #004387;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(1) > span:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #004387;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(2) > span {
+            background-color: #E50012;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(2) > span:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #E50012;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(3) > span {
+            background-color: #fff;
+            border: 1px dashed #004387;
+            border-right: none;
+            box-sizing: border-box;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(3) > span:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: dashed;
+            border-color: transparent transparent transparent #004387;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(3) > span:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: dashed;
+            border-color: transparent transparent transparent #fff;
+            right: -.12rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(4) > span {
+            background-color: #fff;
+            border: 1px solid #004387;
+            border-right: none;
+            box-sizing: border-box;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(4) > span:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #004387;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fl > div:nth-child(4) > span:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #fff;
+            right: -.115rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fr {
+            margin-right: .5rem;
+            font-family: Regular;
+            font-size: .12rem;
+            width: 1.5rem;
+            height: .3rem;
+            background-color: #E50012;
+            color: #fff;
+            text-align: center;
+            line-height: .3rem;
+            border-radius: 13px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .downBox .fr > a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form {
+            width: 94%;
+            margin: .2rem auto;
+            font-family: Regular;
+            font-size: .16rem;
+            /*overflow: hidden;*/
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form > div {
+            border-bottom: 1px solid #E7E7E7;
+            position: relative;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox img.line {
+            margin: .2rem 0;
+            width: 100%;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line {
+            /*height: .46rem;*/
+            width: 100%;
+            border-radius: 6px;
+            text-align: center;
+            line-height: .46rem;
+            background: #fff;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line:nth-child(2n) {
+            background: #F8F8F8;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line > div {
+            width: 1.23rem;
+            height: .46rem;
+            border-right: 1px solid #E7E7E7;
+            color: #282828;
+            /*overflow: hidden;*/
+            position: relative;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line > div:nth-child(3) {
+            z-index: 1;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line > div:nth-child(8) {
+            width: .65rem;
+            border-right: none;
+            z-index: 2;
+            cursor: pointer;
+            color: #EBEBEB;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line > div.cli {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            color: #87BCF1;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .line > div.show {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            color: #87BCF1;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineTitle {
+            background: #004387;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineTitle > div {
+            border-right: 1px solid #fff;
+            color: #fff;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox {
+            position: absolute;
+            width: 100%;
+            height: .14rem;
+            left: 0%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            /*background-color: rgba(1,1,1,0.3);*/
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox > div {
+            position: absolute;
+            height: 100%;
+            left: 0%;
+            top: 0;
+            /*display: none;*/
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .blue {
+            background-color: #004387;
+            /*z-index: 2;*/
+            /*width: 100%;*/
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .blue:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: dashed;
+            border-color: transparent transparent transparent #004387;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .red {
+            background-color: #E50012;
+            /*width: 100%;*/
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .red:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: dashed;
+            border-color: transparent transparent transparent #E50012;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .white {
+            background-color: #fff;
+            border: 1px dashed #004387;
+            /*border-left:none;*/
+            border-right: none;
+            box-sizing: border-box;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .white:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #004387;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .white:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #fff;
+            right: -.12rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .grey {
+            background-color: #E0DDDD;
+            /*width: 100%;*/
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .grey:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: dashed;
+            border-color: transparent transparent transparent #E0DDDD;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .white2 {
+            background-color: #fff;
+            border: 1px solid #004387;
+            /*border-left:none;*/
+            border-right: none;
+            box-sizing: border-box;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .white2:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #004387;
+            right: -.13rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .lineBox .white2:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: .07rem;
+            border-style: solid;
+            border-color: transparent transparent transparent #fff;
+            right: -.12rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details {
+            width: 99.5%;
+            height: auto;
+            border: 1px solid #E7E7E7;
+            /*border-top:none;*/
+            position: relative;
+            background: #fff;
+            display: none;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details > .btn {
+            position: absolute;
+            width: .9rem;
+            color: #fff;
+            background-color: #004387;
+            border-radius: 13px;
+            text-align: center;
+            height: .3rem;
+            font-family: Regular;
+            font-size: .14rem;
+            line-height: .3rem;
+            top: 50%;
+            right: .25rem;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details > .box {
+            margin-left: .25rem;
+            width: 85%;
+            padding: .2rem 0;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details > .box > div:nth-child(2) {
+            border-top: 1px solid #E7E7E7;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details > .box > div > div {
+            /*height: .4rem;*/
+            line-height: .4rem;
+            font-size: .14rem;
+            font-family: Regular;
+            color: #626262;
+            text-align: left;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details > .box > div > div > div {
+            display: inline-block;
+            margin-right: .66rem;
+            text-align: left;
+        }
+
+        #pipeline .page3 .content .pipeline .contrastBox .form .every .details > .box > div > div > div > span:first-child {
+            font-family: Bold;
+            color: #004387;
+        }
+
+        .three {
+            display: none;
+        }
+    </style>
+</head>
+<body ondragstart="return false">
+<div class="page page1">
+    <img class='bg' src="../../images/pc/territory/page1.png" alt="">
+</div>
+<div class="page page2">
+    <div class="bx">
+        <div class="btn btn1" alt=''>
+            <div>研发平台</div>
+        </div>
+        <div class="btn btn2 show" alt='base'>
+            <div>生产基地</div>
+        </div>
+        <div class="btn btn3" alt='pipeline'>
+            <div>产品管线</div>
+        </div>
+    </div>
+</div>
+
+<div id="base" class='three' style='display: block;'>
+    <div class="page page3">
+        <img class='bg' src="../../images/pc/territory/base/page3bg.jpg" alt="">
+        <div class="bx">
+            <div class="title">我们在中国拥有两个单克隆抗体生产基地，分别位于<span>苏州吴江</span>和<span>上海临港</span>。</div>
+            <div class="title1">苏州吴江生产基地
+                <div class="borderB"></div>
+            </div>
+            <div class="banner1">
+                <div class="bn bn1 show">
+                    <img src="../../images/pc/territory/base/banner1-1.png?t=1" alt="">
+                    <div class="shade"></div>
+                </div>
+                <div class="bn bn2">
+                    <img src="../../images/pc/territory/base/banner1-2.png?t=1" alt="">
+                    <div class="shade"></div>
+                </div>
+                <div class="bn bn3">
+                    <img src="../../images/pc/territory/base/banner1-3.png?t=1" alt="">
+                    <div class="shade"></div>
+                </div>
+                <div class="point">
+                    <div class='show'></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <img src="../../images/pc/territory/base/banner1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="page page4">
+        <img class='bg' src="../../images/pc/territory/base/page4bg.jpg" alt="">
+        <div class="bx">
+            <div class="title1">上海临港生产基地
+                <div class="borderB"></div>
+            </div>
+            <div class="banner2">
+                <div class="bn bn1 show">
+                    <img src="../../images/pc/territory/base/banner2-1.png?t=1" alt="">
+                    <div class="shade"></div>
+                </div>
+                <div class="bn bn2">
+                    <img src="../../images/pc/territory/base/banner2-2.png?t=1" alt="">
+                    <div class="shade"></div>
+                </div>
+                <div class="bn bn3">
+                    <img src="../../images/pc/territory/base/banner2-3.png?t=1" alt="">
+                    <div class="shade"></div>
+                </div>
+                <div class="point">
+                    <div class='show'></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <img src="../../images/pc/territory/base/banner2.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pipeline" class='three'>
+    <div class="page page3">
+        <img class='bg' src="../../images/pc/territory/pipeline/bg.jpg" alt="">
+        <div class="bx clearfix">
+            <div class="tab fl">
+                <div class="level1 show">
+                    <div class="btn">产品管线</div>
+                </div>
+                <div class="level1 other">
+                    <div class="btn">抗肿瘤</div>
+                    <div class="level2 animated fadeIn">JS001(PD-1)</div>
+                    <div class="level2 animated fadeIn">JS003(PD-L1)</div>
+                    <div class="level2 animated fadeIn">JS004(BTLA)</div>
+                    <div class="level2 animated fadeIn">JS006(TIGIT)</div>
+                    <div class="level2 animated fadeIn">JS007(CTLA-4)</div>
+                    <div class="level2 animated fadeIn">JS009(未予披露)</div>
+                    <div class="level2 animated fadeIn">JS011(未予披露)</div>
+                    <div class="level2 animated fadeIn">JS012(未予披露)</div>
+                    <div class="level2 animated fadeIn">JS101(Pan-CDK)</div>
+                    <div class="level2 animated fadeIn">JS104(Pan-CDK)</div>
+                    <div class="level2 animated fadeIn">JS105(PI3K-α)</div>
+                    <div class="level2 animated fadeIn">JS014(IL-21)</div>
+                    <div class="level2 animated fadeIn">JS501(VEGF)</div>
+                    <div class="level2 animated fadeIn">JS108(抗Trop2单抗-Tub196 偶联剂)</div>
+                </div>
+                <div class="level1 other">
+                    <div class="btn">代谢类疾病</div>
+                    <div class="level2 animated fadeIn">JS002(PCSK9)</div>
+                    <div class="level2 animated fadeIn">JS008(未予披露)</div>
+                </div>
+                <div class="level1 other">
+                    <div class="btn">自身免疫</div>
+                    <div class="level2 animated fadeIn">UBP1211(TNF-α)</div>
+                    <div class="level2 animated fadeIn">JS005(IL-17A)</div>
+                    <div class="level2 animated fadeIn">UBP1213(BLyS)</div>
+                </div>
+                <div class="level1 other">
+                    <div class="btn">神经系统疾病</div>
+                    <div class="level2 animated fadeIn">JS010(未予披露)</div>
+                </div>
+                <div class="level1 other">
+                    <div class="btn">抗感染</div>
+                    <div class="level2 animated fadeIn">JS016(S蛋白)</div>
+                </div>
+            </div>
+            <div class="content fr">
+                <!--管线内容-->
+                <div class="pipeline">
+                    <div class="title">
+                        <img src="../../images/pc/territory/pipeline/pipelineTitle.png" alt="">
+                    </div>
+                    <!--对比盒子-->
+                    <div class="contrastBox">
+                        <div class="contrastTitle">
+                            <img src="../../images/pc/territory/pipeline/contrastTitle.png" alt="">
+                            <div class="text">
+                                我们围绕“创新驱动”与“患者可及”，通过源头创新与合作引进，构建了丰富的产品管线，包含单抗、融合蛋白、小分子药物等多种类型，覆盖抗肿瘤、代谢类疾病、自身免疫疾病和神经系统疾病等治疗领域，处于已上市销售到早期探索发现的不同研发阶段。<br>
+                                随着产品管线的不断丰富和对药物联合治疗的进一步探索，我们的创新领域还将持续扩展至包括小分子药物、抗体药物偶联物（ADC）等在内的更多类型的药物研发，及癌症、自身免疫性疾病的下一代创新疗法的探索。
+                            </div>
+                        </div>
+                        <div class="downBox clearfix">
+                            <div class="fl">
+                                <div><span></span>生物药剂</div>
+                                <div><span></span>小分子药物</div>
+                                <div><span></span>在美国的临床进展</div>
+                                <div><span></span>亚太多中心</div>
+                            </div>
+                            <div class="fr">
+                                下载完整管线图
+                                <a href="http://f.webbsn.com/junshi/images/pc/territory/pipeline/gjt.pdf"
+                                   target="_blank"></a>
+
+                            </div>
+                        </div>
+                        <!--表格-->
+                        <div class="form">
+                            <img class='line' src="../../images/pc/territory/pipeline/line1.png" alt="">
+                            <!--肿瘤-->
+                            <div class="tumour">
+                                <div class="line lineTitle clearfix">
+                                    <div class="fl">药品代号</div>
+                                    <div class="fl">靶点</div>
+                                    <div class="fl">临床前</div>
+                                    <div class="fl">临床一期</div>
+                                    <div class="fl">临床二期</div>
+                                    <div class="fl">临床三期</div>
+                                    <div class="fl">NDA</div>
+                                    <div class="fl"></div>
+                                </div>
+
+                                <div class="line every clearfix">
+                                    <div class="fl">JS001</div>
+                                    <div class="fl">PD-1</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 500%;'></div>
+                                            <div class="grey" style='width: 100%;left: 303%;'></div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="lineBox"></div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="lineBox"></div>
+                                        </div>
+                                        <div class="fl">
+                                            <div class="lineBox"></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>黑色素瘤、鼻咽癌、尿路上皮癌、食管癌、三阴乳腺癌、肝细胞癌、肾细胞癌、肺癌等</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS001</div>
+                                    <div class="fl">PD-1</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="white2" style='width: 350%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>亚太多中心</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>鼻咽癌（一线治疗，与化疗联合）</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS001</div>
+                                    <div class="fl">PD-1</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="white" style='width: 140%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>美国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>多种实体瘤</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS003</div>
+                                    <div class="fl">PD-L1</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 140%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span
+                                                            class='adapt'>尿路上皮癌，黑色素瘤，非小细胞肺癌，三阴性乳腺癌等</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS004</div>
+                                    <div class="fl">BTLA</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="white" style='width: 140%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>美国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>黑色素瘤，肺癌，淋巴瘤等</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS004</div>
+                                    <div class="fl">BTLA</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 100%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>肿瘤</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS006</div>
+                                    <div class="fl">TIGIT</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>多种实体瘤</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS007</div>
+                                    <div class="fl">CTLA-4</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>肺癌，黑色素瘤</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS009</div>
+                                    <div class="fl">未予披露</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 60%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>未予披露</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS011</div>
+                                    <div class="fl">未予披露</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 60%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>未予披露</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS012</div>
+                                    <div class="fl">未予披露</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>未予披露</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS101</div>
+                                    <div class="fl">Pan-CDK</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="red" style='width: 100%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>乳腺癌</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS104</div>
+                                    <div class="fl">Pan-CDK</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="red" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>乳腺癌</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS105</div>
+                                    <div class="fl">PI3K-α</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="red" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>乳腺癌,肾癌,淋巴瘤</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS014</div>
+                                    <div class="fl">IL-21</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>肿瘤</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS501</div>
+                                    <div class="fl" style='line-height: .24rem;'>VEGF（安维汀生物类似药）</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 160%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span
+                                                            class='adapt'>转移性结直肠癌和晚期、转移性或复发性非小细胞肺癌</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS108</div>
+                                    <div class="fl" style='line-height: .24rem;'>抗Trop2单抗-Tub196 偶联剂</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="white2" style='width: 90%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span
+                                                            class='country'>除日本、韩国以外的全部亚洲国家及区域</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>Trop2阳性三阴性乳腺癌、小细胞肺癌、胰腺癌等实体肿瘤</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!--代谢疾病-->
+                            <img class='line' src="../../images/pc/territory/pipeline/line2.png" alt="">
+                            <div class="metabolize">
+                                <div class="line every clearfix">
+                                    <div class="fl">JS002</div>
+                                    <div class="fl">PCSK9</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 260%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>高血脂症</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS008</div>
+                                    <div class="fl">未予披露</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 40%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>未予披露</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--自身免疫-->
+                            <img class='line' src="../../images/pc/territory/pipeline/line3.png" alt="">
+                            <div class="immune">
+                                <div class="line every clearfix">
+                                    <div class="fl">UBP1211</div>
+                                    <div class="fl" style='line-height: .24rem;'>TNF-α（修美乐生物类似药）</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 380%;'></div>
+                                            <div class="grey" style='width: 100%;left:202%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span
+                                                            class='adapt'>类风湿性关节炎，强直性脊柱炎，银屑病关节炎</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">JS005</div>
+                                    <div class="fl">IL-17A</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 140%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>银屑病，类风湿性关节炎</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                                <div class="line every clearfix">
+                                    <div class="fl">UBP1213</div>
+                                    <div class="fl">BLyS</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 90%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>系统性红斑狼疮</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--神经疾病-->
+                            <img class='line' src="../../images/pc/territory/pipeline/line4.png" alt="">
+                            <div class="nerve">
+                                <div class="line every clearfix">
+                                    <div class="fl">JS010</div>
+                                    <div class="fl">未予披露</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="blue" style='width: 80%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国</span></div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>未予披露</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--抗感染-->
+                            <img class='line' src="../../images/pc/territory/pipeline/line5.png" alt="">
+                            <div class="infection">
+                                <div class="line every clearfix">
+                                    <div class="fl">JS016</div>
+                                    <div class="fl">S蛋白</div>
+                                    <div class="fl">
+                                        <div class="lineBox">
+                                            <div class="white2" style='width: 70%;'></div>
+                                        </div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl">
+                                        <div class="lineBox"></div>
+                                    </div>
+                                    <div class="fl detailsBtn">▲</div>
+                                    <div class="fl details">
+                                        <div class="box">
+                                            <div>
+                                                <div>
+                                                    <div><span>临床实验地区- </span><span class='country'>中国（大中华地区之外的开发权利授予礼来制药）</span>
+                                                    </div>
+                                                    <div><span>开发来源- </span><span class='source'>自主研发</span></div>
+                                                </div>
+                                                <div>
+                                                    <div><span>适应性：</span><span class='adapt'>新型冠状病毒肺炎</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">查看详细</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--底部-->
+<div id="bot" class="page">
+    <div class="content">
+        <div class="bx">
+            <div class="logo">
+                <img src="../../images/pc/logo.png" alt="">
+            </div>
+            <div class="">
+                <div class="btn">网站首页</div>
+                <div class="btn">关于我们</div>
+                <div class="btn">治疗领域</div>
+            </div>
+            <div class="">
+                <div class="btn">新闻资讯</div>
+                <div class="btn">人才招聘</div>
+                <div class="btn">投资者关系</div>
+            </div>
+            <div class="">
+                <div class="btn">联系我们</div>
+                <div class="btn">不良事件通报平台</div>
+            </div>
+            <div class="">
+                <div class="">联系我们</div>
+                <div class="">电话：（021）20248288</div>
+                <div class="">传真：（86）21-50796192</div>
+                <div class="">地址：中国上海市张江高科技园蔡伦路781号6楼602室</div>
+            </div>
+            <div class="rwm">
+                <img src="../../images/pc/index/rwm1.png" alt="">
+                <img src="../../images/pc/index/rwm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="ICP">Copyright-上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号</div>
+</div>
+<!--导航条-->
+<div id="nav">
+    <div class="bx">
+        <div class="logo">
+            <img src="../../images/pc/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <div class="indexBtn">网站首页</div>
+            <div class="asBtn">关于君实</div>
+            <div class="territoryBtn show">治疗领域</div>
+            <div class="newsBtn">新闻资讯</div>
+            <div class="joinBtn">加入我们</div>
+            <div class="investBtn">投资者关系</div>
+            <div class="relationBtn">联系我们</div>
+            <div class="languageBtn">
+                <div class="chinses btn">简</div>
+                <div>|</div>
+                <div class="complex btn">繁</div>
+                <div>|</div>
+                <div class="engligh btn">EN</div>
+            </div>
+            <div class="staffBtn">员工入口</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/pc/PCcommon.js?t=1"></script>
+<script>
+    //    3个页面切换
+    $('.page2 .btn').each(function (i, e) {
+        $(e).on('click', function () {
+            $('.page2 .btn').removeClass('show');
+            $(this).addClass('show');
+            $('.three').hide();
+            $('#' + $(this).attr('alt')).show();
+            // $("html,body").animate({
+            //     scrollTop: 0,
+            //     screenLeft: 0,
+            // }, 400);
+        })
+    })
+
+    //生产基地
+    //    banner1切换
+    $('.banner1 .point>div').each(function (i, e) {
+        $(e).on('click', function () {
+            var index = i + 1;
+            var x1 = $('.banner1 .bn.show').position().left;
+            var y1 = $('.banner1 .bn.show').position().top;
+            var z1 = $('.banner1 .bn.show').css('z-index');
+            var x2 = $('.banner1 .bn' + index).position().left;
+            var y2 = $('.banner1 .bn' + index).position().top;
+            var z2 = $('.banner1 .bn' + index).css('z-index');
+            $('.banner1 .bn' + index).animate({'left': x1, 'top': y1, 'z-index': z1}, 300);
+            $('.banner1 .bn.show').animate({'left': x2, 'top': y2, 'z-index': z2}, 300, function () {
+                $('.banner1 .bn.show').removeClass('show');
+                $('.banner1 .bn' + index).addClass('show');
+            });
+            $('.banner1 .point>div').removeClass('show');
+            $(this).addClass('show')
+        })
+    })
+
+    //    banner2切换
+    $('.banner2 .point>div').each(function (i, e) {
+        $(e).on('click', function () {
+            var index = i + 1;
+            var x1 = $('.banner2 .bn.show').position().left;
+            var y1 = $('.banner2 .bn.show').position().top;
+            var z1 = $('.banner2 .bn.show').css('z-index');
+            var x2 = $('.banner2 .bn' + index).position().left;
+            var y2 = $('.banner2 .bn' + index).position().top;
+            var z2 = $('.banner2 .bn' + index).css('z-index');
+            $('.banner2 .bn' + index).animate({'left': x1, 'top': y1, 'z-index': z1}, 300);
+            $('.banner2 .bn.show').animate({'left': x2, 'top': y2, 'z-index': z2}, 300, function () {
+                $('.banner2 .bn.show').removeClass('show');
+                $('.banner2 .bn' + index).addClass('show');
+            });
+            $('.banner2 .point>div').removeClass('show');
+            $(this).addClass('show')
+        })
+    })
+
+
+    //产品管线
+    //    tab栏切换
+    $('#pipeline .page3 .tab .level1').each(function (i, e) {
+        $(e).on('click', function () {
+            if ($(e).hasClass('show')) {
+                $(this).removeClass('show');
+            } else {
+                $('#pipeline .page3 .tab .level1').removeClass('show');
+                $(this).addClass('show');
+            }
+        })
+    })
+
+    //    点击进入每一个详情
+    $('#pipeline .form .every .detailsBtn').each(function (i, e) {
+        $(e).on('click', function () {
+            if ($(this).hasClass('cli')) {
+                $('#pipeline .form .every .details').hide();
+                $('#pipeline .form .every .detailsBtn').removeClass('cli');
+            } else {
+                $('#pipeline .form .every .details').hide();
+                $('#pipeline .form .every .detailsBtn').removeClass('cli');
+                $(this).next().show();
+                $(this).addClass('cli');
+            }
+        })
+    })
+
+
+</script>
+</html>

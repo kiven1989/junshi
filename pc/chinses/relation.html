@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripion" content="">
+    <meta name="keywords" content="">
+    <title>君实生物</title>
+    <!--<link rel="stylesheet" href="../../css/animate.min.css">-->
+    <!--<link rel="stylesheet" href="../../css/swiper.min.css">-->
+    <link rel="stylesheet" href="../../css/pc/PCcommon.css?t=5">
+    <!--<link rel="stylesheet" href="../../css/pc/myanimate.css">-->
+    <!--<link rel="stylesheet" href="../../css/pc/index.css?t=1">-->
+    <style>
+        .bg {
+            width: 100%;
+        }
+
+        .box {
+            top: 5rem;
+            height: 10.72rem;
+            background-color: #fff;
+            border-radius: .2rem;
+            overflow: hidden;
+            font-family: '微软雅黑';
+        }
+        .box > .title {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .34rem;
+            top: .68rem;
+        }
+
+        .box > .title .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+        .box>.top{
+            position: absolute;
+            height: 7.61rem;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-family: '微软雅黑';
+        }
+        .box>.top .left{
+            position: absolute;
+            width: 10.29rem;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .box>.top .left .map{
+            position: absolute;
+            width: 95%;
+            left: 2.5%;
+            top: 2.5rem;
+        }
+        .box>.top .left .map>div{
+            position: absolute;
+            width: .7rem;
+            height: .35rem;
+            /*background-color: rgba(1,1,1,0.5);*/
+            cursor: pointer;
+        }
+        .box>.top .left .map .shanghai{
+            top: 23%;
+            left: 84%;
+        }
+        .box>.top .left .map .beijing{
+            top: 14%;
+            left: 82.7%;
+        }
+        .box>.top .left .map .suzhou{
+            top: 21%;
+            left: 68.3%;
+        }
+        .box>.top .left .map .guangzhou{
+            top: 38.5%;
+            left: 68%;
+        }
+        .box>.top .left .map .malilan{
+            top: 12.5%;
+            left: 24.7%;
+        }
+        .box>.top .left .map .jiujinshan{
+            top: 24.5%;
+            left: 0%;
+        }
+        .box>.top .left>.up{
+            position: absolute;
+            width: .44rem;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .box>.top .left .change{
+            position: absolute;
+            left: 5.55rem;
+            top: 1.22rem;
+            font-size: .14rem;
+            font-weight: 900;
+        }
+        .box>.top .left .change .title{
+            color: #4d4d4d;
+            text-indent: .12rem;
+        }
+        .box>.top .left .change .changebox{
+            border-left: 1px solid #cacaca;
+            color: #cacaca;
+        }
+        .box>.top .left .change .changebox>div{
+            margin:.1rem;
+            padding:.06rem;
+            cursor: pointer;
+            border-radius: .1rem;
+            position: relative;
+        }
+        .box>.top .left .change .changebox>div.show{
+            background-color: #004A95;
+            color: #fff;
+        }
+        .box>.top .left .change .changebox>div.show::before{
+            content: '';
+            position: absolute;
+            width: .1rem;
+            height: .1rem;
+            border-radius: 50%;
+            background-color: #E9424C;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: -.16rem;
+        }
+        .box>.top .right{
+            position: absolute;
+            width: 2.71rem;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-color: #004A95;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items:  center;
+        }
+        .box>.top .right>div{
+            position: relative;
+            width: 1.4rem;
+            /*height: 1.1rem;*/
+            /*background-color: #fff;*/
+            font-size: .12rem;
+            color: #fff;
+        }
+        .box>.top .right>div>img{
+            margin: 0 auto;
+        }
+        .box>.top .right>div>div{
+            width: 100%;
+            text-align: center;
+            margin-top: .3rem;
+        }
+        .box>.top .right .address>img{
+            width: .35rem;
+        }
+        .box>.top .right .tel>img{
+            width: .46rem;
+        }
+        .box>.top .right .fax>img{
+            width: .41rem;
+        }
+        .box>.top .right .zip>img{
+            width: .41rem;
+        }
+
+        .box>.bot{
+            position: absolute;
+            width: 92%;
+            border-top: 1px solid #DDDDDD;
+            left: 4%;
+            top: 8.05rem;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            font-family: '微软雅黑';
+        }
+        .box>.bot>div{
+            margin-top: .9rem;
+            width: 33%;
+            position: relative;
+            height: .48rem;
+        }
+        .box>.bot>div:nth-child(2){
+            border-left: 2px solid #DDDDDD;
+            border-right: 2px solid #DDDDDD;
+        }
+        .box>.bot>div>.title{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: -.4rem;
+            color: #848484;
+            font-size: .14rem;
+            font-weight: 900;
+        }
+        .box>.bot>div .bbox{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+        .box>.bot>div .bbox>div:nth-child(1){
+            font-size: .3rem;
+            font-weight: 900;
+            color: #004a95;
+            white-space:nowrap;
+        }
+        .box>.bot>div .bbox>div:nth-child(2){
+            font-size: .12rem;
+            color: #848484;
+        }
+        .box>.bot>div .bbox>img{
+            position: absolute;
+            height: .4rem;
+            top: .125rem;
+            left: -.5rem;
+        }
+        .box>.bot>div .btn{
+            position: absolute;
+            width: 1.4rem;
+            height: .4rem;
+            top: 50%;
+            left: 50%;
+            font-size: .12rem;
+            text-align: center;
+            line-height: .4rem;
+            border-radius: 1rem;
+            background-color: #E50112;
+            color: #fff;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        #up{
+            position: absolute;
+            height: .44rem;
+            left: 50%;
+            top: 4.56rem;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body ondragstart="return false">
+<img class='bg' src="../../images/pc/relation/bg.jpg" alt="">
+<img id='up' src="../../images/pc/up.png" alt="">
+<div class="box bx">
+    <div class="title">联系我们
+        <div class="borderB"></div>
+    </div>
+    <div class="top">
+        <div class="left">
+            <div class="change">
+                <div class="title">点击切换地点：</div>
+                <div class="changebox SHA">
+                    <div class='show'>上海君实生物医药科技股份有限公司</div>
+                    <div class=''>上海君实生物工程有限公司（上海生产基地）</div>
+                </div>
+            </div>
+            <div class="map">
+                <img class='bg' src="../../images/pc/relation/mapSH.png" alt="">
+                <div class='shanghai'></div>
+                <!--<div class='beijing'></div>-->
+                <div class='suzhou'></div>
+                <!--<div class='guangzhou'></div>-->
+                <div class='malilan'></div>
+                <div class='jiujinshan'></div>
+            </div>
+            <img class='up' src="../../images/pc/relation/up.png" alt="">
+        </div>
+        <div class="right">
+            <div class='address'>
+                <img src="../../images/pc/relation/address.png" alt="">
+                <div>上海市浦东新区海趣路36号、58号2幢13层</div>
+            </div>
+            <div class='tel'>
+                <img src="../../images/pc/relation/tel.png" alt="">
+                <div>021-22500300</div>
+            </div>
+            <div class='fax'>
+                <img src="../../images/pc/relation/fax.png" alt="">
+                <div>021-80164691</div>
+            </div>
+            <div class='zip'>
+                <img src="../../images/pc/relation/zip.png" alt="">
+                <div>201203</div>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+        <div>
+            <div class="title">医学咨询及不良事件上报</div>
+            <div class="bbox">
+                <div>4000-0808-66</div>
+                <div>(工作日9:00~17:30)</div>
+                <img src="../../images/pc/relation/bigTEL.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="title">医学信息咨询（医疗专业人士）</div>
+            <div class="btn btn1">点击进入系统</div>
+        </div>
+        <div>
+            <div class="title">不良事件上报</div>
+            <div class="btn btn2">点击进入系统</div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div id="bot" class="page">
+    <div class="content">
+        <div class="bx">
+            <div class="logo">
+                <img src="../../images/pc/logo.png" alt="">
+            </div>
+            <div class="">
+                <div class="btn">网站首页</div>
+                <div class="btn">关于我们</div>
+                <div class="btn">治疗领域</div>
+            </div>
+            <div class="">
+                <div class="btn">新闻资讯</div>
+                <div class="btn">人才招聘</div>
+                <div class="btn">投资者关系</div>
+            </div>
+            <div class="">
+                <div class="btn">联系我们</div>
+                <div class="btn">不良事件通报平台</div>
+            </div>
+            <div class="">
+                <div class="">联系我们</div>
+                <div class="">电话：（021）20248288</div>
+                <div class="">传真：（86）21-50796192</div>
+                <div class="">地址：中国上海市张江高科技园蔡伦路781号6楼602室</div>
+            </div>
+            <div class="rwm">
+                <img src="../../images/pc/index/rwm1.png" alt="">
+                <img src="../../images/pc/index/rwm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="ICP">Copyright-上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号</div>
+</div>
+<!--导航条-->
+<div id="nav">
+    <div class="bx">
+        <div class="logo">
+            <img src="../../images/pc/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <div class="indexBtn">网站首页</div>
+            <div class="asBtn">关于君实</div>
+            <div class="territoryBtn">治疗领域</div>
+            <div class="newsBtn">新闻资讯</div>
+            <div class="joinBtn">加入我们</div>
+            <div class="investBtn">投资者关系</div>
+            <div class="relationBtn show">联系我们</div>
+            <div class="languageBtn">
+                <div class="chinses btn">简</div>
+                <div>|</div>
+                <div class="complex btn">繁</div>
+                <div>|</div>
+                <div class="engligh btn">EN</div>
+            </div>
+            <div class="staffBtn">员工入口</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/pc/PCcommon.js?t=1"></script>
+<!--<script src="../../js/animate.js"></script>-->
+<!--<script src="../../js/pc/index.js"></script>-->
+<script>
+    $('.changebox>div:nth-child(1)').on('click',function () {
+        if($(this).parent().hasClass('SHA')){
+            $(this).next().removeClass('show');
+            $(this).addClass('show');
+            $('.address>div').html('上海市浦东新区海趣路36号、58号2幢13层');
+            $('.tel>div').html('021-22500300');
+            $('.fax>div').html('021-80164691');
+            $('.zip>div').html('201203');
+        }else if($(this).parent().hasClass('SZV')){
+            $(this).next().removeClass('show');
+            $(this).addClass('show');
+            $('.address>div').html('江苏省苏州市吴江区庞杨路8号');
+            $('.tel>div').html('0512-63937908');
+            $('.fax>div').html('0512-86876920');
+            $('.zip>div').html('215200');
+        }
+    })
+
+    $('.changebox>div:nth-child(2)').on('click',function () {
+        if($(this).parent().hasClass('SHA')){
+            $(this).prev().removeClass('show');
+            $(this).addClass('show');
+            $('.address>div').html('上海浦东新区上科路88号豪威科技园西塔605室');
+            $('.tel>div').html('021-61040024');
+            $('.fax>div').html('暂无信息');
+            $('.zip>div').html('201210');
+        }else if($(this).parent().hasClass('SZV')){
+            $(this).prev().removeClass('show');
+            $(this).addClass('show');
+            $('.address>div').html('江苏省苏州市吴江区龙桥路999号');
+            $('.tel>div').html('0512-63036200');
+            $('.fax>div').html('暂无信息');
+            $('.zip>div').html('215200');
+        }
+    })
+
+//    上海1
+    $('.map .shanghai').on('click',function () {
+        $('.map .bg').attr('src','../../images/pc/relation/mapSH.png');
+        $('.changebox').removeClass('SZV');
+        $('.changebox').addClass('SHA');
+        $('.changebox>div:nth-child(1)').html('上海君实生物医药科技股份有限公司');
+        $('.changebox>div:nth-child(2)').html('上海君实生物工程有限公司（上海生产基地）');
+        $('.changebox>div:nth-child(1)').addClass('show');
+        $('.change').show();
+        $('.address>div').html('上海市浦东新区海趣路36号、58号2幢13层');
+        $('.tel>div').html('021-22500300');
+        $('.fax>div').html('021-80164691');
+        $('.zip>div').html('201203');
+    })
+
+//    苏州1
+    $('.map .suzhou').on('click',function () {
+        $('.map .bg').attr('src','../../images/pc/relation/mapSZ.png');
+        $('.changebox').removeClass('SHA');
+        $('.changebox').addClass('SZV');
+        $('.changebox>div:nth-child(1)').html('苏州君盟生物医药科技有限公司（苏州研发中心）');
+        $('.changebox>div:nth-child(2)').html('苏州众合生物医药科技有限公司（苏州中试/生产基地）');
+        $('.changebox>div:nth-child(1)').addClass('show');
+        $('.change').show();
+        $('.address>div').html('江苏省苏州市吴江区庞杨路8号');
+        $('.tel>div').html('0512-63937908');
+        $('.fax>div').html('0512-86876920');
+        $('.zip>div').html('215200');
+    })
+
+//    旧金山
+    $('.map .jiujinshan').on('click',function () {
+        $('.map .bg').attr('src','../../images/pc/relation/mapJJS.png');
+        $('.changebox').removeClass('SHA SZV');
+        $('.change').hide();
+        $('.address>div').html('3475-1 Edison Way, Menlo Park, CA 94025, USA');
+        $('.tel>div').html('暂无信息');
+        $('.fax>div').html('暂无信息');
+        $('.zip>div').html('CA 94025');
+    })
+
+//    马里兰
+    $('.map .malilan').on('click',function () {
+        $('.map .bg').attr('src','../../images/pc/relation/mapMLL.png');
+        $('.changebox').removeClass('SHA SZV');
+        $('.change').hide();
+        $('.address>div').html('9430 Key West Ave Suite 125, rockville, MD 20850, USA');
+        $('.tel>div').html('301-640-5166');
+        $('.fax>div').html('301-640-5167');
+        $('.zip>div').html('MD 20850');
+    })
+
+//    医学信息咨询（医疗专业人士）
+    $('.bot .btn1').on('click',function () {
+//        window.location.href = 'index1.html';
+    })
+
+//    不良事件上报
+    $('.bot .btn2').on('click',function () {
+//        window.location.href = 'index1.html';
+    })
+</script>
+</html>

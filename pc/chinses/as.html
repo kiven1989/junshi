@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripion" content="">
+    <meta name="keywords" content="">
+    <title>君实生物</title>
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/pc/PCcommon.css?t=5">
+    <!--<link rel="stylesheet" href="../../css/pc/myanimate.css">-->
+    <!--<link rel="stylesheet" href="../../css/pc/index.css?t=1">-->
+    <style>
+        .bx{
+            height: 100%;
+        }
+        .page,.page>.bg{
+            position: relative;
+            width: 100%;
+        }
+        .page2{
+            margin-top: -.9rem;
+        }
+        .page2 .up{
+            position: absolute;
+            height: .44rem;
+            left: 50%;
+            top: .47rem;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .page2 .bx>.title {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .34rem;
+            top: 1.5rem;
+        }
+        .page2 .bx>.title .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+        .page2 .grouping{
+            margin-left: 4.11rem;
+            position: relative;
+            width: 4.91rem;
+            display: none;
+        }
+        .page2 .grouping .title{
+            font-family: Heavy;
+            font-size: .21rem;
+            color: #575757;
+            letter-spacing: 1px;
+        }
+        .page2 .grouping .text{
+            font-family: Regular;
+            font-size: .14rem;
+            color: #666666;
+            margin-top: .24rem;
+        }
+        .page2 .grouping1{
+            margin-top: 3.5rem;
+        }
+        .page2 .grouping1>img{
+            position: absolute;
+            width: 3rem;
+            left: -3.52rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .page2 .grouping2{
+            margin-top: 1.6rem;
+        }
+        .page2 .grouping2>img{
+            position: absolute;
+            width: 3.04rem;
+            right: -3.4rem;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .page3 .up{
+            position: absolute;
+            height: .44rem;
+            left: 50%;
+            top: -.44rem;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .page3 .up2{
+            position: absolute;
+            height: .44rem;
+            left: 50%;
+            bottom: 0;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .page3 .bx{
+            height: 100%;
+        }
+        .page3 .bx>.title {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #fff;
+            left: .34rem;
+            top: .45rem;
+        }
+
+        .page3 .bx>.title .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #F3EFF0;
+            border-radius: .04rem;
+        }
+        .page3 .bx .smallTitle{
+            position: absolute;
+            font-size: .16rem;
+            font-family: Regular;
+            color: #F3EFF0;
+            top: 1.1rem;
+            left: .34rem;
+        }
+        .page3 .bx .grouping{
+            position: absolute;
+            display: none;
+        }
+        .page3 .bx .grouping .text{
+            position: absolute;
+            font-family: Bold;
+            font-size: .2rem;
+            line-height: .31rem;
+            color: #fff;
+            letter-spacing: 1px;
+            white-space:nowrap;
+        }
+        .page3 .bx .grouping .text .lineBox{
+            position: absolute;
+            width: 100%;
+            height: .04rem;
+            background-color: #6791BB;
+            bottom:-.2rem;
+            border-radius: 50px;
+        }
+        .page3 .bx .text .lineBox .line{
+            position: absolute;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 50px;
+        }
+        .page3 .bx .grouping1 .text .lineBox .line,.page3 .bx .grouping3 .text .lineBox .line{
+            right: 0;
+        }
+        .page3 .bx .text .lineBox .ball{
+            position: absolute;
+            width: .14rem;
+            height: .14rem;
+            border-radius: 50%;
+            background-color: #fff;
+            top: -.05rem;
+            left: 0%;
+            z-index:1;
+        }
+        .page3 .bx .grouping1 .text .lineBox .ball,.page3 .bx .grouping3 .text .lineBox .ball{
+            left: 99%;
+        }
+        .page3 .bx .grouping1{
+            left: 3.35rem;
+            top: 2.95rem;
+        }
+        .page3 .bx .grouping1 .text{
+            top: .15rem;
+            left: -110%;
+        }
+        .page3 .bx .grouping1 .text::before{
+            position: absolute;
+            content: '';
+            width: .1rem;
+            height: .1rem;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 7px;
+            right: -14px;
+        }
+        .page3 .bx .grouping2{
+            left: 5.55rem;
+            top: 2.59rem;
+        }
+        .page3 .bx .grouping2 .text{
+            top: .15rem;
+            left: 120%;
+        }
+        .page3 .bx .grouping2 .text::before{
+            position: absolute;
+            content: '';
+            width: .1rem;
+            height: .1rem;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 7px;
+            left: -14px;
+        }
+        .page3 .bx .grouping3{
+            left: 4.55rem;
+            top: 4.73rem;
+        }
+        .page3 .bx .grouping3 .text{
+            bottom: 0;
+            left: -140%;
+        }
+        .page3 .bx .grouping3 .text::before{
+            position: absolute;
+            content: '';
+            width: .1rem;
+            height: .1rem;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 7px;
+            right: -14px;
+        }
+        .page3 .bx .grouping4{
+            left: 6.73rem;
+            top: 4.4rem;
+        }
+        .page3 .bx .grouping4 .text{
+            bottom: 0;
+            left: 120%;
+        }
+        .page3 .bx .grouping4 .text::before{
+            position: absolute;
+            content: '';
+            width: .1rem;
+            height: .1rem;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 7px;
+            left: -14px;
+        }
+        .page3 .bx .grouping1>img,.page3 .bx .grouping2>img{
+            width: 2.05rem;
+        }
+        .page3 .bx .grouping3>img,.page3 .bx .grouping4>img{
+            width: 1.99rem;
+        }
+
+        .page4 .bx{
+            height: 100%;
+        }
+        .page4 .bx>.title1 {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .34rem;
+            top: .55rem;
+        }
+        .page4 .bx>.title1 .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+        .page4 .bx>.title2 {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .34rem;
+            top: 7.22rem;
+        }
+
+        .page4 .bx>.title2 .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+        .page4 .bx .smallTitle{
+            position: absolute;
+            font-size: .16rem;
+            font-family: Regular;
+            color: #606060;
+            top: 1.2rem;
+            left: .34rem;
+        }
+        .page4 .bx .logobox{
+            position: relative;
+            margin:2.66rem auto 0 auto;
+            width: 2.56rem;
+        }
+        .page4 .bx .logobox>.bg{
+            width: 100%;
+        }
+        .page4 .bx .logobox .icon1{
+            position: absolute;
+            width: 2.76rem;
+            top: -.44rem;
+            left: -2.46rem;
+        }
+        .page4 .bx .logobox .icon2{
+            position: absolute;
+            width: 3.85rem;
+            top: -.44rem;
+            right: -3.54rem;
+        }
+        .page4 .bx .logobox .icon3{
+            position: absolute;
+            width: 4.21rem;
+            top: 2.1rem;
+            left: .68rem;
+        }
+        .page4 .bx .logobox .botBall{
+            position: relative;
+            width: .3rem;
+            height: .3rem;
+            border-radius: 50%;
+            background-color: #DDDDDD;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            margin-top: .13rem;
+        }
+        .page4 .bx .logobox .botBall:nth-child(5){
+            margin-top: 1.2rem;
+        }
+        .page4 .swiperBox{
+            width: 4.86rem;
+            margin:.27rem auto 0 auto;
+            position: relative;
+        }
+        .page4 .swiperBox>.bg{
+            width: 100%;
+        }
+        .page4 .banner{
+            position: absolute;
+            width: 100%;
+            left: 0%;
+            height: 2.6rem;
+            top: 70%;
+            /*background-color: rgba(1,1,1,0.1);*/
+        }
+        .page4 .banner .every{
+            position: absolute;
+            border-radius: 50%;
+            /*border: .05rem solid #024A96;*/
+            /*box-sizing: border-box;*/
+            overflow: hidden;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+        .page4 .banner .every .shade{
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            top: 50%;
+            left: 50%;
+            background: rgba(255,255,255,0.9);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+        .page4 .banner .every>img{
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        #swiper2{
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            height: 60%;
+            top: 0%;
+        }
+        #swiper2 .swiper-slide{
+            width: 100%;
+            height: 100%;
+        }
+        #swiper2 .swiper-slide .title{
+            margin-top: 1.3rem;
+            width: 100%;
+            text-align: center;
+            font-family: Bold;
+            font-size: .35rem;
+            color: #004A95;
+        }
+        #swiper2 .swiper-slide .text{
+            margin-top:.05rem;
+            width: 100%;
+            text-align: center;
+            font-family: Regular;
+            font-size: .2rem;
+            color: #535353;
+        }
+        .page4 .up{
+            position: absolute;
+            height: .44rem;
+            left: 50%;
+            bottom: 0;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .page4 .prevBtn,.page4 .nextBtn{
+            position: absolute;
+            font-size: .5rem;
+            font-weight: 900;
+            color: #A4A4A4;
+            top: 55%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            cursor: pointer;
+            outline: none;
+        }
+        .page4 .prevBtn{
+            left: -.8rem;
+            opacity: .2;
+        }
+        .page4 .nextBtn{
+            right: -.8rem;
+        }
+        .page4 .yearBox{
+            position: absolute;
+            width: .8rem;
+            height: 4.13rem;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: .27rem;
+            left: 6.5rem;
+            border-left: 1px solid #ECECEC;
+        }
+        .page4 .yearBox>div{
+            position: relative;
+            font-family:Regular;
+            font-size: .2rem;
+            color: #929292;
+            text-align: right;
+            cursor: pointer;
+        }
+        .page4 .yearBox .show{
+            font-family:Bold;
+            color: #E60012;
+        }
+        .page4 .yearBox .show:before{
+            position: absolute;
+            content: '';
+            width: .32rem;
+            height: .24rem;
+            background: url("../../images/pc/as/red.png") no-repeat center;
+            background-size: 100% 100%;
+            top: 0;
+            left: -.15rem;
+        }
+
+        .page5 .bx>.title {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #fff;
+            left: .34rem;
+            top: .45rem;
+        }
+        .page5 .bx>.title .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #F3EFF0;
+            border-radius: .04rem;
+        }
+        #swiper3{
+            position: relative;
+            width: 9.75rem;
+            height: 5.4rem;
+            margin-left: .93rem;
+            margin-top: 1.22rem;
+        }
+        #swiper3 .swiper-slide{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #swiper3 .swiper-slide>img{
+            position: absolute;
+            width: 4.09rem;
+            top: 0;
+            left: 0;
+        }
+        #swiper3 .swiper-slide .name{
+            position: absolute;
+            font-family: Bold;
+            color: #fff;
+            font-size: .46rem;
+            left: 3.75rem;
+            top: .7rem;
+        }
+        #swiper3 .swiper-slide .job{
+            position: absolute;
+            font-family: Medium;
+            color: #fff;
+            font-size: .22rem;
+            left: 3.75rem;
+            top: 1.3rem;
+        }
+        #swiper3 .swiper-slide .brBox{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 5rem;
+        }
+        #swiper3 .swiper-slide .title{
+            position: relative;
+            font-family: Normal;
+            color: #fff;
+            font-size: .2rem;
+            width: 100%;
+        }
+        #swiper3 .swiper-slide .text{
+            position: relative;
+            font-family: Regular;
+            color: #fff;
+            font-size: .14rem;
+            margin-top: .12rem;
+            width: 100%;
+        }
+        .page5 .swiper3-button-next{
+            position: absolute;
+            width: .48rem;
+            height: .55rem;
+            background: url("../../images/pc/as/next.png") no-repeat center;
+            background-size: 100% 100%;
+            right: 1.3rem;
+            top: 4.7rem;
+            outline: none;
+        }
+        .page5 .swiper3-pagination{
+            position: absolute;
+            height: .1rem;
+            left: 50%;
+            bottom: .77rem;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            display: -webkit-flex;
+            display: flex;
+        }
+        .page5 .swiper3-pagination>span{
+            height: .1rem;
+            width: .1rem;
+            background-color: #C5C5C5;
+            margin:0 .14rem;
+        }
+        .page5 .swiper3-pagination>.swiper-pagination-bullet-active{
+            background-color: #D91312;
+        }
+
+        .page6 .bx>.title {
+            position: absolute;
+            font-family: Medium;
+            font-size: .24rem;
+            color: #3e3a39;
+            left: .34rem;
+            top: .55rem;
+        }
+        .page6 .bx>.title .borderB {
+            width: 100%;
+            height: .1rem;
+            background-color: #004a95;
+            border-radius: .04rem;
+        }
+        .page6 .bx>.smallTitle{
+            font-family: Regular;
+            font-size: .16rem;
+            color: #535353;
+            width: 100%;
+            padding:0 .34rem;
+            box-sizing: border-box;
+            margin-top: 1.1rem;
+        }
+        .page6 .bx .box{
+            position: relative;
+            width: 12.58rem;
+            margin:.8rem auto 0 auto;
+        }
+        .page6 .bx .box>.bg{
+            width: 100%;
+        }
+        .USAbox{
+            position: absolute;
+            width: 2.6rem;
+            left: 2%;
+            top: 19%;
+            /*cursor: pointer;*/
+        }
+        .USAbox .jjs{
+            position: absolute;
+            height: 1.6rem;
+            top: -75%;
+            left: 115%;
+        }
+        .USAbox .jjs .btn{
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            /*background-color: rgba(1,1,1,0.2);*/
+            z-index:1;
+            cursor: pointer;
+            left: .15rem;
+            top: .15rem;
+        }
+        .USAbox .jjs .light{
+            position: absolute;
+            width: 4.17rem;
+            left: -3rem;
+            top: 3%;
+        }
+        .USAbox .jjs .text,.USAbox .mll .text{
+            position: absolute;
+            white-space: nowrap;
+            color: #535353;
+            font-family: Regular;
+            font-size: .16rem;
+            top: 1.3rem;
+            left: 1.5rem;
+        }
+        .USAbox .mll .text{
+            display: none;
+        }
+        .USAbox .mll{
+            position: absolute;
+            height: 1.6rem;
+            top: 20%;
+            left: 100%;
+        }
+        .USAbox .mll .btn{
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            /*background-color: rgba(1,1,1,0.2);*/
+            z-index:1;
+            cursor: pointer;
+            left: .15rem;
+            top: .15rem;
+        }
+        .USAbox .mll .light{
+            position: absolute;
+            width: 3.5rem;
+            left: -2.3rem;
+            top: 15%;
+            -webkit-transform: rotate(20deg);
+            -moz-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -o-transform: rotate(20deg);
+            transform: rotate(20deg);
+            transform-origin: top right;
+            display: none;
+        }
+
+        .USAbox>img,.CHINAbox>img{
+            position: relative;
+            width: 100%;
+            cursor: pointer;
+        }
+        .USAbox .jjs>.bg,.USAbox .mll>.bg{
+            position: relative;
+            height: 100%;
+        }
+        .CHINAbox{
+            position: absolute;
+            width: 2.12rem;
+            left: 67%;
+            top: 17%;
+        }
+
+        .CHINAbox .sh{
+            position: absolute;
+            height: 1.6rem;
+            top: -70%;
+            right: 120%;
+            display: none;
+        }
+        .CHINAbox .sh .btn{
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            /*background-color: rgba(1,1,1,0.2);*/
+            z-index:1;
+            cursor: pointer;
+            right: .15rem;
+            top: .15rem;
+        }
+        .CHINAbox .sh .light{
+            position: absolute;
+            width: 3.6rem;
+            left: 2.6rem;
+            top: -1%;
+        }
+        .CHINAbox .sh .text,.CHINAbox .sz .text{
+            position: absolute;
+            white-space: nowrap;
+            color: #535353;
+            font-family: Regular;
+            font-size: .16rem;
+            top: 1.8rem;
+            text-align: left;
+            right: 0rem;
+        }
+        .CHINAbox .sh>.bg,.CHINAbox .sz>.bg{
+            position: relative;
+            height: 100%;
+        }
+        .CHINAbox .sz{
+            position: absolute;
+            height: 1.6rem;
+            top: 40%;
+            right: 100%;
+            display: none;
+        }
+        .CHINAbox .sz .btn{
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            /*background-color: rgba(1,1,1,0.2);*/
+            z-index:1;
+            cursor: pointer;
+            right: .15rem;
+            top: .15rem;
+        }
+        .CHINAbox .sz .light{
+            position: absolute;
+            width: 3rem;
+            left: 2.3rem;
+            top: 37%;
+            -webkit-transform: rotate(-25deg);
+            -moz-transform: rotate(-25deg);
+            -ms-transform: rotate(-25deg);
+            -o-transform: rotate(-25deg);
+            transform: rotate(-40deg);
+            transform-origin: top left;
+        }
+    </style>
+</head>
+<body ondragstart="return false">
+    <div class="page page1">
+        <img class='bg' src="../../images/pc/as/page1bg.jpg" alt="">
+    </div>
+    <div class="page page2">
+        <img class='bg' src="../../images/pc/as/page2bg.png" alt="">
+        <img class='up' src="../../images/pc/up.png" alt="">
+        <div class="bx">
+            <div class="title">关于君实
+                <div class="borderB"></div>
+            </div>
+            <div class="grouping grouping1 animated fadeInLeft">
+                <div class="title">关于我们</div>
+                <div class="text">君实生物是一家创新驱动型生物制药公司，致力于创新药物的发现和开发，以及在全球范围内的临床研发及商业化。</div>
+                <img src="../../images/pc/as/page2-1.png" alt="">
+            </div>
+            <div class="grouping grouping2 animated fadeInRight">
+                <div class="title">创新领域</div>
+                <div class="text">我们的创新领域将扩展至包括小分子药物和抗体药物偶联物（或ADCs）等更多类型的药物研发，以及对癌症和自身免疫性疾病下一代创新疗法的探索。</div>
+                <img src="../../images/pc/as/page2-2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="page page3">
+        <img class='bg' src="../../images/pc/as/page3bg.jpg" alt="">
+        <img class='up' src="../../images/pc/up2.png" alt="">
+        <div class="bx">
+            <div class="title">我们的使命
+                <div class="borderB"></div>
+            </div>
+            <div class="smallTitle">我们是一家创新驱动型生物制药公司，致力于全球范围内创新药物的发现，开发，临床研发及商业化。</div>
+            <div class="grouping grouping1 animated fadeInLeft">
+                <img src="../../images/pc/as/part3-1.png" alt="">
+                <div class="text">
+                    为患者提供效果更好<br>花费更低的治疗选择
+                    <div class="lineBox"><div class="line"></div><div class="ball"></div></div>
+                </div>
+            </div>
+            <div class="grouping grouping2 animated fadeInDown">
+                <img src="../../images/pc/as/part3-2.png" alt="">
+                <div class="text">
+                    通过源头创新来开发首创（first- in-class）<br>或同类最优（best-in- class）的药物
+                    <div class="lineBox"><div class="line"></div><div class="ball"></div></div>
+                </div>
+            </div>
+            <div class="grouping grouping3 animated fadeInRight">
+                <img src="../../images/pc/as/part3-3.png" alt="">
+                <div class="text">
+                    成为转化医学领域的先锋
+                    <div class="lineBox"><div class="line"></div><div class="ball"></div></div>
+                </div>
+            </div>
+            <div class="grouping grouping4 animated fadeInUp">
+                <img src="../../images/pc/as/part3-4.png" alt="">
+                <div class="text">
+                    满足医疗需求和治愈病患
+                    <div class="lineBox"><div class="line"></div><div class="ball"></div></div>
+                </div>
+            </div>
+        </div>
+        <img class='up2' src="../../images/pc/up.png" alt="">
+    </div>
+    <div class="page page4">
+        <img class='bg' src="../../images/pc/as/page4bg.jpg" alt="">
+        <div class="bx">
+            <div class="title1">发展战略
+                <div class="borderB"></div>
+            </div>
+            <div class="title2">发展历程
+                <div class="borderB"></div>
+            </div>
+            <div class="smallTitle">我们计划成为一家集研发、生产和商业化于一体的全产业链运营集团，并具有全球竞争力的创新型生物制药公司。</div>
+            <div class="logobox">
+                <img class='bg' src="../../images/pc/as/logo.png" alt="">
+                <img class='icon icon1' src="../../images/pc/as/logo-1.png" alt="">
+                <img class='icon icon2' src="../../images/pc/as/logo-2.png" alt="">
+                <img class='icon icon3' src="../../images/pc/as/logo-3.png" alt="">
+                <div class="botBall"></div>
+                <div class="botBall"></div>
+                <div class="botBall"></div>
+                <div class="botBall"></div>
+                <div class="botBall"></div>
+                <div class="botBall"></div>
+            </div>
+            <div class="swiperBox">
+                <img class='bg' src="../../images/pc/as/part5bg2.png" alt="">
+                <div class="banner">
+                    <div class="every show" alt='2'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='3'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='4'>
+                        <img class='bg' src="../../images/pc/as/2015-3.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='0'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='1'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                </div>
+                <div class='swiper-container' id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">2012年5月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年4月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年3月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年2月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年1月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prevBtn">&lt;</div>
+                <div class="nextBtn">&gt;</div>
+                <div class="yearBox">
+                    <div class='show'>2012</div>
+                    <div>2015</div>
+                    <div>2016</div>
+                    <div>2017</div>
+                    <div>2018</div>
+                </div>
+            </div>
+        </div>
+        <img class='up' src="../../images/pc/up2.png" alt="">
+    </div>
+    <div class="page page5">
+        <img class='bg' src="../../images/pc/as/page5bg.jpg" alt="">
+        <div class="bx">
+            <div class="title">核心团队
+                <div class="borderB"></div>
+            </div>
+            <div class='swiper-container' id="swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head1.png" alt="">
+                        <div class="name">李宁博士</div>
+                        <div class="job">执行董事/首席执行官</div>
+                        <div class="brBox">
+                            <div class="title">主要负责制定业务策略及管理本集团运营事宜</div>
+                            <div class="text">
+                                李宁博士曾在美国FDA担任多项职务，包括肿瘤产品团队审评员，审评组长。后任职于赛诺菲集团，所担任的最后职位为全球监管事务亚洲监管事务及医学政策副总裁；并受聘北京大学临床研究所客座教授及北京大学医学信息学中心兼职教授。<br>
+                                李宁博士于1984年7月获得中国复旦大学上海医学院医学学士学位，于1987年7月获得中国复旦大学上海医学院医学硕士学位,并于1994年8月获得美国爱荷华大学预防医学博士学位。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head2.png" alt="">
+                        <div class="name">冯辉博士</div>
+                        <div class="job">执行董事/首席运营官</div>
+                        <div class="brBox">
+                            <div class="title">主要负责本集团的日常运营管理事宜。任君实生物工程执行董事及法律代表，苏州君盟的法律代表、执行董事兼总经理。冯辉博士参与本集团有关JS001、JS002及JS003的若干注册专利及申请中专利发明</div>
+                            <div class="text">
+                                冯辉博士于生物科技及药物发现行业有逾10年经验。其经验涉及药物研发的多个领域，包括抗体发现、蛋白质工程及肿瘤免疫疗法。曾任职于艾伯特爱因斯坦医学院；HumanZyme Inc.生产经理；MedImmune Inc.（阿斯利康之附属公司）科学家。<br>
+                                冯辉博士于1997年7月获得中国清华大学生物科学与技术专业学士学位，并于2003年9月获得美国艾伯特爱因斯坦医学院分子药理学医学博士学位，曾发表多篇学术论文，发明多项专利。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head3.png" alt="">
+                        <div class="name">张卓兵先生</div>
+                        <div class="job">执行董事/副总经理</div>
+                        <div class="brBox">
+                            <div class="title">任苏州众合医药的执行董事兼总经理</div>
+                            <div class="text">
+                                张卓兵先生在制药行业拥有10年以上经验。曾任上海众合医药的董事/副总经理，苏州众合医药法律代表、执行董事兼总经理、北京欣经科生物技术董事及北京天实董事。<br>
+                                张卓兵先生于1995年7月获得中国清华大学生物化学系硕士学位。张卓兵先生于2005年荣获山东地区发明奖一等奖。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head4.png" alt="">
+                        <div class="name">武海博士</div>
+                        <div class="job">执行董事/副总经理/首席科学官</div>
+                        <div class="brBox">
+                            <div class="title">主要负责本集团项目开发及研发，曾任TopAlliance财务总监、总裁。武海博士参与本集团有关JS002及JS003的若干注册及申请中专利发明</div>
+                            <div class="text">
+                                武海博士在生物制药行业拥有10年以上经验，曾任斯坦福大学担任博士后助理研究员、Trellis Biosciences科学家、、Amgen高级科学家。<br>
+                                武海博士于1994年7月获得中国南京大学生物化学系学士学位，并于2002年5月获得美国达拉斯西南医学中心得克萨斯大学博士学位。曾于《自然》(Nature)、《科学》(Science)及《欧洲分子生物学杂志》(EMBO)等学术期刊上发表了大约20篇关于生物制药的论文，发明多项专利。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head5.png" alt="">
+                        <div class="name">姚盛博士</div>
+                        <div class="job">执行董事/副总经理</div>
+                        <div class="brBox">
+                            <div class="title">TopAlliance的高级副总裁、苏州君奥董事。姚盛博士参与本集团有关JS002及JS003的若干注册专利及申请中专利发明</div>
+                            <div class="text">
+                                姚盛博士曾任梅奥医学院的免疫学研究人员、约翰霍普金斯大学医学院皮肤科研究员、耶鲁大学人类和转化免疫学系研究助理科学家、阿斯利康附属公司Amplimmune Inc.的高级科学家，负责肿瘤免疫及自身免疫性疾病抗体研究项目。<br>
+                                姚盛博士于1998年6月获得中国北京大学生命科学学院生物技术学士学位，并于2003年1月获得美国艾伯特爱因斯坦医学院博士学位。姚盛博士在国际学术期刊发表多篇文章，包括《自然通讯》（Nature Communications）、《科学进展》（Science Advances）、《免疫》（Immunity）、《Jem》、《Blood》及《JI》。姚盛博士亦是六项注册专利或实用专利的发明人。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head6.png" alt="">
+                        <div class="name">王刚博士</div>
+                        <div class="job">副总经理/首席质量官</div>
+                        <div class="brBox">
+                            <div class="title">工业事务高级副总裁兼首席质量官，全面负责公司的生产质量及相关工作</div>
+                            <div class="text">
+                                王刚博士拥有20年以上生物制品包括细胞和基因治疗产品评审、生产、批准前检查、CGMP（药品生产质量管理规范）合规检查、监管等领域的从业经验，曾任职于原国家食品药品监督管理总局（CFDA）药品审评中心（CDE），担任负责合规和检查的首席科学家，美国FDA驻华办公室助理主任、FDA生物制品审评和研究中心（CBER）资深审评员和GMP检查员、上海药明生物负责质量和全球监管事务的副总裁等职务。<br>
+                                王刚博士毕业于南京大学生物化学专业，并获得美国达特茅斯医学院（Dartmouth Medical School）药理学与毒理学博士学位。博士毕业后在美国国家卫生研究院（NIH）国家癌症中心（NCI）从事肿瘤免疫疗法领域的博士后研究，随后在德克萨斯州大学MD Anderson癌症中心任助理教授和课题负责人。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head7.png" alt="">
+                        <div class="name">韩净先生</div>
+                        <div class="job">副总经理</div>
+                        <div class="brBox">
+                            <div class="title">拥有近二十年跨国制药公司营销职能工作经验，以及3年临床医生经验。在加入君实生物之前，曾先后供职于默沙东制药有限公司、勃林格殷格翰制药有限公司、阿斯利康（无锡）制药有限公司、拜耳医药保健有限公司、罗氏制药有限公司，历任区域销售总监等职务</div>
+                            <div class="text">
+                                韩净先生1996年本科毕业于上海市第二医科大学临床医学系，并于2018年获得中欧国际商学院eMBA硕士学位。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head8.png" alt="">
+                        <div class="name">段鑫先生</div>
+                        <div class="job">副总经理</div>
+                        <div class="brBox">
+                            <div class="title">拥有近二十年肿瘤相关制药领域工作经验，以及五年临床医生经验。在加入君实之前，曾经先后供职于阿斯利康制药有限公司、拜耳医药保健有限公司、上海罗氏制药有限公司等跨国制药企业，以及本土企业齐鲁制药集团销售总公司，历任全国销售总监、事业部总经理等职务</div>
+                            <div class="text">
+                                段鑫先生1994年毕业于华北煤炭医学院（现华北理工大学），2017年毕业于中国人民大学，拥有工商管理硕士学位。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/pc/as/head9.png" alt="">
+                        <div class="name">原璐女士</div>
+                        <div class="job">财务总监</div>
+                        <div class="brBox">
+                            <div class="title">拥有10年以上财务管制经验，曾任陶氏化学（中国）有限公司的财务分析师（管培生）、博世（中国）有限公司基层干部项目财务管制人员、汉高（中国）投资有限公司BU-Adhesive Consumer China主管、费斯托（中国）有限公司亚太地区业务总管</div>
+                            <div class="text">
+                                原璐女士于2004年7月获得中国上海财经大学会计学院财务管理学士学位，并于2007年1月获得中国上海财经大学会计学院财务管理硕士学位。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper3-button-next"></div>
+            <div class="swiper3-pagination"></div>
+        </div>
+    </div>
+    <div class="page page6">
+        <img class='bg' src="../../images/pc/as/page6bg.jpg" alt="">
+        <div class="bx">
+            <div class="title">全球化布局
+                <div class="borderB"></div>
+            </div>
+            <div class="smallTitle">君实生物在苏州，美国旧金山和马里兰建成三个研发中心；在苏州吴江和上海临港设立两个生产基地，基地全程采用国际先进的一次性生产技术，可最大程度地避免交叉污染风险。目前吴江基地已取得《药品生产许可证》；临港基地（I期占地80亩，建筑面积约7万平米）的建设工作正在加紧进行。</div>
+            <div class="box">
+                <img class='bg' src="../../images/pc/as/mapbg.png" alt="">
+                <div class="USAbox">
+                    <img src="../../images/pc/as/USA.png" alt="">
+                    <div class="jjs">
+                        <div class="btn"></div>
+                        <img class='light' src="../../images/pc/as/usalight.png" alt="">
+                        <img class='bg' src="../../images/pc/as/jjs.png" alt="">
+                        <div class="text">
+                            肿瘤和自身免疫疾病领域已知与创新靶点的机制研究<br>
+                            药物发现<br>
+                            精确筛选药物分子
+                        </div>
+                    </div>
+                    <div class="mll">
+                        <div class="btn"></div>
+                        <img class='light' src="../../images/pc/as/usalight.png" alt="">
+                        <img class='bg' src="../../images/pc/as/mll-1.png" alt="">
+                        <div class="text">
+                            肿瘤和自身免疫疾病领域已知与创新靶点的机制研究<br>
+                            药物发现<br>
+                            精确筛选药物分子
+                        </div>
+                    </div>
+                </div>
+                <div class="CHINAbox">
+                    <img src="../../images/pc/as/CHINA-1.png" alt="">
+                    <div class="sh">
+                        <div class="btn"></div>
+                        <img class='light' src="../../images/pc/as/chinalight.png" alt="">
+                        <img class='bg' src="../../images/pc/as/sh.png" alt="">
+                        <div class="text">
+                            肿瘤和自身免疫疾病领域已知与创新靶点的机制研究<br>
+                            药物发现<br>
+                            精确筛选药物分子
+                        </div>
+                    </div>
+                    <div class="sz">
+                        <div class="btn"></div>
+                        <img class='light' src="../../images/pc/as/chinalight.png" alt="">
+                        <img class='bg' src="../../images/pc/as/sz-1.png" alt="">
+                        <div class="text">
+                            肿瘤和自身免疫疾病领域已知与创新靶点的机制研究<br>
+                            药物发现<br>
+                            精确筛选药物分子
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--底部-->
+<div id="bot" class="page">
+    <div class="content">
+        <div class="bx">
+            <div class="logo">
+                <img src="../../images/pc/logo.png" alt="">
+            </div>
+            <div class="">
+                <div class="btn">网站首页</div>
+                <div class="btn">关于我们</div>
+                <div class="btn">治疗领域</div>
+            </div>
+            <div class="">
+                <div class="btn">新闻资讯</div>
+                <div class="btn">人才招聘</div>
+                <div class="btn">投资者关系</div>
+            </div>
+            <div class="">
+                <div class="btn">联系我们</div>
+                <div class="btn">不良事件通报平台</div>
+            </div>
+            <div class="">
+                <div class="">联系我们</div>
+                <div class="">电话：（021）20248288</div>
+                <div class="">传真：（86）21-50796192</div>
+                <div class="">地址：中国上海市张江高科技园蔡伦路781号6楼602室</div>
+            </div>
+            <div class="rwm">
+                <img src="../../images/pc/index/rwm1.png" alt="">
+                <img src="../../images/pc/index/rwm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="ICP">Copyright-上海君实生物医药科技股份有限公司 All Rights Reserved. 沪ICP备14029724号</div>
+</div>
+<!--导航条-->
+<div id="nav">
+    <div class="bx">
+        <div class="logo">
+            <img src="../../images/pc/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <div class="indexBtn">网站首页</div>
+            <div class="asBtn show">关于君实</div>
+            <div class="territoryBtn">治疗领域</div>
+            <div class="newsBtn">新闻资讯</div>
+            <div class="joinBtn">加入我们</div>
+            <div class="investBtn">投资者关系</div>
+            <div class="relationBtn">联系我们</div>
+            <div class="languageBtn">
+                <div class="chinses btn">简</div>
+                <div>|</div>
+                <div class="complex btn">繁</div>
+                <div>|</div>
+                <div class="engligh btn">EN</div>
+            </div>
+            <div class="staffBtn">员工入口</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/pc/PCcommon.js?t=1"></script>
+<!--<script src="../../js/animate.js"></script>-->
+<!--<script src="../../js/pc/index.js"></script>-->
+<script>
+    var part2Flag = true;
+    var part3Flag = true;
+    var posArr = [
+        {
+            width:'1rem',
+            height:'1rem',
+            left:'10%',
+            top:'25%',
+            opacity:'0.8',
+            zindex:'1'
+        },
+        {
+            width:'1.56rem',
+            height:'1.56rem',
+            left:'25%',
+            top:'40%',
+            opacity:'0.4',
+            zindex:'2'
+        },
+        {
+            width:'2.6rem',
+            height:'2.6rem',
+            left:'50%',
+            top:'50%',
+            opacity:'0',
+            zindex:'3'
+        },
+        {
+            width:'1.56rem',
+            height:'1.56rem',
+            left:'75%',
+            top:'40%',
+            opacity:'0.4',
+            zindex:'2'
+        },
+        {
+            width:'1rem',
+            height:'1rem',
+            left:'90%',
+            top:'25%',
+            opacity:'0.8',
+            zindex:'1'
+        }
+    ];
+    var swiper2012 = `<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">2012年5月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年4月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年3月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年2月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2012年1月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                    </div>`;
+    var swiper2015 = `<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">2015年5月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2015年4月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2015年3月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2015年2月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                    </div>`;
+    var swiper2016 = `<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">2016年5月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2016年4月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2016年3月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                    </div>`;
+    var swiper2017 = `<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">2017年5月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2017年4月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2017年3月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="title">2017年2月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                    </div>`;
+    var swiper2018 = `<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">2018年5月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2018年4月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2018年3月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="title">2018年2月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">2018年1月</div>
+                            <div class="text">
+                                公司完成股份制改造，<br>
+                                更名为上海君实生物医药科技股份有限公司。
+                            </div>
+                        </div>
+                    </div>`;
+    var banner2012 = `<div class="every show" alt='2'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='3'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='4'>
+                        <img class='bg' src="../../images/pc/as/2015-3.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='0'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='1'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>`;
+    var banner2015 = `<div class="every show" alt='2'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='3'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='4'>
+                        <img class='bg' src="../../images/pc/as/2015-3.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='0'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>`;
+    var banner2016 = `<div class="every show" alt='2'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='3'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='4'>
+                        <img class='bg' src="../../images/pc/as/2015-3.png" alt="">
+                        <div class="shade"></div>
+                    </div>`;
+    var banner2017 = `<div class="every show" alt='2'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='3'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='4'>
+                        <img class='bg' src="../../images/pc/as/2015-3.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='0'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>`;
+    var banner2018 = `<div class="every show" alt='2'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='3'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='4'>
+                        <img class='bg' src="../../images/pc/as/2015-3.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='0'>
+                        <img class='bg' src="../../images/pc/as/2015-1.png" alt="">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="every" alt='1'>
+                        <img class='bg' src="../../images/pc/as/2015-2.png" alt="">
+                        <div class="shade"></div>
+                    </div>`;
+
+    var page4Flag = 1;
+    $('.banner .every').each(function (i, e) {
+        if(i < 3){
+            $(e).css({
+                'width':posArr[($(e).attr('alt')-0)].width,
+                'height':posArr[($(e).attr('alt')-0)].height,
+                'top':posArr[($(e).attr('alt')-0)].top,
+                'left':posArr[($(e).attr('alt')-0)].left,
+                'z-index':posArr[($(e).attr('alt')-0)].zindex
+            });
+            $(e).children('.shade').css('opacity',posArr[($(e).attr('alt')-0)].opacity);
+        }
+    })
+
+    var clickFlag = true;
+    console.log($('.banner .every').length)
+    $('.page4 .nextBtn').on('click',function () {
+        if(clickFlag){
+            clickFlag = false;
+//            $('.page4 .prevBtn').css('opacity',1);
+            var now = $('.banner .show');
+            if($(now).next().hasClass('every')){
+                $(now).removeClass('show');
+                $(now).next().addClass('show');
+                page4Flag +=1;
+                console.log(page4Flag)
+                if(page4Flag == 1){
+                    $('.banner .every').css('opacity',1);
+                    if($('.banner .every').length !== (2 || 3)){
+                        $('.banner .every:last-child').css('opacity',0);
+                    }
+                    if($('.banner .every').length > 4){
+                        $('.banner .every:nth-child('+($('.banner .every').length-1)+')').css('opacity',0);
+                    }
+                }else if(page4Flag == 2){
+                    $('.banner .every').css('opacity',1);
+                    if($('.banner .every').length > 4){
+                        $('.banner .every:last-child').css('opacity',0);
+                    }
+                }else if(page4Flag == 3){
+                    $('.banner .every').css('opacity',1);
+                }else if(page4Flag == 4){
+                    $('.banner .every').css('opacity',1);
+                    $('.banner .every:first').css('opacity',0);
+                }else if(page4Flag == 5){
+//                    $('.page4 .nextBtn').css('opacity',.2);
+                    $('.banner .every').css('opacity',1);
+                    $('.banner .every:first').css('opacity',0);
+                    $('.banner .every:nth-child(2)').css('opacity',0);
+                }
+                $('.banner .every').each(function (i, e) {
+                    if((($(e).attr('alt')-0)-1) < 0){
+                        $(e).attr('alt',5);
+                    }
+                    $(e).animate({
+                        'width':posArr[(($(e).attr('alt')-0)-1)].width,
+                        'height':posArr[(($(e).attr('alt')-0)-1)].height,
+                        'top':posArr[(($(e).attr('alt')-0)-1)].top,
+                        'left':posArr[(($(e).attr('alt')-0)-1)].left,
+                        'z-index':posArr[(($(e).attr('alt')-0)-1)].zindex
+                    },300,function () {
+                        $(e).children('.shade').css('opacity',posArr[(($(e).attr('alt')-0)-1)].opacity);
+                        $(e).attr('alt',(($(e).attr('alt')-0)-1));
+                        clickFlag = true;
+                    });
+                })
+            }else{
+                clickFlag = true;
+            }
+        }
+    })
+
+    $('.page4 .prevBtn').on('click',function () {
+        if(clickFlag){
+            clickFlag = false;
+//            $('.page4 .nextBtn').css('opacity',1);
+            var now = $('.banner .show');
+            if($(now).prev().hasClass('every')){
+                $(now).removeClass('show');
+                $(now).prev().addClass('show');
+                page4Flag -=1;
+                console.log(page4Flag)
+                if(page4Flag == 1){
+//                    $('.page4 .prevBtn').css('opacity',.2);
+                    if($('.banner .every').length !== (2 || 3)){
+                        $('.banner .every:last-child').css('opacity',0);
+                    }
+                    if($('.banner .every').length > 4){
+                        $('.banner .every:nth-child('+($('.banner .every').length-1)+')').css('opacity',0);
+                    }
+                }else if(page4Flag == 2){
+                    $('.banner .every').css('opacity',1);
+                    if($('.banner .every').length > 4){
+                        $('.banner .every:last-child').css('opacity',0);
+                    }
+                }else if(page4Flag == 3){
+                    $('.banner .every').css('opacity',1);
+                }else if(page4Flag == 4){
+                    $('.banner .every').css('opacity',1);
+                    $('.banner .every:first').css('opacity',0);
+                }else if(page4Flag == 5){
+                    $('.banner .every').css('opacity',1);
+                    $('.banner .every:first').css('opacity',0);
+                    $('.banner .every:nth-child(2)').css('opacity',0);
+                }
+                $('.banner .every').each(function (i, e) {
+                    if((($(e).attr('alt')-0)+1) > 4){
+                        $(e).attr('alt',-1);
+                    }
+                    $(e).animate({
+                        'width':posArr[(($(e).attr('alt')-0)+1)].width,
+                        'height':posArr[(($(e).attr('alt')-0)+1)].height,
+                        'top':posArr[(($(e).attr('alt')-0)+1)].top,
+                        'left':posArr[(($(e).attr('alt')-0)+1)].left,
+                        'z-index':posArr[(($(e).attr('alt')-0)+1)].zindex
+                    },300,function () {
+                        $(e).children('.shade').css('opacity',posArr[(($(e).attr('alt')-0)+1)].opacity);
+                        $(e).attr('alt',(($(e).attr('alt')-0)+1));
+                        clickFlag = true;
+                    });
+                })
+            }else{
+                clickFlag = true;
+            }
+        }
+    })
+
+    $('.page4 .yearBox>div').each(function (i, e) {
+        $(e).on('click',function () {
+            $('.page4 .yearBox>div').removeClass('show');
+            $(this).addClass('show');
+            page4Flag = 1;
+            if(i == 0){
+                $('#swiper2').html(swiper2012);
+                $('.banner').html(banner2012)
+            }else if(i == 1){
+                $('#swiper2').html(swiper2015);
+                $('.banner').html(banner2015)
+            }else if(i == 2){
+                $('#swiper2').html(swiper2016);
+                $('.banner').html(banner2016)
+            }else if(i == 3){
+                $('#swiper2').html(swiper2017);
+                $('.banner').html(banner2017)
+            }else if(i == 4){
+                $('#swiper2').html(swiper2018);
+                $('.banner').html(banner2018)
+            }
+            $('.banner .every').each(function (i, e) {
+                if(i < 3){
+                    $(e).css({
+                        'width':posArr[($(e).attr('alt')-0)].width,
+                        'height':posArr[($(e).attr('alt')-0)].height,
+                        'top':posArr[($(e).attr('alt')-0)].top,
+                        'left':posArr[($(e).attr('alt')-0)].left,
+                        'z-index':posArr[($(e).attr('alt')-0)].zindex
+                    });
+                    $(e).children('.shade').css('opacity',posArr[($(e).attr('alt')-0)].opacity);
+                }
+            })
+            setTimeout(function () {
+                swiper2.update();
+            },100)
+        })
+    })
+
+//    美国按钮
+    $('.page6 .USAbox>img').on('click',function () {
+        $('.page6 .USAbox>img').attr('src','../../images/pc/as/USA.png');
+        $('.page6 .USAbox .jjs .bg').attr('src','../../images/pc/as/jjs.png');
+        $('.page6 .USAbox .jjs .light').show();
+        $('.page6 .USAbox .jjs .text').show();
+        $('.page6 .USAbox .jjs').show();
+        $('.page6 .USAbox .mll .bg').attr('src','../../images/pc/as/mll-1.png');
+        $('.page6 .USAbox .mll .light').hide();
+        $('.page6 .USAbox .mll .text').hide();
+        $('.page6 .USAbox .mll').show();
+        $('.page6 .CHINAbox>img').attr('src','../../images/pc/as/CHINA-1.png');
+        $('.page6 .CHINAbox .sh').hide();
+        $('.page6 .CHINAbox .sz').hide();
+    })
+    //    中国按钮
+    $('.page6 .CHINAbox>img').on('click',function () {
+        $('.page6 .CHINAbox>img').attr('src','../../images/pc/as/CHINA.png');
+        $('.page6 .CHINAbox .sh .bg').attr('src','../../images/pc/as/sh.png');
+        $('.page6 .CHINAbox .sh .light').show();
+        $('.page6 .CHINAbox .sh .text').show();
+        $('.page6 .CHINAbox .sh').show();
+        $('.page6 .CHINAbox .sz .bg').attr('src','../../images/pc/as/sz-1.png');
+        $('.page6 .CHINAbox .sz .light').hide();
+        $('.page6 .CHINAbox .sz .text').hide();
+        $('.page6 .CHINAbox .sz').show();
+        $('.page6 .USAbox>img').attr('src','../../images/pc/as/USA-1.png');
+        $('.page6 .USAbox .jjs').hide();
+        $('.page6 .USAbox .mll').hide();
+    })
+
+//    旧金山按钮
+    $('.page6 .USAbox .jjs .btn').on('click',function () {
+        $('.page6 .USAbox .jjs .bg').attr('src','../../images/pc/as/jjs.png');
+        $('.page6 .USAbox .jjs .light').show();
+        $('.page6 .USAbox .jjs .text').show();
+        $('.page6 .USAbox .jjs').show();
+        $('.page6 .USAbox .mll .bg').attr('src','../../images/pc/as/mll-1.png');
+        $('.page6 .USAbox .mll .light').hide();
+        $('.page6 .USAbox .mll .text').hide();
+        $('.page6 .USAbox .mll').show();
+    })
+//    马里兰按钮
+    $('.page6 .USAbox .mll .btn').on('click',function () {
+        $('.page6 .USAbox .jjs .bg').attr('src','../../images/pc/as/jjs-1.png');
+        $('.page6 .USAbox .jjs .light').hide(1);
+        $('.page6 .USAbox .jjs .text').hide(1);
+        $('.page6 .USAbox .jjs').show();
+        $('.page6 .USAbox .mll .bg').attr('src','../../images/pc/as/mll.png');
+        $('.page6 .USAbox .mll .light').show();
+        $('.page6 .USAbox .mll .text').show();
+        $('.page6 .USAbox .mll').show();
+    })
+
+//    上海按钮
+    $('.page6 .CHINAbox .sh .btn').on('click',function () {
+        $('.page6 .CHINAbox .sh .bg').attr('src','../../images/pc/as/sh.png');
+        $('.page6 .CHINAbox .sh .light').show();
+        $('.page6 .CHINAbox .sh .text').show();
+        $('.page6 .CHINAbox .sh').show();
+        $('.page6 .CHINAbox .sz .bg').attr('src','../../images/pc/as/sz-1.png');
+        $('.page6 .CHINAbox .sz .light').hide();
+        $('.page6 .CHINAbox .sz .text').hide();
+        $('.page6 .CHINAbox .sz').show();
+    })
+//    苏州按钮
+    $('.page6 .CHINAbox .sz .btn').on('click',function () {
+        $('.page6 .CHINAbox .sh .bg').attr('src','../../images/pc/as/sh-1.png');
+        $('.page6 .CHINAbox .sh .light').hide();
+        $('.page6 .CHINAbox .sh .text').hide();
+        $('.page6 .CHINAbox .sh').show();
+        $('.page6 .CHINAbox .sz .bg').attr('src','../../images/pc/as/sz.png');
+        $('.page6 .CHINAbox .sz .light').show();
+        $('.page6 .CHINAbox .sz .text').show();
+        $('.page6 .CHINAbox .sz').show();
+    })
+
+
+    $(window).scroll(function () {
+        var scroH = $(document).scrollTop();  //滚动高度
+        if(scroH >= ($('.page2').offset().top - $(window).height()/3) && part2Flag){
+            part2Flag = false;
+            $('.page2 .grouping').show();
+        }
+//        console.log(scroH,$('.page3').offset().top - $(window).height()/3)
+        if((scroH >= ($('.page3').offset().top - $(window).height()/3) && part3Flag)){
+            part3Flag = false;
+            $('.page3 .grouping1').show();
+            setTimeout(function () {
+                $('.page3 .grouping1 .text .line').animate({'width':'100%'},500);
+                $('.page3 .grouping1 .text .ball').animate({'left':'0%'},500);
+                $('.page3 .grouping2').show();
+                setTimeout(function () {
+                    $('.page3 .grouping2 .text .line').animate({'width':'100%'},500);
+                    $('.page3 .grouping2 .text .ball').animate({'left':'99%'},500);
+                    $('.page3 .grouping4').show();
+                    setTimeout(function () {
+                        $('.page3 .grouping4 .text .line').animate({'width':'100%'},500);
+                        $('.page3 .grouping4 .text .ball').animate({'left':'99%'},500);
+                        $('.page3 .grouping3').show();
+                        setTimeout(function () {
+                            $('.page3 .grouping3 .text .line').animate({'width':'100%'},500);
+                            $('.page3 .grouping3 .text .ball').animate({'left':'0%'},500);
+                        },300);
+                    },300);
+                },300);
+            },300);
+        }
+    })
+
+
+    var swiper2 = new Swiper('#swiper2', {
+//        loop : true,
+        speed: 300,//速度
+//        allowTouchMove: false,//无法滑动
+        effect : 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        navigation: {
+            nextEl: '.page4 .nextBtn',
+            prevEl: '.page4 .prevBtn',
+        },
+    })
+
+    var swiper3 = new Swiper('#swiper3', {
+        loop : true,
+        speed: 300,//速度
+        allowTouchMove: false,//无法滑动
+        effect : 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        navigation: {
+            nextEl: '.swiper3-button-next',
+//            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper3-pagination',
+            // clickable :true,
+        },
+    })
+</script>
+</html>

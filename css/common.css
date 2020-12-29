@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*css初始化*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, img, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, a, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    /*在移动端特殊的设置*/
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子的宽度以边框开始计算*/
+    -webkit-box-sizing: border-box;
+    /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+    box-sizing: border-box;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    display: block;
+}
+
+.rwm{
+    pointer-events: all;  /*识别图中二维码*/
+}
+
+html, body {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; /*防止卡顿*/
+}
+html { font-size:100px; }
+@media(max-width:540px){ html { font-size:84.375px; } } /*Android常用宽度*/
+@media(max-width:480px){ html { font-size:75px; } }		/*Android常用宽度*/
+@media(max-width:414px){ html { font-size:64.69px; } }  /*i6Plus,i7Plus宽度*/
+@media(max-width:375px){ html { font-size:58.59px; } }	/*i6,i7宽度*/
+@media(max-width:360px){ html { font-size:56.25px; } }	/*Android常用宽度*/
+@media(max-width:320px){ html { font-size:50px; } }		/*i5宽度*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+section, header {
+    display: block;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    /*border: none;*/
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a, a:link, a:hover {
+    text-decoration: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button { /*去掉按钮的默认样式*/
+
+    -webkit-appearance: none;
+
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+/*公共类*/
+/*左浮动*/
+.fl {
+    float: left;
+}
+
+/*右浮动*/
+.fr {
+    float: right;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+/*css初始化结束*/
+.bx{
+    width: 76%;
+}
+#mobile{
+    min-width: 3.2rem;/*适配小屏幕设备  为了保持布局的正常  设置比320px还小的屏幕的时候做适配*/
+    max-width: 6.4rem;/*在行业当中  设计图一般是640px 如果不限制那么图片就会被拉伸  页面的显示效果就差*/
+}
