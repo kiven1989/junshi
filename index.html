@@ -262,7 +262,57 @@
 			</div>
 			<div class="indexNews indexTrams">
 				<h2>新闻资讯</h2>
-				<ul>
+				<ul class="news-model">
+					<li>
+						<a href="">
+							<div class="img-box" style="background-image: url(http://121.42.10.139:8028/upload/file/20201214/151213/%E5%9B%BE%E5%B1%82%2023.png);">
+								<div class="mask">
+									<span>了解更多+</span>
+								</div>
+							</div>
+							<div class="news-content">
+								<h4>君实生物在香港联交所主板成功上市</h4>
+								<i></i>
+								<p>
+									君实生物成立于2012年12月，由毕业于中美两国知名学府、具有丰富跨国科技成果…
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img-box" style="background-image: url(http://121.42.10.139:8028/upload/file/20201225/160745/banner.png);">
+								<div class="mask">
+									<span>了解更多+</span>
+								</div>
+							</div>
+							<div class="news-content">
+								<h4>君实生物在香港联交所主板成功上市</h4>
+								<i></i>
+								<p>
+									君实生物成立于2012年12月，由毕业于中美两国知名学府、具有丰富跨国科技成果…
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img-box" style="background-image: url(http://121.42.10.139:8028/upload/file/20201225/171234/3.png);">
+								<div class="mask">
+									<span>了解更多+</span>
+								</div>
+							</div>
+							<div class="news-content">
+								<h4>君实生物在香港联交所主板成功上市</h4>
+								<i></i>
+								<p>
+									君实生物成立于2012年12月，由毕业于中美两国知名学府、具有丰富跨国科技成果…
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- <ul>
 					<li id="indexNews1">
 						<a href="">
 							<img class="btnTow" src="img/indenew.png" alt="">
@@ -302,7 +352,7 @@
 							</div>
 						</a>
 					</li>
-				</ul>
+				</ul> -->
 				<button onclick="location.href='NewsCenter.html'">了解更多+</button>
 			</div>
 		</div>
@@ -506,8 +556,8 @@
 							$(".rshow").show().removeClass("mm");
 							time = setTimeout(function () {
 								zizeng()
-							}, 2500)
-						}, 2000)
+							}, 1000)
+						}, 1000)
 
 						$(".jd >div").css("opacity", "0")
 						$(".lshow").hide()
@@ -527,8 +577,8 @@
 							$(".lshow").show().removeClass("mm");
 							time = setTimeout(function () {
 								zizeng()
-							}, 2500)
-						}, 2000)
+							}, 1000)
+						}, 1000)
 
 						$(".jd >div").css("opacity", "0")
 						$(".rshow").hide()
@@ -540,7 +590,7 @@
 		}
 		time = setTimeout(function () {
 			zizeng()
-		}, 2500)
+		}, 1000)
 		$(".innovate .w1300").mouseup(function (e) {
 			console.log('mouseup')
 			$(".Mypagination span").removeClass("on")
@@ -561,8 +611,8 @@
 								$(".rshow").show().removeClass("mm");
 								time = setTimeout(function () {
 									zizeng()
-								}, 2500)
-							}, 2000)
+								}, 1000)
+							}, 500)
 
 							$(".jd >div").css("opacity", "0")
 							$(".lshow").hide()
@@ -582,8 +632,8 @@
 								$(".lshow").show().removeClass("mm");
 								time = setTimeout(function () {
 									zizeng()
-								}, 2500)
-							}, 2000)
+								}, 1000)
+							}, 500)
 
 							$(".jd >div").css("opacity", "0")
 							$(".rshow").hide()
@@ -608,8 +658,8 @@
 								$(".rshow").show().removeClass("mm");
 								time = setTimeout(function () {
 									zizeng()
-								}, 2500)
-							}, 2000)
+								}, 1000)
+							}, 500)
 
 							$(".jd >div").css("opacity", "0")
 							$(".lshow").hide()
@@ -629,8 +679,8 @@
 								$(".lshow").show().removeClass("mm");
 								time = setTimeout(function () {
 									zizeng()
-								}, 2500)
-							}, 2000)
+								}, 1000)
+							}, 500)
 
 							$(".jd >div").css("opacity", "0")
 							$(".rshow").hide()
@@ -651,7 +701,7 @@
 		},
 		on: {
 			touchMove: function (swiper, event) {
-				你的事件
+				// 你的事件
 				console.log(111)
 			},
 		},
@@ -678,23 +728,23 @@
 			
 			
 			//news
-			$("#indexNews1 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[0].id)
-			$("#indexNews1 a>img").attr('src', imgurl + data.data.newslist[0].file2.img_url)
-			$("#indexNews1 a h3").text(data.data.newslist[0].title)
-			$("#indexNews1 a span").html(data.data.newslist[0].content)
-			if (data.data.newslist[1]) {
-				$("#indexNews2 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[1].id)
-				$("#indexNews2 a>img").attr('src', imgurl + data.data.newslist[1].file2.img_url)
-				$("#indexNews2 a h3").text(data.data.newslist[1].title)
-				$("#indexNews2 a span").html(data.data.newslist[1].content)
-			}
+			// $("#indexNews1 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[0].id)
+			// $("#indexNews1 a>img").attr('src', imgurl + data.data.newslist[0].file2.img_url)
+			// $("#indexNews1 a h3").text(data.data.newslist[0].title)
+			// $("#indexNews1 a span").html(data.data.newslist[0].content)
+			// if (data.data.newslist[1]) {
+			// 	$("#indexNews2 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[1].id)
+			// 	$("#indexNews2 a>img").attr('src', imgurl + data.data.newslist[1].file2.img_url)
+			// 	$("#indexNews2 a h3").text(data.data.newslist[1].title)
+			// 	$("#indexNews2 a span").html(data.data.newslist[1].content)
+			// }
 
-			if (data.data.newslist[2]) {
-				$("#indexNews3 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[2].id)
-				$("#indexNews3 a>img").attr('src', imgurl + data.data.newslist[2].file2.img_url)
-				$("#indexNews3 a h3").text(data.data.newslist[2].title)
-				$("#indexNews3 a span").html(data.data.newslist[2].content)
-			}
+			// if (data.data.newslist[2]) {
+			// 	$("#indexNews3 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[2].id)
+			// 	$("#indexNews3 a>img").attr('src', imgurl + data.data.newslist[2].file2.img_url)
+			// 	$("#indexNews3 a h3").text(data.data.newslist[2].title)
+			// 	$("#indexNews3 a span").html(data.data.newslist[2].content)
+			// }
 
 			$(".rotateBox .pqiu").hide()
 			var are = data.data.area
@@ -707,7 +757,7 @@
 					$(".rotateBox .pqiu").eq(i).find('div').text(are[i].title)
 				}
 				let html = ''
-
+				console.log('html', i)
 				html += ''
 					+ '<div class="domainCenter xic">'
 					+ '	<img src="' + imgurl + are[i].file.img_url + '" width="70"><br>'
@@ -807,9 +857,9 @@
 			}
 		})
 		$('.indexNews li').hover(function () {
-			$(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "0" })
-			$(this).find('.indexnewText').stop(true, true).css({"background":'#004A95'})
-			$(this).find('.btnTowDetail').stop(true, true).animate({ bottom: "0" })
+			// $(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "0" })
+			// $(this).find('.indexnewText').stop(true, true).css({"background":'#004A95'})
+			// $(this).find('.btnTowDetail').stop(true, true).animate({ bottom: "0" })
 
 		}, function () {
 			$(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "20px" })
