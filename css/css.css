@@ -78,7 +78,7 @@ color: #004A95;}
 
 .right .jd{ animation: op 2s .8s forwards ;}
 .right .jd div{ animation: op 2s 1.4s forwards ;}
-.right .ileft{animation: totiight 2s 0.4s forwards ;}
+.right .ileft{animation: totiight 2s cubic-bezier(.82,1.28,.94,1.39) 0.4s forwards ;}
 .right .ileft img{ animation: zd2 2s 0.4s forwards ; }
 .mm .jd .jdTitle{ animation: fadeInRight 1s  forwards ;}
 .mm .jd .jdInfo{ animation: fadeInRight 1s 0.4s forwards ;}
@@ -150,12 +150,21 @@ color: #004A95;}
 }
 @keyframes totiight{
 	0%{left:0px; transform: scale(1);}
-	65%{left:0px; transform: scale(1.6);}
+	30%{left:0px; transform: scale(1.6);}
+	60%{ left: 750px; transform: scale(1);}
+	70%{ left: 730px; transform: scale(1);}
+	80%{ left: 748px; transform: scale(1);}
+	90%{ left: 743px; transform: scale(1);}
 	100%{ left: 745px; transform: scale(1);}
 }
 @keyframes totiight1{
 	0%{left:745px; transform: scale(1);}
-	65%{left:745px; transform: scale(1.6);}
+	30%{left:745px; transform: scale(1.6);}
+
+	60%{ left: -5px; transform: scale(1);}
+	70%{ left: 10px; transform: scale(1);}
+	80%{ left: -2px; transform: scale(1);}
+	90%{ left: 2px; transform: scale(1);}
 	100%{ left: 0; transform: scale(1);}
 }
 @-webkit-keyframes fadeInRight{
