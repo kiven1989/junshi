@@ -2435,3 +2435,117 @@ line-height: 80px;
 .news-content p{
     line-height: 180%;
 }
+/* 大转盘样式 */
+.turnplate-zone{
+    padding: 20px;
+    border: 1px solid red;
+}
+.turnplate-zone dl{
+    display: flex;
+    align-items: center;
+}
+.turnplate-zone dl dt{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.turnplate-zone dl dd{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.turnplate-box{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.center-info{
+    width:360px;
+    height: 360px;
+    border-radius: 50%;
+    background: #fff;
+}
+.dial-wrap{
+    position:absolute;
+    width: 100px;
+    height: 118%;
+    background: #ff000059;
+    transform: rotate(90deg);
+}
+.dial-wrap li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+}
+/* .dial-wrap li:nth-child(1) {
+    transform: rotate(0deg);
+}
+.dial-wrap li:nth-child(1) .dial-item{
+    transform: rotate(-90deg);
+}
+.dial-wrap li:nth-child(2) {
+    transform: rotate(-72deg);
+}
+.dial-wrap li:nth-child(2) .dial-item{
+    transform: rotate(-30deg);
+}
+.dial-wrap li:nth-child(3) {
+    transform: rotate(-144deg);
+}
+.dial-wrap li:nth-child(3) .dial-item{
+    transform: rotate(30deg);
+}
+.dial-wrap li:nth-child(4) {
+    transform: rotate(-216deg);
+}
+.dial-wrap li:nth-child(4) .dial-item{
+    transform: rotate(90deg);
+}
+.dial-wrap li:nth-child(5) {
+    transform: rotate(-288deg);
+}
+.dial-wrap li:nth-child(5) .dial-item{
+    transform: rotate(150deg);
+} */
+/* .dial-wrap li:nth-child(6) {
+    transform: rotate(-300deg);
+}
+.dial-wrap li:nth-child(6) .dial-item{
+    transform: rotate(210deg);
+} */
+.dial-item{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #004A95;
+}
+.dial-item h6{
+    font-size: 12px;
+}
+
+/* 
+相加为
+0 -90 = -90
+-60 -30 = -90
+-120 30
+-180 90
+-240 150
+-300 210
+
+*/

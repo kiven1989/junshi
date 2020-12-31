@@ -152,7 +152,62 @@
 					治疗领域
 					<div class="line"></div>
 				</div>
-				<div class="domainIndex">
+				<div class="turnplate-zone">
+					<dl>
+						<dd>
+							<img src="img/l.png" width="45">
+						</dd>
+						<dt>
+							<div class="turnplate-box">
+								<div class="center-info">
+									center-info
+								</div>
+								<ul class="dial-wrap">
+									<!-- <li>
+										<div class="dial-item">
+											<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+											<h6>我我我我1</h6>
+										</div>
+									</li>
+									<li>
+										<div class="dial-item">
+											<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+											<h6>我我我我2</h6>
+										</div>
+									</li>
+									<li>
+										<div class="dial-item">
+											<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+											<h6>我我我我3</h6>
+										</div>
+									</li>
+									<li>
+										<div class="dial-item">
+											<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+											<h6>我我我我4</h6>
+										</div>
+									</li>
+									<li>
+										<div class="dial-item">
+											<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+											<h6>我我我我5</h6>
+										</div>
+									</li> -->
+									<!-- <li>
+										<div class="dial-item">
+											<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+											<h6>我我我我6</h6>
+										</div>
+									</li> -->
+								</ul>
+							</div>
+						</dt>
+						<dd>
+							<img src="img/r.png" width="45">
+						</dd>
+					</dl>
+				</div>
+				<!-- <div class="domainIndex">
 					<div class="zuo center">
 						<img src="img/l.png" width="45" />
 					</div>
@@ -221,10 +276,11 @@
 
 					</div>
 					<div id="HideIndex" style="display: none;"></div>
-				</div>
+				</div> -->
 			</div>
 			<img src="img/x1.png" width="338" class="x">
 		</div>
+
 		<div class="indexbtn">
 			<div class="indexCourse">
 				<img class="indexCourImg" src="img/indexbtn.png" alt="">
@@ -749,8 +805,14 @@
 			// 	$("#indexNews3 a span").html(data.data.newslist[2].content)
 			// }
 
-			$(".rotateBox .pqiu").hide()
+			// $(".rotateBox .pqiu").hide()
 			var are = data.data.area
+			let originAngle = 0
+			// 渲染大转盘
+			const turnplateHtml = renderTurnplate(are, originAngle)
+			$('.dial-wrap').css('transform', `rotate(${originAngle}deg)`)
+			$('.dial-wrap').html(turnplateHtml)
+
 			var i = 0;
 
 			for (i = 0; i < are.length; i++) {
@@ -871,6 +933,25 @@
 		})
 
 	})
+	function renderTurnplate(data, originAngle) {
+		// 转盘子个数
+		const len = data.length 
+		// 每格角度间距
+		const disAngle = Math.round(360 / len)
+
+		return data.map((item, index) => {
+			const currentAngle = index * -disAngle
+			const turnAngle = -originAngle - currentAngle
+			return `
+				<li style="transform: rotate(${currentAngle}deg)">
+					<div class="dial-item" style="transform: rotate(${turnAngle}deg)">
+						<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
+						<h6>${index}我我</h6>
+					</div>
+				</li>
+			`
+		})
+	}
 
 	function renderNews (newList) {
 		const domainUrl = 'http://121.42.10.139:8028/upload'
