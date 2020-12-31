@@ -2421,6 +2421,7 @@ line-height: 80px;
     text-align:center;
 }
 .news-content{
+    height: 148px;
     padding: 30px 20px;
     background: rgb(220, 221, 221);
     color: #333333;
