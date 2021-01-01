@@ -154,14 +154,11 @@
 				</div>
 				<div class="turnplate-zone">
 					<dl>
-						<dd>
+						<dd data-flag="left">
 							<img src="img/l.png" width="45">
 						</dd>
 						<dt>
 							<div class="turnplate-box">
-								<div class="center-info">
-									center-info
-								</div>
 								<ul class="dial-wrap">
 									<!-- <li>
 										<div class="dial-item">
@@ -200,9 +197,17 @@
 										</div>
 									</li> -->
 								</ul>
+								<div class="center-info">
+									<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="65">
+									<h4>肿瘤</h4>
+									<p>JS001 (PD-1)
+										JS003 (PD-L1)
+										JS004 (BTLA)</p>
+										<a href="">查看更多</a>
+								</div>
 							</div>
 						</dt>
-						<dd>
+						<dd data-flag="right">
 							<img src="img/r.png" width="45">
 						</dd>
 					</dl>
@@ -368,47 +373,6 @@
 						</a>
 					</li> -->
 				</ul>
-				<!-- <ul>
-					<li id="indexNews1">
-						<a href="">
-							<img class="btnTow" src="img/indenew.png" alt="">
-							<div class="indexnewText">
-								<h3></h3>
-								<div class=""></div>
-								<span></span>
-							</div>
-							<div class="btnTowDetail">
-								<button >了解更多+</button>
-							</div>
-						</a>
-					</li>
-					<li id="indexNews2">
-						<a href="">
-							<div class="indexnewText btnTow">
-								<h3></h3>
-								<div class="indexnewLine"></div>
-								<span></span>
-							</div>
-							<img class="btnTow" src="img/indenew.png" alt="">
-							<div class="btnTowDetail">
-								<button>了解更多+</button>
-							</div>
-						</a>
-					</li>
-					<li id="indexNews3">
-						<a href="">
-							<img class="btnTow" src="img/indenew.png" alt="">
-							<div class="indexnewText">
-								<h3></h3>
-								<div class="indexnewLine"></div>
-								<span></span>
-							</div>
-							<div class="btnTowDetail">
-								<button>了解更多+</button>
-							</div>
-						</a>
-					</li>
-				</ul> -->
 				<button onclick="location.href='NewsCenter.html'">了解更多+</button>
 			</div>
 		</div>
@@ -496,7 +460,7 @@
 </script>
 <script>
 
-
+	const domainUrl = 'http://121.42.10.139:8028/upload'
 
 	$(".lineBox ").addClass("r2")
 	$(".rotateBox ").on('click', 'div', function () {
@@ -787,86 +751,22 @@
 			const liHtml = renderNews(data.data.newslist)
 			console.log('liHtml', liHtml)
 			$('.news-model').html(liHtml)
-			// $("#indexNews1 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[0].id)
-			// $("#indexNews1 a>img").attr('src', imgurl + data.data.newslist[0].file2.img_url)
-			// $("#indexNews1 a h3").text(data.data.newslist[0].title)
-			// $("#indexNews1 a span").html(data.data.newslist[0].content)
-			// if (data.data.newslist[1]) {
-			// 	$("#indexNews2 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[1].id)
-			// 	$("#indexNews2 a>img").attr('src', imgurl + data.data.newslist[1].file2.img_url)
-			// 	$("#indexNews2 a h3").text(data.data.newslist[1].title)
-			// 	$("#indexNews2 a span").html(data.data.newslist[1].content)
-			// }
 
-			// if (data.data.newslist[2]) {
-			// 	$("#indexNews3 a").attr('href', 'NewsCenterD.html?id=' + data.data.newslist[2].id)
-			// 	$("#indexNews3 a>img").attr('src', imgurl + data.data.newslist[2].file2.img_url)
-			// 	$("#indexNews3 a h3").text(data.data.newslist[2].title)
-			// 	$("#indexNews3 a span").html(data.data.newslist[2].content)
-			// }
 
-			// $(".rotateBox .pqiu").hide()
-			var are = data.data.area
-			let originAngle = 0
+		
+			const area = data.data.area
 			// 渲染大转盘
-			const turnplateHtml = renderTurnplate(are, originAngle)
+			let originAngle = 90
+			const turnplateHtml = renderTurnplate(area, originAngle)
 			$('.dial-wrap').css('transform', `rotate(${originAngle}deg)`)
 			$('.dial-wrap').html(turnplateHtml)
+			// 大转盘事件绑定
+			turnplateHandler(area, originAngle)
 
-			var i = 0;
-
-			for (i = 0; i < are.length; i++) {
-				if (are[i]) {
-					$(".rotateBox .pqiu").eq(i).show()
-					$(".rotateBox .pqiu").eq(i).find('img').attr('src', imgurl + are[i].file.img_url)
-					$(".rotateBox .pqiu").eq(i).find('div').text(are[i].title)
-				}
-				let html = ''
-				console.log('html', i)
-				html += ''
-					+ '<div class="domainCenter xic">'
-					+ '	<img src="' + imgurl + are[i].file.img_url + '" width="70"><br>'
-					+ '	<span class="domainName">'
-					+ '		' + are[i].title + ''
-					+ '	</span><br>'
-					+ '	<span class="domainXq">'
-					+ '	' + are[i].text1 + '<br>' + are[i].text2 + '<br>' + are[i].text3 + '<br>' + are[i].text4 + ''
-					+ '	</span>'
-					+ '	<a href="' + are[i].url + '"><div class="domainMore">'
-					+ '		查看更多'
-					+ '	</div></a>'
-					+ '</div>'
-				$("#domains").append(html)
-			}
-			$("#domains>.domainCenter:eq(0)").addClass('on')
-			
-			
-			//news
-			let news =  data.data.newslist;
-			
-			// $('.indexNews #indexNews1 a').attr('href','')
-			// $('.indexNews #indexNews1 a img').attr('src','')
-			// $('.indexNews #indexNews1 a .indexnewText h3').text('')
-			// $('.indexNews #indexNews1 a .indexnewText div').text('')
-			// $('.indexNews #indexNews1 a .indexnewText span').text('')
-			
-			// <li id="indexNews1">
-			// 	<a href="">
-			// 		<img class="btnTow" src="img/indenew.png" alt="">
-			// 		<div class="indexnewText">
-			// 			<h3></h3>
-			// 			<div class=""></div>
-			// 			<span></span>
-			// 		</div>
-			// 		<div class="btnTowDetail">
-			// 			<button>了解更多+</button>
-			// 		</div>
-			// 	</a>
-			// </li>
-			
-			
-
+			// 渲染转盘中心区域
+			renderTurnplateCenterZone(area, 0)
 		})
+
 		$(window).scroll(function () {
 			if ($(document).scrollTop() > 2200) {
 				$('.indeCouList').addClass('indexTrams')
@@ -921,32 +821,104 @@
 				});
 			}
 		})
-		$('.indexNews li').hover(function () {
-			// $(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "0" })
-			// $(this).find('.indexnewText').stop(true, true).css({"background":'#004A95'})
-			// $(this).find('.btnTowDetail').stop(true, true).animate({ bottom: "0" })
+	})
 
-		}, function () {
-			$(this).find('.btnTow').stop(true, true).css({ "margin-bottom": "20px" })
-			$(this).find('.indexnewText').stop(true, true).css({"background":'#DCDDDD'})
-			$(this).find('.btnTowDetail').stop(true, true).animate({ bottom: "-607px" })
+	function renderTurnplateCenterZone (list, currentAngle) {
+		const res = calculateTurnplate(list)
+		const disAngle = res.disAngle
+		const index = currentAngle < 0 ? (360 + currentAngle) / disAngle : currentAngle / disAngle
+		const item = list[index]
+		const textArr = ['text1', 'text2', 'text3', 'text4']
+		const textArrStr = textArr.map(cell => {
+			return item[cell]
+		}).filter(cell => {
+			return cell !== 'null' && cell
+		})
+		const centerHtml = `
+		<img data-id="8" src="${domainUrl}${item.file.img_url}" width="65">
+		<h4>${item.title}</h4>
+		<p>${textArrStr.join('、')}</p>
+			<a href="">查看更多</a>
+		`
+		$('.center-info').html(centerHtml)
+	}
+
+	function fixTurnplateItemAngle(list, originAngle) {
+		const res = calculateTurnplate(list)
+		const len = res.len
+		const disAngle = res.disAngle
+
+		return list.map((item, index) => {
+			const currentAngle = index * -disAngle
+			const turnAngle = -originAngle - currentAngle
+			$('.dial-wrap li').eq(index).find('.dial-item').css('transform', `translateY(-100px) rotate(${turnAngle}deg)`)
+		})
+	}
+
+	function turnplateHandler(list, originAngle) {
+		const res = calculateTurnplate(list)
+		const len = res.len
+		const disAngle = res.disAngle
+		let currentOriginItemAngle = 0
+
+		$('.turnplate-zone').on('click', 'dd', function() {
+			const flag = $(this).data('flag')
+			const disAngleFlag = flag === 'right' ?  disAngle : -disAngle
+			currentOriginItemAngle = (currentOriginItemAngle + disAngleFlag)%360
+
+			originAngle = originAngle + disAngleFlag
+			$('.dial-wrap').css('transform', `rotate(${originAngle}deg)`)
+
+			fixTurnplateItemAngle(list, originAngle)
+			renderTurnplateCenterZone(list, currentOriginItemAngle)
 		})
 
-	})
-	function renderTurnplate(data, originAngle) {
+
+
+		$('.turnplate-zone').on('click', '.dial-item', function() {
+			const angle = $(this).data('angle')
+			if (Math.abs(angle) < currentOriginItemAngle) {
+				const dis = 360 - currentOriginItemAngle - angle
+				originAngle = originAngle + dis
+			} else {
+				let dis = Math.abs(angle) - currentOriginItemAngle
+				dis = dis < 0 ? 360 - dis : dis
+				originAngle = originAngle + dis
+			}
+			
+			$('.dial-wrap').css('transform', `rotate(${originAngle}deg)`)
+			currentOriginItemAngle = Math.abs(angle)
+			
+			fixTurnplateItemAngle(list, originAngle)
+			renderTurnplateCenterZone(list, currentOriginItemAngle)
+		})
+		
+
+		
+	}
+	function calculateTurnplate(list) {
 		// 转盘子个数
-		const len = data.length 
+		const len = list.length 
 		// 每格角度间距
 		const disAngle = Math.round(360 / len)
+		return {
+			len,
+			disAngle
+		}
+	}
+	function renderTurnplate(list, originAngle) {
+		const res = calculateTurnplate(list)
+		const len = res.len
+		const disAngle = res.disAngle
 
-		return data.map((item, index) => {
+		return list.map((item, index) => {
 			const currentAngle = index * -disAngle
 			const turnAngle = -originAngle - currentAngle
 			return `
 				<li style="transform: rotate(${currentAngle}deg)">
-					<div class="dial-item" style="transform: rotate(${turnAngle}deg)">
-						<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="45">
-						<h6>${index}我我</h6>
+					<div class="dial-item" style="transform: translateY(-100px) rotate(${turnAngle}deg)" data-angle="${currentAngle}">
+						<img data-id="8" src="${domainUrl}${item.file.img_url}" width="45">
+						<h6>${item.title}</h6>
 					</div>
 				</li>
 			`
@@ -954,7 +926,7 @@
 	}
 
 	function renderNews (newList) {
-		const domainUrl = 'http://121.42.10.139:8028/upload'
+		
 		return newList.map(item => {
 			return `
 			<li>
