@@ -2438,7 +2438,6 @@ line-height: 80px;
 /* 大转盘样式 */
 .turnplate-zone{
     padding: 20px;
-    border: 1px solid red;
 }
 .turnplate-zone dl{
     display: flex;
