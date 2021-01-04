@@ -84,66 +84,56 @@
 			<img src="img/x1.png" width="338" class="x">
 		</div>
 		<div class="innovate   pr">
-			<div class="noswiper">
+			<div class="carousel-warp">
+				<ul>
+					<li>
+						<dl class="carousel-inner">
+							<dt>
+								<span class="img-box"></span>
+							</dt>
+							<dd>
+								<h4 class="title-animation">源头创新，科学精神1</h4>
+								<p>全球一体化研发体系</p>
+								<p>全生命周期抗体开发平台技术</p>
+								<a href="#" class="local-button carousel-btn">了解更多 +</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="carousel-inner" style="flex-flow:row-reverse">
+							<dt>
+								<span class="img-box"></span>
+							</dt>
+							<dd>
+								<h4 class="title-animation">源头创新，科学精神2</h4>
+								<p>全球一体化研发体系</p>
+								<p>全生命周期抗体开发平台技术</p>
+								<a href="#" class="local-button carousel-btn">了解更多 +</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="carousel-inner">
+							<dt>
+								<span class="img-box"></span>
+							</dt>
+							<dd>
+								<h4 class="title-animation">源头创新，科学精神3</h4>
+								<p>全球一体化研发体系</p>
+								<p>全生命周期抗体开发平台技术</p>
+								<a href="#" class="local-button carousel-btn">了解更多 +</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
 			</div>
-			<div class="Mypagination center">
-				<span class="on"></span>
-				<span></span>
-			</div>
+
 			<img src="img/x2.png" width="338" class="x">
-
-			<div class="w1300 pr  lshow">
-				<div class="ileft fl center">
-					<img src="img/2U1A7244_1@2x.png">
-				</div>
-				<div class="ileft1 fl">
-					<div class="qiu1">
-					</div>
-				</div>
-				<div class="ileft2 fl">
-					<div class="qiu2">
-					</div>
-				</div>
-				<div class="jd">
-					<div class="jdTitle">
-						<span>源头创新，科学精神</span>
-						<div class="titleLIine"></div>
-					</div>
-					<div class="jdInfo ">
-						全球一体化研发体系<br> 全生命周期抗体开发平台技术
-					</div>
-					<div class="moreBt">
-						了解更多
-					</div>
-				</div>
-			</div>
-			
-			<div class="w1300 pr dn rshow">
-				<div class="ileft fl center" style="left: 745px;">
-					<img src="img/2U1A7244_1@22x.png">
-				</div>
-				<div class="ileft1 fl" style="left:736px">
-					<div class="qiu1">
-					</div>
-				</div>
-				<div class="ileft2 fl" style="left: 727px;">
-					<div class="qiu2">
-					</div>
-				</div>
-				<div class="jd" style="right: 650px;">
-					<div class="jdTitle">
-						<span>创新型生物药企</span>
-						<div class="titleLIine"></div>
-					</div>
-					<div class="jdInfo ">
-						成立于2012年12月<br>中国领先的<br>创新生物医药公司
-					</div>
-					<div class="moreBt" style="margin-top: 85px;">
-						了解更多
-					</div>
-				</div>
-
-			</div>
 		</div>
 
 		<div class="domainBox">
@@ -198,12 +188,6 @@
 									</li> -->
 								</ul>
 								<div class="center-info">
-									<img data-id="8" src="http://121.42.10.139:8028/upload/file/20201209/icon24.png" width="65">
-									<h4>肿瘤</h4>
-									<p>JS001 (PD-1)
-										JS003 (PD-L1)
-										JS004 (BTLA)</p>
-										<a href="">查看更多</a>
 								</div>
 							</div>
 						</dt>
@@ -742,14 +726,13 @@
 			$(".banner").css({ 'background': `url(${bane})` })
 			$(".banner").css({ 'background-size': 'cover' })
 			
-			
 			licheng = data.data.history
 			
-			
+			// 幻灯片效果
+			renderPlayModel(data.data.banner_list)
 			
 			// 渲染新闻模块
 			const liHtml = renderNews(data.data.newslist)
-			console.log('liHtml', liHtml)
 			$('.news-model').html(liHtml)
 
 
@@ -822,6 +805,95 @@
 			}
 		})
 	})
+
+	function highLightLi(index) {
+		$('.carousel-warp ol li').removeClass()
+		$('.carousel-warp ol li').eq(index).addClass('active')
+	}
+
+	function renderUlLi(bannerList) {
+		const liHtml = bannerList.map((item, index) => {
+			return `
+			<li>
+				<dl class="carousel-inner ${`${index % 2 === 0 ? '' : 'reverse'}`}">
+					<dt>
+						<span class="img-box" style="background-image: url(${domainUrl + item.file.img_url})"></span>
+					</dt>
+					<dd>
+						<h4 class="title-animation">${item.title}</h4>
+						<p>${item.text1 ? item.text1 : ''}</p>
+						<p>${item.text2 ? item.text2 : ''}</p>
+						<p>${item.text3 ? item.text3 : ''}</p>
+						<a href="${item.url}" class="local-button carousel-btn">了解更多 +</a>
+					</dd>
+				</dl>
+			</li>
+			`
+		}).join('')
+		$('.carousel-warp ul').html(liHtml)
+	}
+
+	function renderOlLi(bannerList) {
+		const liHtml = bannerList.map(item => {
+			return `<li></li>`
+		})
+		$('.carousel-warp ol').html(liHtml)
+	}
+
+	function bindUl(bannerList) {
+		const len = bannerList.length
+		$('.carousel-warp ul li:eq(0)').addClass('showLeft')
+		$('.carousel-warp ul li').each(function(index) {
+			$(this).find('dt').on('animationend', function(ev) {
+				console.log('ev.originalEvent.animationName', ev.originalEvent.animationName, index)
+				if (ev.originalEvent.animationName === 'fadeOut'){
+					// 运动结束后清除当前索引动画class
+					$(`.carousel-warp ul li:eq(${index})`).removeClass()
+					// 给接下来的子项添加动画（偶数：showLeft， 奇数：showRight）
+					const next = (index + 1) >= len ? 0 : index + 1
+					const type = next % 2 === 0 ? 'showLeft': 'showRight'
+					$(`.carousel-warp ul li:eq(${next})`).addClass(type)
+					highLightLi(next)
+				}
+			})
+		})
+	}
+
+	function bindOl() {
+		$('.carousel-warp ol li').on('click', function() {
+			const index = $(this).index()
+			$(this).addClass('active').siblings().removeClass()
+			const type = index % 2 === 0 ? 'showLeft': 'showRight'
+			$(`.carousel-warp ul li:eq(${index})`).addClass(type).siblings().removeClass()
+		})
+	}
+
+	function renderPlayModel(bannerList) {
+
+		// 渲染Ul
+		renderUlLi(bannerList)
+		// 渲染Ol
+		renderOlLi(bannerList)
+		// 绑定UL事件
+		bindUl(bannerList)
+		// 绑定Ol事件
+		bindOl(bannerList)
+		// 高亮
+		highLightLi(0)
+	
+
+		// $('.carousel-warp li:eq(0)').addClass('showLeft')
+		// let index = 0
+		// $('.carousel-warp li:eq(0) dt').on('animationend', function(ev) {
+
+		// 	if (ev.originalEvent.animationName === 'fadeOut'){
+		// 		++index
+		// 		$(`.carousel-warp li:eq(${index%3 - 1})`).removeClass('showLeft')
+		// 		$(`.carousel-warp li:eq(${index%3})`).addClass('showLeft')
+		// 	}
+			
+		// })
+	}
 
 	function renderTurnplateCenterZone (list, currentAngle) {
 		const res = calculateTurnplate(list)

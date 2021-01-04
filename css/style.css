@@ -2567,7 +2567,256 @@ line-height: 80px;
 .dial-item h6{
     font-size: 12px;
 }
+.local-button{
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: red;
+    border-radius: 20px;
+    text-align: center;
+}
+/* 首页轮播样式 2020-01-03 15：00 开搞 */
+.carousel-warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 120px 0;
+}
+.carousel-warp .carousel-btn{
+    margin-top: 50px;
+}
+.carousel-warp ul {
+    min-height: 418px;
+}
+.carousel-warp ul li{
+    display: none;
+}
+.carousel-warp dl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-warp dl.reverse{
+    flex-flow:row-reverse;
+}
+.carousel-warp dt{
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+.carousel-warp dd{
+    position:relative;
+    z-index: 2;
+}
+.carousel-warp h4{
+    margin-bottom: 40px;
+}
+.title-animation{
+    display: inline-block;
+    font-size: 20px;
+    color:#333333;
+    font-weight:bold;
+    line-height: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.title-animation:after{
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: #004A95;
+    border-radius: 4px;
+}
+.carousel-warp .img-box{
+    display: inline-block;
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('http://121.42.10.139:8028/upload/file/20201225/160745/banner.png');
+}
+.carousel-warp p{
+    font-size: 34px;
+    color: #004A95;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.carousel-warp li.showLeft,.carousel-warp li.showRight{
+    display: block;
+}
+.carousel-warp li.showLeft dt{
+    animation-name: fadeIn, sizeChange, moveChangeLeft, fadeOut;
+    animation-duration:1s, 1s, 2s, .4s;
+    animation-delay: 1s, 7s, 9s, 12s;
+    animation-fill-mode: both, forwards, forwards, forwards;
+    margin-right: 50px;
+}
+.carousel-warp li.showRight dt{
+    animation-name: fadeIn, sizeChange, moveChangeRight, fadeOut;
+    animation-duration:1s, 1s, 2s, .4s;
+    animation-delay: .4s, 7s, 9s, 12s;
+    animation-fill-mode: both, forwards, forwards, forwards;
+    margin-left: 50px;
+}
+.carousel-warp li.showLeft h4{
+    animation-name: fadeInRightBig, fadeOut;
+    animation-duration: 1s, .4s;
+    animation-delay: 3s, 8s;
+    animation-fill-mode: both, forwards;
+}
+.carousel-warp li.showRight h4{
+    animation-name: fadeInLeftBig, fadeOut;
+    animation-duration: 1s, .4s;
+    animation-delay: 3s, 8s;
+    animation-fill-mode: both, forwards;
+}
+.carousel-warp li.showLeft .title-animation:after{
+    animation-name: fadeInRightBig;
+    animation-duration: .4s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+.carousel-warp li.showRight .title-animation:after{
+    animation-name: fadeInLeftBig;
+    animation-duration: .4s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+.carousel-warp li.showLeft p {
+    animation-name: fadeInRight, fadeOut;
+    animation-duration: .4s, .4s;
+    animation-delay: 5s, 8s;
+    animation-fill-mode: both, forwards;
+}
+.carousel-warp li.showRight p {
+    animation-name: fadeInLeft, fadeOut;
+    animation-duration: .4s, .4s;
+    animation-delay: 5s, 8s;
+    animation-fill-mode: both, forwards;
+}
+.carousel-warp li.showLeft .carousel-btn {
+    animation-name: fadeInRight, fadeOut;
+    animation-duration: .4s, .4s;
+    animation-delay: 6s, 8s;
+    animation-fill-mode: both, forwards;
+}
+.carousel-warp li.showRight .carousel-btn {
+    animation-name: fadeInLeft, fadeOut;
+    animation-duration: .4s, .4s;
+    animation-delay: 6s, 8s;
+    animation-fill-mode: both, forwards;
+}
 
+@keyframes opacityChange{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes showLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes titleLineShow{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes titleShow{
+    0%{
+        opacity: 0;
+        transform: translateX(150%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveChangeRight{
+    0%{
+        transform: translateX(0) scale(1.5);
+    }
+    78%{
+        transform: translateX(-110%);
+    }
+    84%{
+        transform: translateX(-90%);
+    }
+    90%{
+        transform: translateX(-116%);
+    }
+    94%{
+        transform: translateX(-96%);
+    }
+    100%{
+        transform: translateX(-100%) scale(1) ;
+    }
+}
+@keyframes moveChangeLeft{
+    0%{
+        transform: translateX(0) scale(1.5);
+    }
+    78%{
+        transform: translateX(110%);
+    }
+    84%{
+        transform: translateX(90%);
+    }
+    90%{
+        transform: translateX(116%);
+    }
+    94%{
+        transform: translateX(96%);
+    }
+    100%{
+        transform: translateX(100%) scale(1) ;
+    }
+}
+@keyframes sizeChange{
+    0%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.5) 
+    }
+}
+
+.carousel-warp ol{
+    display: flex;
+    width: 100%;
+    height: 4px;
+    justify-content: center;
+    padding-top: 100px;
+}
+.carousel-warp ol li{
+    width: 80px;
+    height: 6px;
+    margin: 0 4px;
+    background-color: #004A95;
+    cursor: pointer;
+}
+.carousel-warp ol li.active{
+    background-color: #E60012;
+}
 /* 
 相加为
 0 -90 = -90
